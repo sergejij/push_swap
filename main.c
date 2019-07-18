@@ -3,28 +3,6 @@
 #include "push_swap.h"
 
 
-int  ft_len_stack_a(t_stacks stacks)
-{
-    int i;
-
-    i = 0;
-    while ((stacks.stack_a)[i])
-        i++;
-    return (i);
-}
-
-void    sa(t_stacks *stacks)
-{
-    char tmp;
-
-    //printf("\n%d\n", len);
-    if (ft_len_stack_a(*stacks) > 1)
-    {
-        tmp = stacks->stack_a[0];
-        stacks->stack_a[0] = stacks->stack_a[1];
-        stacks->stack_a[1] = tmp;
-    }
-}
 
 void    ft_filling_a(int argc, char **argv, t_stacks *stacks)
 {

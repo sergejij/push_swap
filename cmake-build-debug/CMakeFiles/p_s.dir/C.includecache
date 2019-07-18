@@ -9,4 +9,14 @@
 /Users/ubartemi/CLionProjects/p_s/main.c
 stdio.h
 -
+stdlib.h
+-
+push_swap.h
+/Users/ubartemi/CLionProjects/p_s/push_swap.h
+
+/Users/ubartemi/CLionProjects/p_s/moves.c
+push_swap.h
+/Users/ubartemi/CLionProjects/p_s/push_swap.h
+
+/Users/ubartemi/CLionProjects/p_s/push_swap.h
 
