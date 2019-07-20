@@ -13,18 +13,18 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-typedef struct              s_stacks
-{
-    int                     stack_a[100];
-    int                     stack_b[100];
-}                           t_stacks;
-
 typedef struct              s_list
 {
     int                     num;
     struct        s_list    *next;
     struct        s_list    *prev;
 }                           t_list;
+
+typedef struct              s_stacks
+{
+    t_list                  *a;
+    t_list                  *b;
+}                           t_stacks;
 
 /*--------------------------moves--------------------------*/
 

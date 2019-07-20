@@ -4,6 +4,3 @@
 CMakeFiles/p_s.dir/main.c.o: ../main.c
 CMakeFiles/p_s.dir/main.c.o: ../push_swap.h
 
-CMakeFiles/p_s.dir/moves.c.o: ../moves.c
-CMakeFiles/p_s.dir/moves.c.o: ../push_swap.h
-

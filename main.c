@@ -43,12 +43,13 @@ t_list    *ft_create_stack(int argc, char **argv)
 
 int     main(int argc, char **argv)
 {
+    t_stacks struct_m;
     t_list  *a;
     t_list  *b;
     if (argc < 2)
         return (0);
-    a = ft_create_stack(argc - 1, argv);
+    struct_m.a = ft_create_stack(argc - 1, argv);
     b = malloc(sizeof(t_list));
-    ft_printf_list(a);
+    ft_printf_list(struct_m.a);
     return 0;
 }

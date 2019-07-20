@@ -83,9 +83,6 @@
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/main.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves.c">
-			<Option target="p_s"/>
-		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
