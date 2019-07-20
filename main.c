@@ -2,33 +2,53 @@
 #include <stdlib.h>
 #include "push_swap.h"
 
-
-
-void    ft_filling_a(int argc, char **argv, t_stacks *stacks)
+void    ft_printf_list(t_list *start)
 {
-    int i;
+    t_list *begin;
 
-    i = 0;
-
-    while (i + 1 < argc)
+    begin = start;
+    while (start)
     {
-        (stacks->stack_a)[i] = atoi(argv[i + 1]);
-        i++;
+        printf("%d ", start->num);
+        start = start->next;
     }
-    i = 0;
-    while (i + 1 < argc)
-        printf("%d ", (stacks->stack_a)[i++]);
 }
 
-int     main(int argc, char **argv) {
-    int i = 0;
-    t_stacks stacks;
+t_list    *ft_create_stack(int argc, char **argv)
+{
+    int i;
+    t_list *begin;
+    t_list *stack;
+    t_list *new;
+
+    i = 1;
+    stack = (t_list *)malloc(sizeof(t_list));
+    begin = stack;
+    stack->num = atoi(argv[i]);
+    stack->next = NULL;
+    stack->prev = NULL;
+    while (i < argc)
+    {
+        new = (t_list *)malloc(sizeof(t_list));
+        stack->next = new;
+        new->next = NULL;
+        new->prev = stack;
+        stack = new;
+        i++;
+        stack->num = atoi(argv[i]);
+    }
+    return (begin);
+}
+
+
+int     main(int argc, char **argv)
+{
+    t_list  *a;
+    t_list  *b;
     if (argc < 2)
         return (0);
-    ft_filling_a(argc, argv, &stacks);
-    sa(&stacks);
-    printf("\n");
-    while (i + 1 < argc)
-        printf("%d ", (stacks.stack_a)[i++]);
+    a = ft_create_stack(argc - 1, argv);
+    b = malloc(sizeof(t_list));
+    ft_printf_list(a);
     return 0;
 }
