@@ -1,7 +1,4 @@
-
 #include "push_swap.h"
-
-
 
 t_lis    *ft_create_stack(int argc, char **argv)
 {
@@ -72,8 +69,11 @@ int       main(int argc, char **argv)
 
     if (argc < 2)
         return (0);
+	b = malloc(sizeof(t_lis));
     ft_parse_and_fill(&main_struct, argc, argv);
-    b = malloc(sizeof(t_lis));
+	ft_printf_list(main_struct.a);
+	printf("\n");
+    sa(&main_struct);
     ft_printf_list(main_struct.a);
     return 0;
 }

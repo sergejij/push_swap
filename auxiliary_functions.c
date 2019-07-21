@@ -1,6 +1,3 @@
-//
-// Created by Ulrick Bartemius on 2019-07-21.
-//
 #include "push_swap.h"
 
 int is_need_parsing(char **argv)
@@ -40,6 +37,19 @@ int 	is_correct_input(char **str)
 	}
 	return (1);
 }
+/*
+int	ft_length_list(const t_lis *start)
+{
+	int counter;
+
+	counter = 0;
+	while (start)
+	{
+		start = start->next;
+		counter++;
+	}
+	return (counter);
+}*/
 
 void    ft_printf_list(t_lis *start)
 {

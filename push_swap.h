@@ -35,13 +35,14 @@ typedef struct              s_stacks
 int 	is_need_parsing(char **argv);
 int 	is_correct_input(char **str);
 void    ft_printf_list(t_lis *start);
+int		ft_length_list(const t_lis *start);
 
 /*--------------------------moves--------------------------*/
 
-int     ft_len_stack_a(t_stacks stacks);
-int     ft_len_stack_b(t_stacks stacks);
+/*int     ft_len_stack_a(t_stacks stacks);
+int     ft_len_stack_b(t_stacks stacks);*/
 
-void    sa(t_stacks *stacks);
-void    sb(t_stacks *stacks);
-void    ss(t_stacks *stacks);
+void    sa(t_stacks	*main_struct);
+/*void    sb(t_stacks *stacks);
+void    ss(t_stacks *stacks);*/
 #endif
