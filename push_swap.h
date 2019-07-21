@@ -13,6 +13,8 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
+#include <stdio.h>
+#include <stdlib.h>
 # include "./libft/libft.h"
 
 typedef struct              s_lis
@@ -27,6 +29,12 @@ typedef struct              s_stacks
     t_lis                     *a;
     t_lis                     *b;
 }                           t_stacks;
+
+/*--------------------------auxiliary--------------------------*/
+
+int 	is_need_parsing(char **argv);
+int 	is_correct_input(char **str);
+void    ft_printf_list(t_lis *start);
 
 /*--------------------------moves--------------------------*/
 

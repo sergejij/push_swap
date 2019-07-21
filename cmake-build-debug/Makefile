@@ -123,6 +123,33 @@ p_s/fast:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/build
 .PHONY : p_s/fast
 
+auxiliary_functions.o: auxiliary_functions.c.o
+
+.PHONY : auxiliary_functions.o
+
+# target to build an object file
+auxiliary_functions.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.o
+.PHONY : auxiliary_functions.c.o
+
+auxiliary_functions.i: auxiliary_functions.c.i
+
+.PHONY : auxiliary_functions.i
+
+# target to preprocess a source file
+auxiliary_functions.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.i
+.PHONY : auxiliary_functions.c.i
+
+auxiliary_functions.s: auxiliary_functions.c.s
+
+.PHONY : auxiliary_functions.s
+
+# target to generate assembly for a file
+auxiliary_functions.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.s
+.PHONY : auxiliary_functions.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... p_s"
+	@echo "... auxiliary_functions.o"
+	@echo "... auxiliary_functions.i"
+	@echo "... auxiliary_functions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

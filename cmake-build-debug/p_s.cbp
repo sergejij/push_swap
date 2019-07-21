@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c">
+			<Option target="p_s"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/main.c">
 			<Option target="p_s"/>
 		</Unit>
