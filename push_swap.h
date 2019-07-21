@@ -13,17 +13,19 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-typedef struct              s_list
+# include "./libft/libft.h"
+
+typedef struct              s_lis
 {
     int                     num;
-    struct        s_list    *next;
-    struct        s_list    *prev;
-}                           t_list;
+    struct        s_lis    *next;
+    struct        s_lis    *prev;
+}                           t_lis;
 
 typedef struct              s_stacks
 {
-    t_list                  *a;
-    t_list                  *b;
+    t_lis                     *a;
+    t_lis                     *b;
 }                           t_stacks;
 
 /*--------------------------moves--------------------------*/
