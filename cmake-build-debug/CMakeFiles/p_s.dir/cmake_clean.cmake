@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/p_s.dir/main.c.o"
   "CMakeFiles/p_s.dir/auxiliary_functions.c.o"
   "CMakeFiles/p_s.dir/moves.c.o"
+  "CMakeFiles/p_s.dir/validation.c.o"
   "p_s.pdb"
   "p_s"
 )

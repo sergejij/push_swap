@@ -25,7 +25,7 @@ int 	is_correct_input(char **str)
 	{
 		while (str[i][j])
 		{
-			if (str[i][j] < 48 || str[i][j] > 57)
+			if ((str[i][j] < 48 || str[i][j] > 57) && (j != 0 || str[i][0] != '-'))
 			{
 				printf("Error");
 				return (0);
@@ -51,7 +51,7 @@ int	ft_length_list(const t_lis *start)
 	return (counter);
 }*/
 
-void    ft_printf_list(t_lis *start)
+void    ft_print_list(t_lis *start)
 {
 	t_lis *begin;
 
@@ -62,4 +62,26 @@ void    ft_printf_list(t_lis *start)
 		start = start->next;
 	}
 	start = begin;
+}
+
+
+void	ft_list_clear(t_lis **begin_list)
+{
+	t_lis	*tmp;
+	t_lis	*list;
+
+	list = *begin_list;
+	tmp = NULL;
+	while (list)
+	{
+		if (list->next)
+		{
+			tmp = list->next;
+			list->prev = NULL;
+		}
+		else
+			tmp = NULL;
+		free(list);
+		list = tmp;
+	}
 }

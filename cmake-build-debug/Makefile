@@ -204,6 +204,33 @@ moves.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves.c.s
 .PHONY : moves.c.s
 
+validation.o: validation.c.o
+
+.PHONY : validation.o
+
+# target to build an object file
+validation.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation.c.o
+.PHONY : validation.c.o
+
+validation.i: validation.c.i
+
+.PHONY : validation.i
+
+# target to preprocess a source file
+validation.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation.c.i
+.PHONY : validation.c.i
+
+validation.s: validation.c.s
+
+.PHONY : validation.s
+
+# target to generate assembly for a file
+validation.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation.c.s
+.PHONY : validation.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... moves.o"
 	@echo "... moves.i"
 	@echo "... moves.s"
+	@echo "... validation.o"
+	@echo "... validation.i"
+	@echo "... validation.s"
 .PHONY : help
 
 
