@@ -5,6 +5,7 @@ void    sa(t_stacks	*main_struct)
 	t_lis *begin;
 	int tmp;
 
+	tmp = 0;
 	begin = main_struct->a;
 	if (begin->next)
 	{
@@ -13,44 +14,35 @@ void    sa(t_stacks	*main_struct)
 		begin->next->num = tmp;
 	}
 }
-/*
-void    sb(t_stacks *stacks)
+void    sb(t_stacks	*main_struct)
 {
-    char tmp;
+	t_lis *begin;
+	int tmp;
 
-    if (ft_len_stack_b(*stacks) > 1)
-    {
-        tmp = stacks->stack_b[0];
-        stacks->stack_b[0] = stacks->stack_b[1];
-        stacks->stack_b[1] = tmp;
-    }
+	tmp = 0;
+	begin = main_struct->b;
+	if (begin->next)
+	{
+		tmp = begin->num;
+		begin->num = begin->next->num;
+		begin->next->num = tmp;
+	}
 }
 
-void    ss(t_stacks *stacks)
+void    ss(t_stacks	*main_struct)
 {
-    sa(stacks);
-    sb(stacks);
-}*/
-/*
+	sa(&(*main_struct));
+	//ft_print_list(main_struct.a);
+	sb(&(*main_struct));
+}
+
 void    pb(t_stacks *stacks)
 {
-    if (ft_len_stack_a(*stacks) > 0)
-    {
-        if (ft_len_stack_b(*stacks) == 0)
-            stacks->stack_a[0] = stacks->stack_b[0];
-        else
-            while ( )
-            {
-
-            }
-    }
-    char tmp;
-
-    if (ft_len_stack_a(*stacks) > 1)
-    {
-        tmp = stacks->stack_a[0];
-        stacks->stack_a[0] = stacks->stack_a[1];
-        stacks->stack_a[1] = tmp;
-    }
+	if ((stacks->a)->next)
+	{
+		stacks->b = (stacks->a);
+		stacks->a = (stacks->a)->next;
+		stacks->b->next = NULL;
+		(stacks->a)->prev = NULL;
+	}//взять значение первого эл-та в а и поместить в верх б
 }
-*/

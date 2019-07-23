@@ -39,20 +39,23 @@ t_lis	*ft_create_stack(int argc, char **argv);
 int 	is_need_parsing(char **argv);
 int 	is_correct_input(char **str);
 void    ft_print_list(t_lis *start);
-int		ft_length_list(const t_lis *start);
 void	ft_list_clear(t_lis **begin_list);
 
 /*----------------------------moves----------------------------*/
 
 void    sa(t_stacks	*main_struct);
-/*void    sb(t_stacks *stacks);
-void    ss(t_stacks *stacks);*/
+void    sb(t_stacks	*main_struct);
+void    ss(t_stacks *stacks);
+void    pb(t_stacks *stacks);
 /*int     ft_len_stack_a(t_stacks stacks);
 int     ft_len_stack_b(t_stacks stacks);*/
 
 /*--------------------------validation--------------------------*/
 
+int		is_int(char **tmp);
 char	**ft_shift_matrix(char **argv, int argc);
 int		ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv);
+t_lis   *ft_create_stack(int argc, char **argv);
+int		ft_atoi_for_over(const char *str);
 
 #endif
