@@ -13,9 +13,11 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
+
 #include <stdio.h>
 #include <stdlib.h>
 # include "./libft/libft.h"
+
 
 typedef struct              s_lis
 {
@@ -47,6 +49,8 @@ void    sa(t_stacks	*main_struct);
 void    sb(t_stacks	*main_struct);
 void    ss(t_stacks *stacks);
 void    pb(t_stacks *stacks);
+void    pa(t_stacks *stacks);
+void	ra(t_stacks *stacks);
 /*int     ft_len_stack_a(t_stacks stacks);
 int     ft_len_stack_b(t_stacks stacks);*/
 

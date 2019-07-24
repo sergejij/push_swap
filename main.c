@@ -15,17 +15,70 @@ int       main(int argc, char **argv)
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
+
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+
+	/*printf("Make - SA");
 	sa(&main_struct);
-	ft_print_list(main_struct.a);
 	printf("\n");
-	pb(&main_struct);
 	printf("\n");
+
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
+
 	printf("b - ");
 	ft_print_list(main_struct.b);
+	printf("\n");
 
+	printf("Make - 3 PB");
+	pb(&main_struct);
+	pb(&main_struct);
+	pb(&main_struct);
+	printf("\n");
+
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	printf("\n");
+
+
+	printf("Make - PA");
+	pa(&main_struct);
+	printf("\n");
+
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+
+	printf("Make - 2 SS");
+	ss(&main_struct);
+	printf("\n");
+	printf("\n");
+
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+*/
+
+	ra(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);
     return 0;
