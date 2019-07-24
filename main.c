@@ -15,6 +15,9 @@ int       main(int argc, char **argv)
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
+	sa(&main_struct);
+	ft_print_list(main_struct.a);
+	printf("\n");
 	pb(&main_struct);
 	printf("\n");
 	printf("a - ");

@@ -32,7 +32,7 @@ typedef struct              s_stacks
 
 /*-----------------------------main-----------------------------*/
 
-t_lis	*ft_create_stack(int argc, char **argv);
+
 
 /*--------------------------auxiliary--------------------------*/
 
@@ -53,9 +53,9 @@ int     ft_len_stack_b(t_stacks stacks);*/
 /*--------------------------validation--------------------------*/
 
 int		is_int(char **tmp);
-char	**ft_shift_matrix(char **argv, int argc);
+char	**ft_shift_matrix(char **argv);
 int		ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv);
-t_lis   *ft_create_stack(int argc, char **argv);
+t_lis    *ft_create_stack(char **tmp);
 int		ft_atoi_for_over(const char *str);
 
 #endif

@@ -28,7 +28,7 @@ int		ft_atoi_for_over(const char *str)
 	return (result * sign);
 }
 
-t_lis    *ft_create_stack(int argc, char **argv)
+t_lis    *ft_create_stack(char **tmp)
 {
 	int     i;
 	t_lis *begin;
@@ -40,9 +40,9 @@ t_lis    *ft_create_stack(int argc, char **argv)
 	stack->next = NULL;
 	stack->prev = NULL;
 	begin = stack;
-	while (argv[i + 1])
+	while (tmp[i + 1])
 	{
-		stack->num = ft_atoi(argv[i]);
+		stack->num = ft_atoi(tmp[i]);
 		new = malloc(sizeof(t_lis));
 		stack->next = new;
 		new->prev = stack;
@@ -50,7 +50,7 @@ t_lis    *ft_create_stack(int argc, char **argv)
 		stack = new;
 		i++;
 	}
-	stack->num = ft_atoi(argv[i]);
+	stack->num = ft_atoi(tmp[i]);
 	return (begin);
 }
 
@@ -83,64 +83,57 @@ int is_int(char **tmp)
 	return (1);
 }
 
-char **ft_shift_matrix(char **argv, int argc)
+char **ft_shift_matrix(char **argv)
 {
-	char **for_parse;
 	int i;
 
 	i = 1;
-	for_parse = (char**)malloc(sizeof(char*) * (argc));
 	while (argv[i])
 	{
-		for_parse[i - 1] = (char*)malloc(sizeof(char) * (ft_strlen(argv[i])));
-		for_parse[i - 1] = argv[i];
-		for_parse[i - 1][(ft_strlen(argv[i]))] = '\0';
+		argv[i - 1] = argv[i];
 		i++;
 	}
-	for_parse[i - 1] = NULL;
-	return (for_parse);
+	argv[i - 1] = NULL;
+	return (argv);
 }
 
-int	ft_parse(char ***tmp, char **argv, t_stacks    *main_struct)
+int	ft_parse(char **argv, t_stacks    *main_struct)
 {
 	int i;
+	char **tmp;
 
 	i = 0;
-	*tmp = ft_strsplit(argv[1], ' ');
-	if (is_correct_input(*tmp) && is_int(*tmp))
-		(*main_struct).a = ft_create_stack(ft_count_word(argv[1], ' '), *tmp);
+	tmp = ft_strsplit(argv[1], ' ');
+	if (is_correct_input(tmp) && is_int(tmp))
+		(*main_struct).a = ft_create_stack(tmp);
 	else
 	{
-		while (*tmp[i])
-			free(*tmp[i++]);
-		free(*tmp);
+		while (tmp[i])
+			free(tmp[i++]);
+		free(tmp);
 		return (0);
 	}
+	while (tmp[i])
+		free(tmp[i++]);
+	free(tmp);
 	return (1);
 }
 
 int	ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv)
 {
-	char        **tmp;
-	int 		i;
-
-	i = 0;
 	if (argc == 2 && is_need_parsing(argv))
 	{
-		if (!(ft_parse(&tmp, argv, main_struct)))
+		if (!(ft_parse(argv, main_struct)))
 			return (0);
 	}
 	else
 	{
-		tmp = ft_shift_matrix(argv, argc);
-		if (is_correct_input(tmp) && is_int(tmp))
-			(*main_struct).a = ft_create_stack(argc, tmp);
+		argv = ft_shift_matrix(argv);
+		if (is_correct_input(argv) && is_int(argv))
+			(*main_struct).a = ft_create_stack(argv);
 		else
-		{
-			free(tmp);
 			return (0);
-		}
+
 	}
-	free(tmp); // почему если чищу циклом каждую строчку двумерного массива, то ошибок больше чемy так?
 	return (1);
 }
