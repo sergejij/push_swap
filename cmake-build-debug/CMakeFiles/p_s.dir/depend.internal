@@ -9,9 +9,21 @@ CMakeFiles/p_s.dir/main.c.o
  /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
  /Users/ubartemi/CLionProjects/p_s/main.c
  /Users/ubartemi/CLionProjects/p_s/push_swap.h
-CMakeFiles/p_s.dir/moves.c.o
+CMakeFiles/p_s.dir/moves/push.c.o
  /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
- /Users/ubartemi/CLionProjects/p_s/moves.c
+ /Users/ubartemi/CLionProjects/p_s/moves/push.c
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/moves/reverse_rotate.c
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+CMakeFiles/p_s.dir/moves/rotate.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/moves/rotate.c
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+CMakeFiles/p_s.dir/moves/swap.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/moves/swap.c
  /Users/ubartemi/CLionProjects/p_s/push_swap.h
 CMakeFiles/p_s.dir/validation.c.o
  /Users/ubartemi/CLionProjects/p_s/./libft/libft.h

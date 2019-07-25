@@ -83,22 +83,9 @@ CMakeFiles/p_s.dir/auxiliary_functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/auxiliary_functions.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c -o CMakeFiles/p_s.dir/auxiliary_functions.c.s
 
-CMakeFiles/p_s.dir/moves.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/moves.c.o: ../moves.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p_s.dir/moves.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/moves.c.o   -c /Users/ubartemi/CLionProjects/p_s/moves.c
-
-CMakeFiles/p_s.dir/moves.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/moves.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/moves.c > CMakeFiles/p_s.dir/moves.c.i
-
-CMakeFiles/p_s.dir/moves.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/moves.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/moves.c -o CMakeFiles/p_s.dir/moves.c.s
-
 CMakeFiles/p_s.dir/validation.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/validation.c.o: ../validation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/p_s.dir/validation.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p_s.dir/validation.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/validation.c.o   -c /Users/ubartemi/CLionProjects/p_s/validation.c
 
 CMakeFiles/p_s.dir/validation.c.i: cmake_force
@@ -109,24 +96,82 @@ CMakeFiles/p_s.dir/validation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/validation.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/validation.c -o CMakeFiles/p_s.dir/validation.c.s
 
+CMakeFiles/p_s.dir/moves/swap.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/moves/swap.c.o: ../moves/swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/p_s.dir/moves/swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/moves/swap.c.o   -c /Users/ubartemi/CLionProjects/p_s/moves/swap.c
+
+CMakeFiles/p_s.dir/moves/swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/moves/swap.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/moves/swap.c > CMakeFiles/p_s.dir/moves/swap.c.i
+
+CMakeFiles/p_s.dir/moves/swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/moves/swap.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/moves/swap.c -o CMakeFiles/p_s.dir/moves/swap.c.s
+
+CMakeFiles/p_s.dir/moves/push.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/moves/push.c.o: ../moves/push.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/p_s.dir/moves/push.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/moves/push.c.o   -c /Users/ubartemi/CLionProjects/p_s/moves/push.c
+
+CMakeFiles/p_s.dir/moves/push.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/moves/push.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/moves/push.c > CMakeFiles/p_s.dir/moves/push.c.i
+
+CMakeFiles/p_s.dir/moves/push.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/moves/push.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/moves/push.c -o CMakeFiles/p_s.dir/moves/push.c.s
+
+CMakeFiles/p_s.dir/moves/rotate.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/moves/rotate.c.o: ../moves/rotate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/p_s.dir/moves/rotate.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/moves/rotate.c.o   -c /Users/ubartemi/CLionProjects/p_s/moves/rotate.c
+
+CMakeFiles/p_s.dir/moves/rotate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/moves/rotate.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/moves/rotate.c > CMakeFiles/p_s.dir/moves/rotate.c.i
+
+CMakeFiles/p_s.dir/moves/rotate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/moves/rotate.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/moves/rotate.c -o CMakeFiles/p_s.dir/moves/rotate.c.s
+
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.o: ../moves/reverse_rotate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/p_s.dir/moves/reverse_rotate.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/moves/reverse_rotate.c.o   -c /Users/ubartemi/CLionProjects/p_s/moves/reverse_rotate.c
+
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/moves/reverse_rotate.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/moves/reverse_rotate.c > CMakeFiles/p_s.dir/moves/reverse_rotate.c.i
+
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/moves/reverse_rotate.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/moves/reverse_rotate.c -o CMakeFiles/p_s.dir/moves/reverse_rotate.c.s
+
 # Object files for target p_s
 p_s_OBJECTS = \
 "CMakeFiles/p_s.dir/main.c.o" \
 "CMakeFiles/p_s.dir/auxiliary_functions.c.o" \
-"CMakeFiles/p_s.dir/moves.c.o" \
-"CMakeFiles/p_s.dir/validation.c.o"
+"CMakeFiles/p_s.dir/validation.c.o" \
+"CMakeFiles/p_s.dir/moves/swap.c.o" \
+"CMakeFiles/p_s.dir/moves/push.c.o" \
+"CMakeFiles/p_s.dir/moves/rotate.c.o" \
+"CMakeFiles/p_s.dir/moves/reverse_rotate.c.o"
 
 # External object files for target p_s
 p_s_EXTERNAL_OBJECTS =
 
 p_s: CMakeFiles/p_s.dir/main.c.o
 p_s: CMakeFiles/p_s.dir/auxiliary_functions.c.o
-p_s: CMakeFiles/p_s.dir/moves.c.o
 p_s: CMakeFiles/p_s.dir/validation.c.o
+p_s: CMakeFiles/p_s.dir/moves/swap.c.o
+p_s: CMakeFiles/p_s.dir/moves/push.c.o
+p_s: CMakeFiles/p_s.dir/moves/rotate.c.o
+p_s: CMakeFiles/p_s.dir/moves/reverse_rotate.c.o
 p_s: CMakeFiles/p_s.dir/build.make
 p_s: ../libft/libft.a
 p_s: CMakeFiles/p_s.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable p_s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable p_s"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p_s.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

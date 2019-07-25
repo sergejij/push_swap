@@ -9,9 +9,21 @@ CMakeFiles/p_s.dir/main.c.o: .././libft/libft.h
 CMakeFiles/p_s.dir/main.c.o: ../main.c
 CMakeFiles/p_s.dir/main.c.o: ../push_swap.h
 
-CMakeFiles/p_s.dir/moves.c.o: .././libft/libft.h
-CMakeFiles/p_s.dir/moves.c.o: ../moves.c
-CMakeFiles/p_s.dir/moves.c.o: ../push_swap.h
+CMakeFiles/p_s.dir/moves/push.c.o: .././libft/libft.h
+CMakeFiles/p_s.dir/moves/push.c.o: ../moves/push.c
+CMakeFiles/p_s.dir/moves/push.c.o: ../push_swap.h
+
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.o: .././libft/libft.h
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.o: ../moves/reverse_rotate.c
+CMakeFiles/p_s.dir/moves/reverse_rotate.c.o: ../push_swap.h
+
+CMakeFiles/p_s.dir/moves/rotate.c.o: .././libft/libft.h
+CMakeFiles/p_s.dir/moves/rotate.c.o: ../moves/rotate.c
+CMakeFiles/p_s.dir/moves/rotate.c.o: ../push_swap.h
+
+CMakeFiles/p_s.dir/moves/swap.c.o: .././libft/libft.h
+CMakeFiles/p_s.dir/moves/swap.c.o: ../moves/swap.c
+CMakeFiles/p_s.dir/moves/swap.c.o: ../push_swap.h
 
 CMakeFiles/p_s.dir/validation.c.o: .././libft/libft.h
 CMakeFiles/p_s.dir/validation.c.o: ../push_swap.h

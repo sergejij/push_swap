@@ -12,10 +12,19 @@
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
+# define SA sa(&main_struct)
+# define SB sb(&main_struct)
+# define SS ss(&main_struct)
+# define PB pb(&main_struct)
+# define PA pa(&main_struct)
+# define RA ra(&main_struct)
+# define RB rb(&main_struct)
+# define RR rr(&main_struct)
+# define RRA rra(&main_struct)
+# define RRB rrb(&main_struct)
+# define RRR rrr(&main_struct)
 
-
-#include <stdio.h>
-#include <stdlib.h>
+# include <stdio.h>
 # include "./libft/libft.h"
 
 
@@ -48,9 +57,17 @@ void	ft_list_clear(t_lis **begin_list);
 void    sa(t_stacks	*main_struct);
 void    sb(t_stacks	*main_struct);
 void    ss(t_stacks *stacks);
+
 void    pb(t_stacks *stacks);
 void    pa(t_stacks *stacks);
+
 void	ra(t_stacks *stacks);
+void	rb(t_stacks *stacks);
+void	rr(t_stacks *stacks);
+
+void	rra(t_stacks *stacks);
+void	rrb(t_stacks *stacks);
+void	rrr(t_stacks *stacks);
 /*int     ft_len_stack_a(t_stacks stacks);
 int     ft_len_stack_b(t_stacks stacks);*/
 

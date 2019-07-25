@@ -177,32 +177,113 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/main.c.s
 .PHONY : main.c.s
 
-moves.o: moves.c.o
+moves/push.o: moves/push.c.o
 
-.PHONY : moves.o
+.PHONY : moves/push.o
 
 # target to build an object file
-moves.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves.c.o
-.PHONY : moves.c.o
+moves/push.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/push.c.o
+.PHONY : moves/push.c.o
 
-moves.i: moves.c.i
+moves/push.i: moves/push.c.i
 
-.PHONY : moves.i
+.PHONY : moves/push.i
 
 # target to preprocess a source file
-moves.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves.c.i
-.PHONY : moves.c.i
+moves/push.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/push.c.i
+.PHONY : moves/push.c.i
 
-moves.s: moves.c.s
+moves/push.s: moves/push.c.s
 
-.PHONY : moves.s
+.PHONY : moves/push.s
 
 # target to generate assembly for a file
-moves.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves.c.s
-.PHONY : moves.c.s
+moves/push.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/push.c.s
+.PHONY : moves/push.c.s
+
+moves/reverse_rotate.o: moves/reverse_rotate.c.o
+
+.PHONY : moves/reverse_rotate.o
+
+# target to build an object file
+moves/reverse_rotate.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/reverse_rotate.c.o
+.PHONY : moves/reverse_rotate.c.o
+
+moves/reverse_rotate.i: moves/reverse_rotate.c.i
+
+.PHONY : moves/reverse_rotate.i
+
+# target to preprocess a source file
+moves/reverse_rotate.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/reverse_rotate.c.i
+.PHONY : moves/reverse_rotate.c.i
+
+moves/reverse_rotate.s: moves/reverse_rotate.c.s
+
+.PHONY : moves/reverse_rotate.s
+
+# target to generate assembly for a file
+moves/reverse_rotate.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/reverse_rotate.c.s
+.PHONY : moves/reverse_rotate.c.s
+
+moves/rotate.o: moves/rotate.c.o
+
+.PHONY : moves/rotate.o
+
+# target to build an object file
+moves/rotate.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/rotate.c.o
+.PHONY : moves/rotate.c.o
+
+moves/rotate.i: moves/rotate.c.i
+
+.PHONY : moves/rotate.i
+
+# target to preprocess a source file
+moves/rotate.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/rotate.c.i
+.PHONY : moves/rotate.c.i
+
+moves/rotate.s: moves/rotate.c.s
+
+.PHONY : moves/rotate.s
+
+# target to generate assembly for a file
+moves/rotate.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/rotate.c.s
+.PHONY : moves/rotate.c.s
+
+moves/swap.o: moves/swap.c.o
+
+.PHONY : moves/swap.o
+
+# target to build an object file
+moves/swap.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.o
+.PHONY : moves/swap.c.o
+
+moves/swap.i: moves/swap.c.i
+
+.PHONY : moves/swap.i
+
+# target to preprocess a source file
+moves/swap.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.i
+.PHONY : moves/swap.c.i
+
+moves/swap.s: moves/swap.c.s
+
+.PHONY : moves/swap.s
+
+# target to generate assembly for a file
+moves/swap.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.s
+.PHONY : moves/swap.c.s
 
 validation.o: validation.c.o
 
@@ -246,9 +327,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... moves.o"
-	@echo "... moves.i"
-	@echo "... moves.s"
+	@echo "... moves/push.o"
+	@echo "... moves/push.i"
+	@echo "... moves/push.s"
+	@echo "... moves/reverse_rotate.o"
+	@echo "... moves/reverse_rotate.i"
+	@echo "... moves/reverse_rotate.s"
+	@echo "... moves/rotate.o"
+	@echo "... moves/rotate.i"
+	@echo "... moves/rotate.s"
+	@echo "... moves/swap.o"
+	@echo "... moves/swap.i"
+	@echo "... moves/swap.s"
 	@echo "... validation.o"
 	@echo "... validation.i"
 	@echo "... validation.s"

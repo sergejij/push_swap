@@ -88,7 +88,16 @@
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/main.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves.c">
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/push.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/reverse_rotate.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/rotate.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/swap.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/validation.c">

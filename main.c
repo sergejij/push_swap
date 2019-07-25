@@ -75,11 +75,204 @@ int       main(int argc, char **argv)
 	printf("\n");
 */
 
+/*	ra(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
 	ra(&main_struct);
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
+	ra(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	ra(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	ra(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	ra(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");*/
+	printf("\n");
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+	PB;
+
+	printf("after lots of PB\na - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	printf("\n");
+
+	PA;
+	PA;
+	PA;
+	PA;
+
+
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	printf("\n");
+
+
+/*	rb(&main_struct);
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rb(&main_struct);
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rb(&main_struct);
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rb(&main_struct);
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rb(&main_struct);
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rb(&main_struct);
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");*/
+	RRR;
+	printf("a - rra - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - rrb - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	printf("\n");
+	printf("\n");
+	RRR;
+	printf("a - rra - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - rrb - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	RRR;
+	printf("a - rra - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - rrb - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	RRR;
+	SA;
+	printf("a - rra - sa - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - rrb - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	/*rra(&main_struct);
+	rrb(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rra(&main_struct);
+	rrb(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rra(&main_struct);
+	rrb(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rra(&main_struct);
+	rrb(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rra(&main_struct);
+	rrb(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rra(&main_struct);
+	rrb(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");*/
+
+	/*rr(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+
+	rr(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rr(&main_struct);
+	printf("a - ");
+	/ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
+	rr(&main_struct);
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");*/
+
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);
+
+
+
     return 0;
 }
