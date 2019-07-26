@@ -12,17 +12,17 @@
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-# define SA sa(&main_struct)
-# define SB sb(&main_struct)
-# define SS ss(&main_struct)
-# define PB pb(&main_struct)
-# define PA pa(&main_struct)
-# define RA ra(&main_struct)
-# define RB rb(&main_struct)
-# define RR rr(&main_struct)
-# define RRA rra(&main_struct)
-# define RRB rrb(&main_struct)
-# define RRR rrr(&main_struct)
+# define SA sa(main_struct)
+# define SB sb(main_struct)
+# define SS ss(main_struct)
+# define PB pb(main_struct)
+# define PA pa(main_struct)
+# define RA ra(main_struct)
+# define RB rb(main_struct)
+# define RR rr(main_struct)
+# define RRA rra(main_struct)
+# define RRB rrb(main_struct)
+# define RRR rrr(main_struct)
 
 # include <stdio.h>
 # include "./libft/libft.h"

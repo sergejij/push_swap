@@ -1,6 +1,45 @@
 #include "push_swap.h"
 
-int       main(int argc, char **argv)
+void	ft_apply_commands(t_stacks *main_struct, char *command)
+{
+	if (ft_strcmp("sa", command) == 0)
+		SA;
+	else if (ft_strcmp("sb", command) == 0)
+		SB;
+	else if (ft_strcmp("ss", command) == 0)
+		SS;
+	else if (ft_strcmp("pb", command) == 0)
+		PB;
+	else if (ft_strcmp("PA", command) == 0)
+		PA;
+	else if (ft_strcmp("ra", command) == 0)
+		RA;
+	else if (ft_strcmp("rb", command) == 0)
+		RB;
+	else if (ft_strcmp("rr", command) == 0)
+		RR;
+	else if (ft_strcmp("rra", command) == 0)
+		RRA;
+	else if (ft_strcmp("rrb", command) == 0)
+		RRB;
+	else if (ft_strcmp("rrr", command) == 0)
+		RRR;
+}
+
+int		ft_check_command(char *command)
+{
+	if ((ft_strcmp("sa", command) != 0) && (ft_strcmp("sb", command) != 0) && (ft_strcmp("ss", command) != 0) &&
+	(ft_strcmp("pb", command) != 0) && (ft_strcmp("pa", command) != 0) && (ft_strcmp("ra", command) != 0) &&
+	(ft_strcmp("rb", command) != 0) && (ft_strcmp("rr", command) != 0) && (ft_strcmp("rra", command) != 0) &&
+	(ft_strcmp("rrb", command) != 0) && (ft_strcmp("rrr", command) != 0))
+	{
+		printf("not valid command");
+		return (0);
+	}
+	return (1);
+}
+
+int		main(int argc, char **argv)
 {
     t_stacks    main_struct;
 	int ret;
@@ -15,25 +54,27 @@ int       main(int argc, char **argv)
 		printf("Error\n");
     	return (0);
 	}
-
-	/*printf("a - ");
+	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
 
 	printf("b - ");
 	ft_print_list(main_struct.b);
-	printf("\n");*/
-/*	fd = open("/Users/ubartemi/Desktop/ubartemi4/2600-0.txt", O_RDONLY);
-	if (fd == -1)
+	printf("\n");
+	while ((ret = get_next_line(0, &command)) > 0)
 	{
-		printf("fd = - 1");
-		return (0);
-	}
-	while ((ret = get_next_line(fd, &command)) > 0)
-	{
-		printf("%s\n", command);
+		if (!ft_check_command(command))
+			return (0);
+		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
-	}*/
+	}
+	printf("a - ");
+	ft_print_list(main_struct.a);
+	printf("\n");
+
+	printf("b - ");
+	ft_print_list(main_struct.b);
+	printf("\n");
 
 /*printf("Make - SA");
 	sa(&main_struct);
