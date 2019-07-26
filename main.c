@@ -36,7 +36,7 @@ int		ft_check_command(char *command)
 	&& (ft_strcmp("rrr", command) != 0))
 	{
 		printf("not valid command");
-		return (0);
+		exit (1);
 	}
 	return (1);
 }
@@ -54,7 +54,7 @@ void ft_sort_check(t_stacks    *main_struct)
 		{
 			main_struct->a = begin;
 			printf("KO\n");
-			return ;
+			exit (1);
 		}
 		main_struct->a = main_struct->a->next;
 	}
@@ -75,8 +75,9 @@ int		main(int argc, char **argv)
         return (0);
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
 	{
-		printf("Error\n");
-    	return (0);
+    	ft_putstr_fd("Error\n", 2);
+		//printf("Error\n");
+    	return (1);
 	}
 	printf("a - ");
 	ft_print_list(main_struct.a);
@@ -88,7 +89,7 @@ int		main(int argc, char **argv)
 	while ((ret = get_next_line(0, &command)) > 0)
 	{
 		if (!ft_check_command(command))
-			return (0);
+			return (1);
 		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
 	}
