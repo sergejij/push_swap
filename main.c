@@ -10,7 +10,7 @@ void	ft_apply_commands(t_stacks *main_struct, char *command)
 		SS;
 	else if (ft_strcmp("pb", command) == 0)
 		PB;
-	else if (ft_strcmp("PA", command) == 0)
+	else if (ft_strcmp("pa", command) == 0)
 		PA;
 	else if (ft_strcmp("ra", command) == 0)
 		RA;
@@ -28,15 +28,38 @@ void	ft_apply_commands(t_stacks *main_struct, char *command)
 
 int		ft_check_command(char *command)
 {
-	if ((ft_strcmp("sa", command) != 0) && (ft_strcmp("sb", command) != 0) && (ft_strcmp("ss", command) != 0) &&
-	(ft_strcmp("pb", command) != 0) && (ft_strcmp("pa", command) != 0) && (ft_strcmp("ra", command) != 0) &&
-	(ft_strcmp("rb", command) != 0) && (ft_strcmp("rr", command) != 0) && (ft_strcmp("rra", command) != 0) &&
-	(ft_strcmp("rrb", command) != 0) && (ft_strcmp("rrr", command) != 0))
+	if ((ft_strcmp("sa", command) != 0) && (ft_strcmp("sb", command) != 0)
+	&& (ft_strcmp("ss", command) != 0) && (ft_strcmp("pb", command) != 0)
+	&& (ft_strcmp("pa", command) != 0) && (ft_strcmp("ra", command) != 0)
+	&& (ft_strcmp("rb", command) != 0) && (ft_strcmp("rr", command) != 0)
+	&& (ft_strcmp("rra", command) != 0) && (ft_strcmp("rrb", command) != 0)
+	&& (ft_strcmp("rrr", command) != 0))
 	{
 		printf("not valid command");
 		return (0);
 	}
 	return (1);
+}
+
+void ft_sort_check(t_stacks    *main_struct)
+{
+	t_lis *begin;
+
+	if (!main_struct->a)
+		return ;
+	begin = main_struct->a;
+	while (main_struct->a && main_struct->a->next)
+	{
+		if (main_struct->a->num > main_struct->a->next->num)
+		{
+			main_struct->a = begin;
+			printf("KO\n");
+			return ;
+		}
+		main_struct->a = main_struct->a->next;
+	}
+	main_struct->a = begin;
+	printf("OK\n");
 }
 
 int		main(int argc, char **argv)
@@ -45,6 +68,7 @@ int		main(int argc, char **argv)
 	int ret;
 	char *command;
 	int fd;
+
 	command = NULL;
 	ret = 0;
     if (argc < 2)
@@ -68,6 +92,7 @@ int		main(int argc, char **argv)
 		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
 	}
+	ft_sort_check(&main_struct);
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");

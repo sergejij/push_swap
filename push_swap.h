@@ -44,7 +44,8 @@ typedef struct              s_stacks
 }                           t_stacks;
 
 /*-----------------------------main-----------------------------*/
-int				get_next_line(const int fd, char **line);
+
+int		get_next_line(const int fd, char **line);
 
 
 /*--------------------------auxiliary--------------------------*/
