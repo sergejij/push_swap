@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   my_main.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ubartemi <ubartemi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/20 13:00:11 by ubartemi          #+#    #+#             */
-/*   Updated: 2019/05/16 15:19:14 by ubartemi         ###   ########.fr       */
+/*   Created: 2019/05/05 17:06:47 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/07/26 12:03:46 by ubartemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# define BUFF_SIZE 2
-# include <unistd.h>
-# include <stdlib.h>
-# include <fcntl.h>
-# include <stdio.h>
-# include "libft.h"
+#include "./get_next_line.h"
 
-int		get_next_line(const int fb, char **line);
+int		main(void)
+{
+	int		fd;
+	int		ret;
+	char	*line;
 
-#endif
+	ret = 0;
+	fd = 0;
+	line = NULL;
+	fd = open("2600-0.txt", O_RDONLY);
+	if (fd == -1)
+		return (0);
+	while ((ret = get_next_line(fd, &line)) > 0)
+	{
+		ft_putstr(line);
+		ft_putchar('\n');
+		ft_strdel(&line);
+	}
+	close(fd);
+	return (0);
+}

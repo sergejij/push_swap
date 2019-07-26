@@ -5,6 +5,10 @@ CMakeFiles/p_s.dir/auxiliary_functions.c.o: .././libft/libft.h
 CMakeFiles/p_s.dir/auxiliary_functions.c.o: ../auxiliary_functions.c
 CMakeFiles/p_s.dir/auxiliary_functions.c.o: ../push_swap.h
 
+CMakeFiles/p_s.dir/get_next_line.c.o: ../get_next_line.c
+CMakeFiles/p_s.dir/get_next_line.c.o: ../get_next_line.h
+CMakeFiles/p_s.dir/get_next_line.c.o: ../libft/libft.h
+
 CMakeFiles/p_s.dir/main.c.o: .././libft/libft.h
 CMakeFiles/p_s.dir/main.c.o: ../main.c
 CMakeFiles/p_s.dir/main.c.o: ../push_swap.h

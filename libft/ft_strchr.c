@@ -6,7 +6,7 @@
 /*   By: ubartemi <ubartemi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 11:54:59 by ubartemi          #+#    #+#             */
-/*   Updated: 2019/05/16 18:09:24 by ubartemi         ###   ########.fr       */
+/*   Updated: 2019/05/05 11:38:53 by ubartemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	return (ft_memchr(s, c, ft_strlen(s) + 1));
+	int		counter;
+
+	if (!s)
+		return (0);
+	counter = 0;
+	while (s[counter] != '\0' && s[counter] != c)
+		counter++;
+	if (s[counter] == c)
+		return ((char*)&s[counter]);
+	else
+		return (0);
 }

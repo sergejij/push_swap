@@ -6,11 +6,11 @@
 /*   By: ubartemi <ubartemi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 10:58:54 by ubartemi          #+#    #+#             */
-/*   Updated: 2019/05/16 15:16:17 by ubartemi         ###   ########.fr       */
+/*   Updated: 2019/05/07 12:32:30 by ubartemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 static int		ft_filling_str2(int ret, char **str, char *tmp, int fd)
 {

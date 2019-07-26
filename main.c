@@ -3,8 +3,11 @@
 int       main(int argc, char **argv)
 {
     t_stacks    main_struct;
-
-
+	int ret;
+	char *command;
+	int fd;
+	command = NULL;
+	ret = 0;
     if (argc < 2)
         return (0);
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
@@ -12,15 +15,27 @@ int       main(int argc, char **argv)
 		printf("Error\n");
     	return (0);
 	}
-	printf("a - ");
+
+	/*printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
 
 	printf("b - ");
 	ft_print_list(main_struct.b);
-	printf("\n");
+	printf("\n");*/
+/*	fd = open("/Users/ubartemi/Desktop/ubartemi4/2600-0.txt", O_RDONLY);
+	if (fd == -1)
+	{
+		printf("fd = - 1");
+		return (0);
+	}
+	while ((ret = get_next_line(fd, &command)) > 0)
+	{
+		printf("%s\n", command);
+		ft_strdel(&command);
+	}*/
 
-	/*printf("Make - SA");
+/*printf("Make - SA");
 	sa(&main_struct);
 	printf("\n");
 	printf("\n");
@@ -74,7 +89,6 @@ int       main(int argc, char **argv)
 	ft_print_list(main_struct.b);
 	printf("\n");
 */
-
 /*	ra(&main_struct);
 	printf("a - ");
 	ft_print_list(main_struct.a);
@@ -99,7 +113,7 @@ int       main(int argc, char **argv)
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");*/
-	printf("\n");
+/*printf("\n");
 	PB;
 	PB;
 	PB;
@@ -132,9 +146,7 @@ int       main(int argc, char **argv)
 	printf("b - ");
 	ft_print_list(main_struct.b);
 	printf("\n");
-	printf("\n");
-
-
+	printf("\n");*/
 /*	rb(&main_struct);
 	printf("b - ");
 	ft_print_list(main_struct.b);
@@ -159,7 +171,7 @@ int       main(int argc, char **argv)
 	printf("b - ");
 	ft_print_list(main_struct.b);
 	printf("\n");*/
-	RRR;
+/*RRR;
 	printf("a - rra - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
@@ -189,8 +201,8 @@ int       main(int argc, char **argv)
 	printf("\n");
 	printf("b - rrb - ");
 	ft_print_list(main_struct.b);
-	printf("\n");
-	/*rra(&main_struct);
+	printf("\n");*/
+/*rra(&main_struct);
 	rrb(&main_struct);
 	printf("a - ");
 	ft_print_list(main_struct.a);
@@ -238,8 +250,7 @@ int       main(int argc, char **argv)
 	printf("b - ");
 	ft_print_list(main_struct.b);
 	printf("\n");*/
-
-	/*rr(&main_struct);
+/*rr(&main_struct);
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");

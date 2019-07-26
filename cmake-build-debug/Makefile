@@ -150,6 +150,33 @@ auxiliary_functions.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.s
 .PHONY : auxiliary_functions.c.s
 
+get_next_line.o: get_next_line.c.o
+
+.PHONY : get_next_line.o
+
+# target to build an object file
+get_next_line.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/get_next_line.c.o
+.PHONY : get_next_line.c.o
+
+get_next_line.i: get_next_line.c.i
+
+.PHONY : get_next_line.i
+
+# target to preprocess a source file
+get_next_line.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/get_next_line.c.i
+.PHONY : get_next_line.c.i
+
+get_next_line.s: get_next_line.c.s
+
+.PHONY : get_next_line.s
+
+# target to generate assembly for a file
+get_next_line.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/get_next_line.c.s
+.PHONY : get_next_line.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -324,6 +351,9 @@ help:
 	@echo "... auxiliary_functions.o"
 	@echo "... auxiliary_functions.i"
 	@echo "... auxiliary_functions.s"
+	@echo "... get_next_line.o"
+	@echo "... get_next_line.i"
+	@echo "... get_next_line.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

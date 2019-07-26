@@ -27,6 +27,8 @@
 # include <stdio.h>
 # include "./libft/libft.h"
 
+# include <fcntl.h>
+
 
 typedef struct              s_lis
 {
@@ -42,7 +44,7 @@ typedef struct              s_stacks
 }                           t_stacks;
 
 /*-----------------------------main-----------------------------*/
-
+int				get_next_line(const int fd, char **line);
 
 
 /*--------------------------auxiliary--------------------------*/

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/p_s.dir/moves/push.c.o"
   "CMakeFiles/p_s.dir/moves/rotate.c.o"
   "CMakeFiles/p_s.dir/moves/reverse_rotate.c.o"
+  "CMakeFiles/p_s.dir/get_next_line.c.o"
   "p_s.pdb"
   "p_s"
 )
