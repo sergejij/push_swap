@@ -35,7 +35,7 @@ int		ft_check_command(char *command)
 	&& (ft_strcmp("rra", command) != 0) && (ft_strcmp("rrb", command) != 0)
 	&& (ft_strcmp("rrr", command) != 0))
 	{
-		ft_printf("not valid command");
+		printf("not valid command");
 		exit (1);
 	}
 	return (1);
@@ -76,16 +76,16 @@ int		main(int argc, char **argv)
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
 	{
     	ft_putstr_fd("Error\n", 2);
-		//ft_printf("Error\n");
+		//printf("Error\n");
     	return (1);
 	}
-	ft_printf("a - ");
+	printf("a - ");
 	ft_print_list(main_struct.a);
-	ft_printf("\n");
+	printf("\n");
 
-	ft_printf("b - ");
+	printf("b - ");
 	ft_print_list(main_struct.b);
-	ft_printf("\n");
+	printf("\n");
 	while ((ret = get_next_line(0, &command)) > 0)
 	{
 		if (!ft_check_command(command))
@@ -94,13 +94,13 @@ int		main(int argc, char **argv)
 		ft_strdel(&command);
 	}
 	ft_sort_check(&main_struct);
-	ft_printf("a - ");
+	printf("a - ");
 	ft_print_list(main_struct.a);
-	ft_printf("\n");
+	printf("\n");
 
-	ft_printf("b - ");
+	printf("b - ");
 	ft_print_list(main_struct.b);
-	ft_printf("\n");
+	printf("\n");
 
 /*printf("Make - SA");
 	sa(&main_struct);

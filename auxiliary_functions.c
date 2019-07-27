@@ -56,7 +56,7 @@ void    ft_print_list(t_lis *start)
 	begin = start;
 	while (start)
 	{
-		ft_printf("%d ", start->num);
+		printf("%d ", start->num);
 		start = start->next;
 	}
 	start = begin;

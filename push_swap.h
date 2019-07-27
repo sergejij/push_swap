@@ -46,7 +46,6 @@ typedef struct              s_stacks
 /*-----------------------------main-----------------------------*/
 
 int		get_next_line(const int fd, char **line);
-int		ft_printf(const char *apformat, ...);
 
 /*--------------------------auxiliary--------------------------*/
 

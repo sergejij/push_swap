@@ -185,7 +185,6 @@ p_s: CMakeFiles/p_s.dir/moves/reverse_rotate.c.o
 p_s: CMakeFiles/p_s.dir/get_next_line.c.o
 p_s: CMakeFiles/p_s.dir/build.make
 p_s: ../libft/libft.a
-p_s: ../ft_printf/libftprintf.a
 p_s: CMakeFiles/p_s.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable p_s"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p_s.dir/link.txt --verbose=$(VERBOSE)
