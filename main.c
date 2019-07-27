@@ -92,14 +92,16 @@ int		main(int argc, char **argv)
 		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
 	}
-	ft_bubble_sort_list(&main_struct);
-	printf("a - ");
+	printf("!!!%d!!!\n", main_struct.a->len);
+	ft_check_duplicates(main_struct);
+	//ft_bubble_sort_list(main_struct);
+	/*printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
 
 	printf("b - ");
 	ft_print_list(main_struct.b);
-	printf("\n");
+	printf("\n");*/
 	ft_check_sort(&main_struct);
 
 /*printf("Make - SA");

@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-void ft_bubble_sort_list_2(t_stacks *main_struct, t_lis *begin)
+void ft_bubble_sort_list_2(t_stacks main_struct, t_lis *begin)
 {
 	t_lis	*tmp;
 	int 	tmp_int;
@@ -23,17 +23,46 @@ void ft_bubble_sort_list_2(t_stacks *main_struct, t_lis *begin)
 	}
 }
 
-void ft_bubble_sort_list(t_stacks *main_struct)
+void ft_bubble_sort_list(t_stacks main_struct)
 {
 	t_lis	*begin;
 
-	begin = main_struct->a;
-	while (main_struct->a)
+	begin = main_struct.a;
+	while (main_struct.a)
 	{
 		ft_bubble_sort_list_2(main_struct, begin);
-		main_struct->a = main_struct->a->next;
+		main_struct.a = main_struct.a->next;
 	}
-	main_struct->a = begin;
+	main_struct.a = begin;
+}
+
+void	ft_check_duplicates(t_stacks main_struct)
+{
+	char *str;
+	t_lis *begin;
+	int i;
+	int sovp;
+
+	i = 0;
+	begin = main_struct.a;
+	str = (char*)malloc(sizeof(char) + (main_struct.a->len + 1));
+	while (main_struct.a)
+	{
+		str[i] = main_struct.a->num;
+		main_struct.a = main_struct.a->next;
+		i++;
+	}
+	str[i] = '\0';
+	main_struct.a = begin;
+	while (main_struct.a)
+	{
+		while ()
+		{
+			if (main_struct.a->num == ft_atoi(str[]))
+				//continue here
+		}
+
+	}
 }
 
 int is_need_parsing(char **argv)

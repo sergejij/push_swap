@@ -32,15 +32,18 @@
 
 typedef struct              s_lis
 {
-    int                    num;
-    struct        s_lis    *next;
-    struct        s_lis    *prev;
+    int                    	num;
+    int 					len;
+    struct        s_lis    	*next;
+    struct        s_lis    	*prev;
 }                           t_lis;
 
 typedef struct              s_stacks
 {
     t_lis                   *a;
     t_lis                   *b;
+    int 					a_len;
+    int 					b_len;
     t_lis					*sorted;
 }                           t_stacks;
 
@@ -54,8 +57,10 @@ int 	is_need_parsing(char **argv);
 int 	is_correct_input(char **str);
 void    ft_print_list(t_lis *start);
 void	ft_list_clear(t_lis **begin_list);
-void 	ft_bubble_sort_list(t_stacks *main_struct);
-void 	ft_bubble_sort_list_2(t_stacks *main_struct, t_lis *begin);
+void 	ft_bubble_sort_list(t_stacks main_struct);
+void 	ft_bubble_sort_list_2(t_stacks main_struct, t_lis *begin);
+void	ft_bubble_sort_list(t_stacks main_struct);
+void	ft_check_duplicates(t_stacks main_struct);
 
 /*----------------------------moves----------------------------*/
 
