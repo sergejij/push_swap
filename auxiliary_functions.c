@@ -1,5 +1,41 @@
 #include "push_swap.h"
 
+void ft_bubble_sort_list_2(t_stacks *main_struct, t_lis *begin)
+{
+	t_lis	*tmp;
+	int 	tmp_int;
+
+	tmp = begin;
+	while (tmp && tmp->next)
+	{
+		if (tmp->num > tmp->next->num)
+		{
+			tmp_int = tmp->num;
+			tmp->num = tmp->next->num;
+			tmp->next->num = tmp_int;
+		}
+		else if (tmp->num == tmp->next->num)
+		{
+			ft_putstr_fd("Error\n", 2);
+			exit (1);
+		}
+		tmp = tmp->next;
+	}
+}
+
+void ft_bubble_sort_list(t_stacks *main_struct)
+{
+	t_lis	*begin;
+
+	begin = main_struct->a;
+	while (main_struct->a)
+	{
+		ft_bubble_sort_list_2(main_struct, begin);
+		main_struct->a = main_struct->a->next;
+	}
+	main_struct->a = begin;
+}
+
 int is_need_parsing(char **argv)
 {
 	int i;

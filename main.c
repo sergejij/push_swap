@@ -41,7 +41,7 @@ int		ft_check_command(char *command)
 	return (1);
 }
 
-void ft_sort_check(t_stacks    *main_struct)
+void ft_check_sort(t_stacks    *main_struct)
 {
 	t_lis *begin;
 
@@ -76,7 +76,6 @@ int		main(int argc, char **argv)
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
 	{
     	ft_putstr_fd("Error\n", 2);
-		//printf("Error\n");
     	return (1);
 	}
 	printf("a - ");
@@ -93,7 +92,7 @@ int		main(int argc, char **argv)
 		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
 	}
-	ft_sort_check(&main_struct);
+	ft_bubble_sort_list(&main_struct);
 	printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
@@ -101,6 +100,7 @@ int		main(int argc, char **argv)
 	printf("b - ");
 	ft_print_list(main_struct.b);
 	printf("\n");
+	ft_check_sort(&main_struct);
 
 /*printf("Make - SA");
 	sa(&main_struct);
