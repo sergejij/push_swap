@@ -70,31 +70,31 @@ CMakeFiles/p_s.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/main.c -o CMakeFiles/p_s.dir/main.c.s
 
-CMakeFiles/p_s.dir/auxiliary_functions.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/auxiliary_functions.c.o: ../auxiliary_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/p_s.dir/auxiliary_functions.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/auxiliary_functions.c.o   -c /Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o: ../auxiliary_functions/auxiliary_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o   -c /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions.c
 
-CMakeFiles/p_s.dir/auxiliary_functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/auxiliary_functions.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c > CMakeFiles/p_s.dir/auxiliary_functions.c.i
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions.c > CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.i
 
-CMakeFiles/p_s.dir/auxiliary_functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/auxiliary_functions.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c -o CMakeFiles/p_s.dir/auxiliary_functions.c.s
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions.c -o CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.s
 
-CMakeFiles/p_s.dir/validation.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/validation.c.o: ../validation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p_s.dir/validation.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/validation.c.o   -c /Users/ubartemi/CLionProjects/p_s/validation.c
+CMakeFiles/p_s.dir/validation/validation.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/validation/validation.c.o: ../validation/validation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p_s.dir/validation/validation.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/validation/validation.c.o   -c /Users/ubartemi/CLionProjects/p_s/validation/validation.c
 
-CMakeFiles/p_s.dir/validation.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/validation.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/validation.c > CMakeFiles/p_s.dir/validation.c.i
+CMakeFiles/p_s.dir/validation/validation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/validation/validation.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/validation/validation.c > CMakeFiles/p_s.dir/validation/validation.c.i
 
-CMakeFiles/p_s.dir/validation.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/validation.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/validation.c -o CMakeFiles/p_s.dir/validation.c.s
+CMakeFiles/p_s.dir/validation/validation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/validation/validation.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/validation/validation.c -o CMakeFiles/p_s.dir/validation/validation.c.s
 
 CMakeFiles/p_s.dir/moves/swap.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/moves/swap.c.o: ../moves/swap.c
@@ -161,32 +161,62 @@ CMakeFiles/p_s.dir/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/get_next_line.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/get_next_line.c -o CMakeFiles/p_s.dir/get_next_line.c.s
 
+CMakeFiles/p_s.dir/validation/validation2.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/validation/validation2.c.o: ../validation/validation2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/p_s.dir/validation/validation2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/validation/validation2.c.o   -c /Users/ubartemi/CLionProjects/p_s/validation/validation2.c
+
+CMakeFiles/p_s.dir/validation/validation2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/validation/validation2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/validation/validation2.c > CMakeFiles/p_s.dir/validation/validation2.c.i
+
+CMakeFiles/p_s.dir/validation/validation2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/validation/validation2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/validation/validation2.c -o CMakeFiles/p_s.dir/validation/validation2.c.s
+
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o: ../auxiliary_functions/auxiliary_functions2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o   -c /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c
+
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c > CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.i
+
+CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c -o CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.s
+
 # Object files for target p_s
 p_s_OBJECTS = \
 "CMakeFiles/p_s.dir/main.c.o" \
-"CMakeFiles/p_s.dir/auxiliary_functions.c.o" \
-"CMakeFiles/p_s.dir/validation.c.o" \
+"CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o" \
+"CMakeFiles/p_s.dir/validation/validation.c.o" \
 "CMakeFiles/p_s.dir/moves/swap.c.o" \
 "CMakeFiles/p_s.dir/moves/push.c.o" \
 "CMakeFiles/p_s.dir/moves/rotate.c.o" \
 "CMakeFiles/p_s.dir/moves/reverse_rotate.c.o" \
-"CMakeFiles/p_s.dir/get_next_line.c.o"
+"CMakeFiles/p_s.dir/get_next_line.c.o" \
+"CMakeFiles/p_s.dir/validation/validation2.c.o" \
+"CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o"
 
 # External object files for target p_s
 p_s_EXTERNAL_OBJECTS =
 
 p_s: CMakeFiles/p_s.dir/main.c.o
-p_s: CMakeFiles/p_s.dir/auxiliary_functions.c.o
-p_s: CMakeFiles/p_s.dir/validation.c.o
+p_s: CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o
+p_s: CMakeFiles/p_s.dir/validation/validation.c.o
 p_s: CMakeFiles/p_s.dir/moves/swap.c.o
 p_s: CMakeFiles/p_s.dir/moves/push.c.o
 p_s: CMakeFiles/p_s.dir/moves/rotate.c.o
 p_s: CMakeFiles/p_s.dir/moves/reverse_rotate.c.o
 p_s: CMakeFiles/p_s.dir/get_next_line.c.o
+p_s: CMakeFiles/p_s.dir/validation/validation2.c.o
+p_s: CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o
 p_s: CMakeFiles/p_s.dir/build.make
 p_s: ../libft/libft.a
 p_s: CMakeFiles/p_s.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable p_s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable p_s"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p_s.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

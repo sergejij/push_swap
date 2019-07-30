@@ -82,7 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c">
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/get_next_line.c">
@@ -106,7 +109,10 @@
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/swap.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/CLionProjects/p_s/validation.c">
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/validation/validation.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/validation/validation2.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/CMakeLists.txt">

@@ -123,32 +123,59 @@ p_s/fast:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/build
 .PHONY : p_s/fast
 
-auxiliary_functions.o: auxiliary_functions.c.o
+auxiliary_functions/auxiliary_functions.o: auxiliary_functions/auxiliary_functions.c.o
 
-.PHONY : auxiliary_functions.o
+.PHONY : auxiliary_functions/auxiliary_functions.o
 
 # target to build an object file
-auxiliary_functions.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.o
-.PHONY : auxiliary_functions.c.o
+auxiliary_functions/auxiliary_functions.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o
+.PHONY : auxiliary_functions/auxiliary_functions.c.o
 
-auxiliary_functions.i: auxiliary_functions.c.i
+auxiliary_functions/auxiliary_functions.i: auxiliary_functions/auxiliary_functions.c.i
 
-.PHONY : auxiliary_functions.i
+.PHONY : auxiliary_functions/auxiliary_functions.i
 
 # target to preprocess a source file
-auxiliary_functions.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.i
-.PHONY : auxiliary_functions.c.i
+auxiliary_functions/auxiliary_functions.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.i
+.PHONY : auxiliary_functions/auxiliary_functions.c.i
 
-auxiliary_functions.s: auxiliary_functions.c.s
+auxiliary_functions/auxiliary_functions.s: auxiliary_functions/auxiliary_functions.c.s
 
-.PHONY : auxiliary_functions.s
+.PHONY : auxiliary_functions/auxiliary_functions.s
 
 # target to generate assembly for a file
-auxiliary_functions.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions.c.s
-.PHONY : auxiliary_functions.c.s
+auxiliary_functions/auxiliary_functions.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.s
+.PHONY : auxiliary_functions/auxiliary_functions.c.s
+
+auxiliary_functions/auxiliary_functions2.o: auxiliary_functions/auxiliary_functions2.c.o
+
+.PHONY : auxiliary_functions/auxiliary_functions2.o
+
+# target to build an object file
+auxiliary_functions/auxiliary_functions2.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o
+.PHONY : auxiliary_functions/auxiliary_functions2.c.o
+
+auxiliary_functions/auxiliary_functions2.i: auxiliary_functions/auxiliary_functions2.c.i
+
+.PHONY : auxiliary_functions/auxiliary_functions2.i
+
+# target to preprocess a source file
+auxiliary_functions/auxiliary_functions2.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.i
+.PHONY : auxiliary_functions/auxiliary_functions2.c.i
+
+auxiliary_functions/auxiliary_functions2.s: auxiliary_functions/auxiliary_functions2.c.s
+
+.PHONY : auxiliary_functions/auxiliary_functions2.s
+
+# target to generate assembly for a file
+auxiliary_functions/auxiliary_functions2.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.s
+.PHONY : auxiliary_functions/auxiliary_functions2.c.s
 
 get_next_line.o: get_next_line.c.o
 
@@ -312,32 +339,59 @@ moves/swap.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.s
 .PHONY : moves/swap.c.s
 
-validation.o: validation.c.o
+validation/validation.o: validation/validation.c.o
 
-.PHONY : validation.o
+.PHONY : validation/validation.o
 
 # target to build an object file
-validation.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation.c.o
-.PHONY : validation.c.o
+validation/validation.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation.c.o
+.PHONY : validation/validation.c.o
 
-validation.i: validation.c.i
+validation/validation.i: validation/validation.c.i
 
-.PHONY : validation.i
+.PHONY : validation/validation.i
 
 # target to preprocess a source file
-validation.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation.c.i
-.PHONY : validation.c.i
+validation/validation.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation.c.i
+.PHONY : validation/validation.c.i
 
-validation.s: validation.c.s
+validation/validation.s: validation/validation.c.s
 
-.PHONY : validation.s
+.PHONY : validation/validation.s
 
 # target to generate assembly for a file
-validation.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation.c.s
-.PHONY : validation.c.s
+validation/validation.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation.c.s
+.PHONY : validation/validation.c.s
+
+validation/validation2.o: validation/validation2.c.o
+
+.PHONY : validation/validation2.o
+
+# target to build an object file
+validation/validation2.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation2.c.o
+.PHONY : validation/validation2.c.o
+
+validation/validation2.i: validation/validation2.c.i
+
+.PHONY : validation/validation2.i
+
+# target to preprocess a source file
+validation/validation2.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation2.c.i
+.PHONY : validation/validation2.c.i
+
+validation/validation2.s: validation/validation2.c.s
+
+.PHONY : validation/validation2.s
+
+# target to generate assembly for a file
+validation/validation2.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation2.c.s
+.PHONY : validation/validation2.c.s
 
 # Help Target
 help:
@@ -348,9 +402,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... p_s"
-	@echo "... auxiliary_functions.o"
-	@echo "... auxiliary_functions.i"
-	@echo "... auxiliary_functions.s"
+	@echo "... auxiliary_functions/auxiliary_functions.o"
+	@echo "... auxiliary_functions/auxiliary_functions.i"
+	@echo "... auxiliary_functions/auxiliary_functions.s"
+	@echo "... auxiliary_functions/auxiliary_functions2.o"
+	@echo "... auxiliary_functions/auxiliary_functions2.i"
+	@echo "... auxiliary_functions/auxiliary_functions2.s"
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"
@@ -369,9 +426,12 @@ help:
 	@echo "... moves/swap.o"
 	@echo "... moves/swap.i"
 	@echo "... moves/swap.s"
-	@echo "... validation.o"
-	@echo "... validation.i"
-	@echo "... validation.s"
+	@echo "... validation/validation.o"
+	@echo "... validation/validation.i"
+	@echo "... validation/validation.s"
+	@echo "... validation/validation2.o"
+	@echo "... validation/validation2.i"
+	@echo "... validation/validation2.s"
 .PHONY : help
 
 

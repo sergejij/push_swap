@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+../././libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+
+.././libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+
+.././push_swap.h
+stdio.h
+-
+./libft/libft.h
+../././libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+stdio.h
+-
+libft/libft.h
+.././libft/libft.h
+
 /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
 unistd.h
 -
@@ -18,9 +46,23 @@ stdio.h
 libft.h
 /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
 
-/Users/ubartemi/CLionProjects/p_s/auxiliary_functions.c
+/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions.c
+push_swap.h
+/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/push_swap.h
+
+/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c
+push_swap.h
+/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/push_swap.h
+
+/Users/ubartemi/CLionProjects/p_s/get_next_line.c
 push_swap.h
 /Users/ubartemi/CLionProjects/p_s/push_swap.h
+
+/Users/ubartemi/CLionProjects/p_s/libft/libft.h
+unistd.h
+-
+stdlib.h
+-
 
 /Users/ubartemi/CLionProjects/p_s/main.c
 push_swap.h
@@ -47,10 +89,22 @@ stdio.h
 -
 ./libft/libft.h
 /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+unistd.h
+-
+stdlib.h
+-
 fcntl.h
 -
+stdio.h
+-
+libft/libft.h
+/Users/ubartemi/CLionProjects/p_s/libft/libft.h
 
-/Users/ubartemi/CLionProjects/p_s/validation.c
-push_swap.h
+/Users/ubartemi/CLionProjects/p_s/validation/validation.c
+../push_swap.h
+/Users/ubartemi/CLionProjects/p_s/push_swap.h
+
+/Users/ubartemi/CLionProjects/p_s/validation/validation2.c
+../push_swap.h
 /Users/ubartemi/CLionProjects/p_s/push_swap.h
 

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "push_swap.h"
 
 static int		ft_filling_str2(int ret, char **str, char *tmp, int fd)
 {
