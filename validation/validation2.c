@@ -34,20 +34,21 @@ void    ft_check_duplicates(t_stacks    *main_struct)
 {
     int *array;
     t_lis *begin;
-    int len = main_struct->a->len;
     int i;
 
+    main_struct->a_len = ft_length_list(main_struct->a);
     i = 0;
     begin = main_struct->a;
-    if (!(array = (int*)malloc(sizeof(int) * len)))
+    if (!(array = (int*)malloc(sizeof(int) * main_struct->a_len)))
         exit (1);
     while (main_struct->a)
     {
         array[i++] = main_struct->a->num;
         main_struct->a = main_struct->a->next;
     }
-    main_struct->median = ft_sort_array(array, len);;
     main_struct->a = begin;
+    main_struct->median = ft_sort_array(array, main_struct->a_len);
+    free(array);
 }
 
 t_lis    *ft_create_stack(char **tmp)
@@ -69,7 +70,6 @@ t_lis    *ft_create_stack(char **tmp)
         new->next = NULL;
         stack = new;
     }
-    begin->len = i + 1;
     stack->num = ft_atoi(tmp[i]);
     return (begin);
 }

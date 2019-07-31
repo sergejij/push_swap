@@ -51,7 +51,6 @@ int	ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv)
 			(*main_struct).a = ft_create_stack(argv);
 		else
 			return (0);
-
 	}
 	return (1);
 }

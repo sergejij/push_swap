@@ -100,7 +100,7 @@ int		main(int argc, char **argv)
     printf("b - ");
     ft_print_list(main_struct.b);
     printf("\n");
-	printf("!!!%d!!!\n", main_struct.a->len);
+	printf("!!!%d!!!\n", main_struct.a_len);
 //
 	//ft_bubble_sort_list(main_struct);
 	/*printf("a - ");

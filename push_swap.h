@@ -39,7 +39,6 @@
 typedef struct              s_lis
 {
     int                    	num;
-    int 					len;
     struct        s_lis    	*next;
     struct        s_lis    	*prev;
 }                           t_lis;
@@ -69,6 +68,7 @@ void	ft_list_clear(t_lis **begin_list);
 int 	is_need_parsing(char **argv);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
+int	ft_length_list(const t_lis *start);
 /*void 	ft_bubble_sort_list(t_stacks main_struct);
 void 	ft_bubble_sort_list_2(t_stacks main_struct, t_lis *begin);
 void	ft_bubble_sort_list(t_stacks main_struct);

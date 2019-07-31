@@ -21,7 +21,7 @@ int 	is_correct_input(char **str)
 	return (1);
 }
 
-/*
+
 int	ft_length_list(const t_lis *start)
 {
 	int counter;
@@ -33,7 +33,7 @@ int	ft_length_list(const t_lis *start)
 		counter++;
 	}
 	return (counter);
-}*/
+}
 
 void    ft_print_list(t_lis *start)
 {
