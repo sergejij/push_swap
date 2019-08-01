@@ -9,7 +9,7 @@ int		ft_check_command(char *command)
         && (ft_strcmp("rra", command) != 0) && (ft_strcmp("rrb", command) != 0)
         && (ft_strcmp("rrr", command) != 0))
     {
-        printf("not valid command");
+        ft_putstr("not valid command\n");
         exit (1);
     }
     return (1);
@@ -52,13 +52,13 @@ void ft_check_sort(t_stacks    *main_struct)
     {
         if (main_struct->a->num > main_struct->a->next->num)
         {
-            printf("KO\n");
+            ft_putstr("KO\n");
             exit (1);
         }
         main_struct->a = main_struct->a->next;
     }
     main_struct->a = begin;
-    printf("OK\n");
+    ft_putstr("OK\n");
 }
 
 
@@ -69,7 +69,7 @@ int		main(int argc, char **argv)
 	char *command;
 	int fd;
 
-	command = NULL;
+	command = 0;
 	ret = 0;
     if (argc < 2)
         return (0);
@@ -78,29 +78,30 @@ int		main(int argc, char **argv)
     	ft_putstr_fd("Error\n", 2);
     	return (1);
 	}
-	printf("a - ");
+	/*printf("a - ");
 	ft_print_list(main_struct.a);
 	printf("\n");
 
 	printf("b - ");
 	ft_print_list(main_struct.b);
-	printf("\n");
+	printf("\n");*/
 	ft_check_duplicates(&main_struct);
 	while ((ret = get_next_line(0, &command)) > 0)
 	{
+	    ft_putstr(command);
 		if (!ft_check_command(command))
 			return (1);
 		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
 	}
-    printf("a - ");
+   /* printf("a - ");
     ft_print_list(main_struct.a);
     printf("\n");
 
     printf("b - ");
     ft_print_list(main_struct.b);
     printf("\n");
-	printf("!!!%d!!!\n", main_struct.a_len);
+	printf("!!!%d!!!\n", main_struct.a_len);*/
 //
 	//ft_bubble_sort_list(main_struct);
 	/*printf("a - ");

@@ -50,7 +50,8 @@ typedef struct              s_stacks
     int                     median;
     int 					a_len;
     int 					b_len;
-    t_lis					*sorted;
+    int 					a_actions;
+    int 					b_actions;
 }                           t_stacks;
 
 int		get_next_line(const int fb, char **line);

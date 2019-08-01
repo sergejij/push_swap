@@ -5,6 +5,7 @@ void	rra(t_stacks *stacks)
 	t_lis *begin;
 	t_lis *penultimate;
 
+
 	if (stacks->a && stacks->a->next)
 	{
 		begin = stacks->a;
