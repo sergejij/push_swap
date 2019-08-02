@@ -39,6 +39,8 @@
 typedef struct              s_lis
 {
     int                    	num;
+    int 					actions_a;
+    int 					actions_b;
     struct        s_lis    	*next;
     struct        s_lis    	*prev;
 }                           t_lis;
