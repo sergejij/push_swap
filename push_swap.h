@@ -24,16 +24,11 @@
 # define RRB rrb(main_struct)
 # define RRR rrr(main_struct)
 
-# include <stdio.h>
-# include "./libft/libft.h"
-
 # define BUFF_SIZE 2
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
 # include "libft/libft.h"
-//# include <fcntl.h>
-
 
 typedef struct              s_lis
 {
@@ -54,29 +49,19 @@ typedef struct              s_stacks
 	int 					flag_stay_in_first;
 }                           t_stacks;
 
-int		get_next_line(const int fb, char **line);
-
 /*-----------------------------main-----------------------------*/
 
 int		get_next_line(const int fd, char **line);
 
 /*--------------------------auxiliary--------------------------*/
 
+int		ft_length_list(const t_lis *start);
 int 	is_correct_input(char **str);
-void    ft_print_list(t_lis *start);
 void	ft_list_clear(t_lis **begin_list);
 
 int 	is_need_parsing(char **argv);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
-int	ft_length_list(const t_lis *start);
-/*void 	ft_bubble_sort_list(t_stacks main_struct);
-void 	ft_bubble_sort_list_2(t_stacks main_struct, t_lis *begin);
-void	ft_bubble_sort_list(t_stacks main_struct);
-void	ft_check_duplicates(t_stacks main_struct);*/
-
-/*int     ft_len_stack_a(t_stacks stacks);
-int     ft_len_stack_b(t_stacks stacks);*/
 
 /*----------------------------moves----------------------------*/
 
@@ -120,6 +105,7 @@ void ft_sort_stack2(t_stacks *main_struct);
 void ft_sort_stack3(t_stacks *main_struct);
 int ft_check_sort_ps(t_stacks    main_struct);
 int is_ready_sort(t_stacks *main_struct);
+void ft_print_command(t_stacks *main_struct, char *command);
 
 /*----------------------------has_gap----------------------------*/
 

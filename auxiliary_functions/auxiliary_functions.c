@@ -37,19 +37,6 @@ int	ft_length_list(const t_lis *start)
 	return (++counter);
 }
 
-void    ft_print_list(t_lis *start)
-{
-	t_lis *begin;
-
-	begin = start;
-	while (start)
-	{
-		printf("%d ", start->num);
-		start = start->next;
-	}
-	start = begin;
-}
-
 void	ft_list_clear(t_lis **begin_list)
 {
 	t_lis	*tmp;

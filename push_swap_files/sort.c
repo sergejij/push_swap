@@ -10,6 +10,28 @@ void ft_sort_stack2(t_stacks *main_struct)
 
 }
 
+void ft_print_command(t_stacks *main_struct, char *command)
+{
+	if (command[0] == 's' && command[1] == 'a')
+	{
+		SA;
+		ft_putstr("sa\n");
+	}
+	else if (command[0] == 'r')
+	{
+		if (command[1] == 'r')
+		{
+			RRA;
+			ft_putstr("rra\n");
+		}
+		else if (command[1] == 'a')
+		{
+			RA;
+			ft_putstr("ra\n");
+		}
+	}
+}
+
 void ft_sort_stack3(t_stacks *main_struct)
 {
 	int   first;
@@ -20,34 +42,21 @@ void ft_sort_stack3(t_stacks *main_struct)
 	second = main_struct->a->next->num;
 	third = main_struct->a->next->next->num;
 	if (first > second && second < third && first < third)
-	{
-		SA;
-		ft_putstr("sa\n");
-	}
+		ft_print_command(main_struct, "sa");
 	else if (third < second && second < first)
 	{
-		SA;
-		ft_putstr("sa\n");
-		RRA;
-		ft_putstr("rra\n");
+		ft_print_command(main_struct, "sa");
+		ft_print_command(main_struct, "rra");
 	}
 	else if (first > second && second < third && third < first)
-	{
-		RA;
-		ft_putstr("ra\n");
-	}
+		ft_print_command(main_struct, "ra");
 	else if (first < second && first < third && second > third)
 	{
-		SA;
-		ft_putstr("sa\n");
-		RA;
-		ft_putstr("ra\n");
+		ft_print_command(main_struct, "sa");
+		ft_print_command(main_struct, "ra");
 	}
 	else if (first < second && first > third && second > third)
-	{
-		RRA;
-		ft_putstr("rra\n");
-	}
+		ft_print_command(main_struct, "rra");
 }
 
 int ft_check_sort_ps(t_stacks    main_struct)
