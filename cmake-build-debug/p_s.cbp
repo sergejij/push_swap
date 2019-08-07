@@ -88,13 +88,13 @@
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c">
 			<Option target="p_s"/>
 		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/checker.c">
+			<Option target="p_s"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/get_next_line.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/get_next_line.h">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/CLionProjects/p_s/main.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/push.c">
@@ -107,6 +107,21 @@
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/moves/swap.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/push_swap_files/count_actions.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/push_swap_files/has_gap.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/push_swap_files/moves.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/push_swap_files/sort.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/CLionProjects/p_s/push_swap_files/throwing.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/CLionProjects/p_s/validation/validation.c">

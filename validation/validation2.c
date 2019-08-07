@@ -60,6 +60,7 @@ t_lis    *ft_create_stack(char **tmp)
 
     i = 0;
     stack = malloc(sizeof(t_lis));
+	stack->prev = NULL;
     begin = stack;
     while (tmp[i + 1])
     {
@@ -71,6 +72,7 @@ t_lis    *ft_create_stack(char **tmp)
         stack = new;
     }
     stack->num = ft_atoi(tmp[i]);
+	stack->next = NULL;
     return (begin);
 }
 

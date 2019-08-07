@@ -27,12 +27,14 @@ int	ft_length_list(const t_lis *start)
 	int counter;
 
 	counter = 0;
-	while (start)
+	if (!start->next)
+		return (1);
+	while (start && start->next)
 	{
 		start = start->next;
 		counter++;
 	}
-	return (counter);
+	return (++counter);
 }
 
 void    ft_print_list(t_lis *start)

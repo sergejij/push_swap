@@ -39,10 +39,9 @@
 typedef struct              s_lis
 {
     int                    	num;
-    int 					actions_a;
-    int 					actions_b;
     struct        s_lis    	*next;
     struct        s_lis    	*prev;
+	int 					common_and_pos_a_b[3];
 }                           t_lis;
 
 typedef struct              s_stacks
@@ -52,8 +51,8 @@ typedef struct              s_stacks
     int                     median;
     int 					a_len;
     int 					b_len;
-    int 					a_actions;
-    int 					b_actions;
+	int 					min_actions;
+	int 					flag_stay_in_first;
 }                           t_stacks;
 
 int		get_next_line(const int fb, char **line);
@@ -108,5 +107,47 @@ int    ft_sort_array(int *array, int len);
 void    ft_check_duplicates(t_stacks    *main_struct);
 t_lis    *ft_create_stack(char **tmp);
 
+
+
+/*---------------------------push_swap---------------------------*/
+
+int	ft_count_moves(int num_item, int len_stack);
+int ft_count_no_gap(t_stacks *main_struct, int item, int len_a);
+int is_has_gap(t_stacks main_struct);
+
+/*-----------------------------sort-----------------------------*/
+
+void ft_sort_stack2(t_stacks *main_struct);
+void ft_sort_stack3(t_stacks *main_struct);
+int ft_check_sort_ps(t_stacks    main_struct);
+int is_ready_sort(t_stacks *main_struct);
+
+/*----------------------------has_gap----------------------------*/
+
+int	ft_count_has_gap(t_stacks *main_struct, int item, int len_a);
+void ft_find_pos_after_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found);
+void ft_find_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found);
+
+/*-------------------------count_actions-------------------------*/
+
+int is_has_gap(t_stacks main_struct);
+int ft_count_no_gap(t_stacks *main_struct, int item, int len_a);
+int ft_count_actions_in_a(t_stacks *main_struct, int item, int len_a);
+int ft_count_actions_in_b(t_lis *b, int item, int len_b);
+int ft_check_quantity_throw(t_stacks main_struct);
+
+/*-----------------------------moves------------------------------*/
+
+int	ft_count_moves(int num_item, int len_stack);
+void ft_move_no_gap(t_stacks *main_struct, int len_a, int item);
+void ft_move_common(t_stacks *main_struct, int num_item, int len_stack, char which_stack);
+void ft_move_b(t_stacks *main_struct, int item_b, int len_b);
+
+/*----------------------------throwing-----------------------------*/
+
+int	ft_find_poss_for_less_throws_a(t_stacks main_struct);
+int	ft_find_poss_for_less_throws_b(t_stacks main_struct);
+void ft_make_throws(t_stacks *main_struct);
+void ft_throwing(t_stacks *main_struct);
 
 #endif
