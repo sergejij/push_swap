@@ -11,15 +11,15 @@ CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o
  /Users/ubartemi/CLionProjects/p_s/auxiliary_functions/auxiliary_functions2.c
  /Users/ubartemi/CLionProjects/p_s/libft/libft.h
  /Users/ubartemi/CLionProjects/p_s/push_swap.h
+CMakeFiles/p_s.dir/checker.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/checker.c
+ /Users/ubartemi/CLionProjects/p_s/libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
 CMakeFiles/p_s.dir/get_next_line.c.o
  /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
  /Users/ubartemi/CLionProjects/p_s/get_next_line.c
  /Users/ubartemi/CLionProjects/p_s/libft/libft.h
- /Users/ubartemi/CLionProjects/p_s/push_swap.h
-CMakeFiles/p_s.dir/main.c.o
- /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
- /Users/ubartemi/CLionProjects/p_s/libft/libft.h
- /Users/ubartemi/CLionProjects/p_s/main.c
  /Users/ubartemi/CLionProjects/p_s/push_swap.h
 CMakeFiles/p_s.dir/moves/push.c.o
  /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
@@ -41,6 +41,31 @@ CMakeFiles/p_s.dir/moves/swap.c.o
  /Users/ubartemi/CLionProjects/p_s/libft/libft.h
  /Users/ubartemi/CLionProjects/p_s/moves/swap.c
  /Users/ubartemi/CLionProjects/p_s/push_swap.h
+CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap_files/count_actions.c
+CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap_files/has_gap.c
+CMakeFiles/p_s.dir/push_swap_files/moves.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap_files/moves.c
+CMakeFiles/p_s.dir/push_swap_files/sort.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap_files/sort.c
+CMakeFiles/p_s.dir/push_swap_files/throwing.c.o
+ /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/libft/libft.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap.h
+ /Users/ubartemi/CLionProjects/p_s/push_swap_files/throwing.c
 CMakeFiles/p_s.dir/validation/validation.c.o
  /Users/ubartemi/CLionProjects/p_s/./libft/libft.h
  /Users/ubartemi/CLionProjects/p_s/libft/libft.h

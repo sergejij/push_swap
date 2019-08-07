@@ -13,10 +13,22 @@
   <component name="ChangeListManager">
     <list default="true" id="62771f2e-4b22-4947-a3ad-c7bb21a53726" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out.dSYM/Contents/Resources/DWARF/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out.dSYM/Contents/Resources/DWARF/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker" beforeDir="false" afterPath="$PROJECT_DIR$/checker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/push.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/push.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/reverse_rotate.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/reverse_rotate.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/rotate.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/rotate.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/swap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/moves/swap.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/validation/validation.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/validation/validation2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/validation/validation2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/p_s" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/validation2.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/validation2.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,35 +45,32 @@
     <favorites_list name="p_s" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5163077">
+    <splitter split-orientation="horizontal" split-proportion="0.416">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
+                <state>
                   <caret line="9" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/checker.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="10" selection-start-column="10" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#1882#2011#0" />
-                    <element signature="e#2246#2433#0" />
-                    <element signature="e#2475#2604#0" />
-                    <element signature="e#2636#3466#0" />
-                    <element signature="e#3467#3962#0" />
-                    <element signature="e#3963#4359#0" />
-                    <element signature="e#4360#4855#0" />
-                    <element signature="e#4856#5474#0" />
-                    <element signature="e#5475#6473#0" />
-                    <element signature="e#6474#7058#0" />
-                  </folding>
+                <state relative-caret-position="509">
+                  <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/validation/validation.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-55">
+                  <caret column="13" selection-start-column="13" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -69,8 +78,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/push_swap.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
-                  <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+                <state relative-caret-position="407">
+                  <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -102,15 +111,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/validation/validation2.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/push_swap_files/has_gap.c">
               <provider selected="true" editor-type-id="text-editor">
@@ -133,20 +133,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/auxiliary_functions/auxiliary_functions.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="103">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="675">
+                  <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/push_swap.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -196,8 +196,9 @@
         <option value="$PROJECT_DIR$/push_swap_files/moves.c" />
         <option value="$PROJECT_DIR$/push_swap_files/throwing.c" />
         <option value="$PROJECT_DIR$/push_swap.c" />
-        <option value="$PROJECT_DIR$/push_swap.h" />
         <option value="$PROJECT_DIR$/validation/validation2.c" />
+        <option value="$PROJECT_DIR$/push_swap.h" />
+        <option value="$PROJECT_DIR$/checker.c" />
       </list>
     </option>
   </component>
@@ -214,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,21 +223,10 @@
               <item name="p_s" type="b2602c69:ProjectViewProjectNode" />
               <item name="p_s" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="p_s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p_s" type="462c0819:PsiDirectoryNode" />
-              <item name="push_swap_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p_s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p_s" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,7 +263,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="p_s" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="234 4" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="p_s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="p_s">
+    <configuration name="p_s" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="1 2 3 4 5" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="p_s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="p_s">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -317,12 +308,13 @@
       <workItem from="1565010752957" duration="701000" />
       <workItem from="1565096173517" duration="640000" />
       <workItem from="1565153891823" duration="608000" />
-      <workItem from="1565167697911" duration="5095000" />
+      <workItem from="1565167697911" duration="6083000" />
+      <workItem from="1565181797667" duration="1238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115500000" />
+    <option name="totallyTimeSpent" value="117726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,21 +327,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="633" y="23" width="1909" height="1337" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47356582" visible="true" weight="0.12961972" />
-      <window_info id="Structure" order="1" sideWeight="0.5264342" side_tool="true" visible="true" weight="0.12961972" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47176912" visible="true" weight="0.13069095" />
+      <window_info id="Structure" order="1" sideWeight="0.52823085" side_tool="true" visible="true" weight="0.13069095" />
       <window_info id="Favorites" order="2" sideWeight="0.5005203" side_tool="true" weight="0.09412232" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967743" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.359854" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.20481928" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.35983935" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34698796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.35983935" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.35983935" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039715" side_tool="true" weight="0.29927006" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49960285" visible="true" weight="0.28594378" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49960285" weight="0.39839357" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32903227" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32919708" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -417,23 +410,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/checker.c</url>
-          <line>208</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/auxiliary_functions/auxiliary_functions.c</url>
-          <line>3</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/checker.c</url>
-          <line>330</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/checker.c</url>
-          <line>193</line>
-          <option name="timeStamp" value="55" />
+          <line>69</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -582,27 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/validation/validation.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auxiliary_functions/auxiliary_functions.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/moves/push.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -631,36 +588,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checker.c">
+    <entry file="file://$PROJECT_DIR$/push_swap_files/count_actions/count_actions_b.c" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#1882#2011#0" />
-            <element signature="e#2246#2433#0" />
-            <element signature="e#2475#2604#0" />
-            <element signature="e#2636#3466#0" />
-            <element signature="e#3467#3962#0" />
-            <element signature="e#3963#4359#0" />
-            <element signature="e#4360#4855#0" />
-            <element signature="e#4856#5474#0" />
-            <element signature="e#5475#6473#0" />
-            <element signature="e#6474#7058#0" />
-          </folding>
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap_files/count_actions/count_actions_b.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/libft/ft_putstr_fd.c">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap_files/sort.c">
+    <entry file="file://$PROJECT_DIR$/push_swap_files/moves.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state>
+          <caret selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -671,17 +613,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap_files/count_actions.c">
+    <entry file="file://$PROJECT_DIR$/push_swap_files/sort.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap_files/moves.c">
+    <entry file="file://$PROJECT_DIR$/auxiliary_functions/auxiliary_functions.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
+        <state relative-caret-position="675">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/push_swap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -692,24 +641,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/validation/validation2.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="-311">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/push_swap_files/count_actions.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/validation.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/push_swap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-int		ft_check_command(char *command)
+int		ft_check_command(char *command, t_stacks *main_struct)
 {
     if ((ft_strcmp("sa", command) != 0) && (ft_strcmp("sb", command) != 0)
         && (ft_strcmp("ss", command) != 0) && (ft_strcmp("pb", command) != 0)
@@ -9,7 +9,9 @@ int		ft_check_command(char *command)
         && (ft_strcmp("rra", command) != 0) && (ft_strcmp("rrb", command) != 0)
         && (ft_strcmp("rrr", command) != 0))
     {
-        ft_putstr("not valid command\n");
+		ft_putstr_fd("Error\n", 2);
+		ft_list_clear(&main_struct->a);
+		ft_list_clear(&main_struct->b);
         exit (1);
     }
     return (1);
@@ -50,7 +52,7 @@ void ft_check_sort(t_stacks    *main_struct)
     begin = main_struct->a;
     while (main_struct->a && main_struct->a->next)
     {
-        if (main_struct->a->num > main_struct->a->next->num)
+        if ((main_struct->a->num > main_struct->a->next->num) || main_struct->b)
         {
             ft_putstr("KO\n");
             exit (1);
@@ -65,12 +67,9 @@ void ft_check_sort(t_stacks    *main_struct)
 int		main(int argc, char **argv)
 {
     t_stacks    main_struct;
-	int ret;
 	char *command;
-	int fd;
 
 	command = 0;
-	ret = 0;
     if (argc < 2)
         return (0);
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
@@ -78,286 +77,14 @@ int		main(int argc, char **argv)
     	ft_putstr_fd("Error\n", 2);
     	return (1);
 	}
-	/*printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");*/
 	ft_check_duplicates(&main_struct);
-	while ((ret = get_next_line(0, &command)) > 0)
+	while (get_next_line(0, &command) > 0)
 	{
-	    ft_putstr(command);
-		if (!ft_check_command(command))
-			return (1);
+		ft_check_command(command, &main_struct);
 		ft_apply_commands(&main_struct, command);
 		ft_strdel(&command);
 	}
-   /* printf("a - ");
-    ft_print_list(main_struct.a);
-    printf("\n");
-
-    printf("b - ");
-    ft_print_list(main_struct.b);
-    printf("\n");
-	printf("!!!%d!!!\n", main_struct.a_len);*/
-//
-	//ft_bubble_sort_list(main_struct);
-	/*printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");*/
 	ft_check_sort(&main_struct);
-
-/*printf("Make - SA");
-	sa(&main_struct);
-	printf("\n");
-	printf("\n");
-
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-
-	printf("Make - 3 PB");
-	pb(&main_struct);
-	pb(&main_struct);
-	pb(&main_struct);
-	printf("\n");
-
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	printf("\n");
-
-
-	printf("Make - PA");
-	pa(&main_struct);
-	printf("\n");
-
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-
-	printf("Make - 2 SS");
-	ss(&main_struct);
-	printf("\n");
-	printf("\n");
-
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-*/
-/*	ra(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	ra(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	ra(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	ra(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	ra(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	ra(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");*/
-/*printf("\n");
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-	PB;
-
-	printf("after lots of PB\na - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	printf("\n");
-
-	PA;
-	PA;
-	PA;
-	PA;
-
-
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	printf("\n");*/
-/*	rb(&main_struct);
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rb(&main_struct);
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rb(&main_struct);
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rb(&main_struct);
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rb(&main_struct);
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rb(&main_struct);
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");*/
-/*RRR;
-	printf("a - rra - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - rrb - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	RRR;
-	printf("a - rra - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - rrb - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	RRR;
-	printf("a - rra - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - rrb - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	RRR;
-	SA;
-	printf("a - rra - sa - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - rrb - ");
-	ft_print_list(main_struct.b);
-	printf("\n");*/
-/*rra(&main_struct);
-	rrb(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rra(&main_struct);
-	rrb(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rra(&main_struct);
-	rrb(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rra(&main_struct);
-	rrb(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rra(&main_struct);
-	rrb(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rra(&main_struct);
-	rrb(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");*/
-/*rr(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-
-	rr(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rr(&main_struct);
-	printf("a - ");
-	/ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");
-	rr(&main_struct);
-	printf("a - ");
-	ft_print_list(main_struct.a);
-	printf("\n");
-	printf("b - ");
-	ft_print_list(main_struct.b);
-	printf("\n");*/
-
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);
     return 0;
