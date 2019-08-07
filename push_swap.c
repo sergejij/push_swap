@@ -25,15 +25,13 @@ void ft_eliminate_gap(t_stacks *main_struct, int a_len)
 
 void ft_push_swap(t_stacks *main_struct)
 {
-	int is_first;
-
-	is_first = 1;
+	main_struct->is_first = 1;
     while (!is_ready_sort(main_struct)) // циклит пока не отсортирует
 	{
-    	if (is_first)
+    	if (main_struct->is_first)
 			while (((main_struct->a_len - 3) > 0))
 			{
-				is_first = 0;
+				main_struct->is_first = 0;
 				PB;
 				ft_putstr("pb\n");
 				main_struct->a_len -= 1;

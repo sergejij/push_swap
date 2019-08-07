@@ -1,12 +1,9 @@
 #include "../push_swap.h"
 
-int    ft_sort_array(int *array, int len)
+void    ft_check_dup(int *array, int len, int i, int j)
 {
-    int i;
-    int j;
     int tmp;
 
-    i = 0;
     while (i < len - 1)
     {
         j = 0;
@@ -27,7 +24,6 @@ int    ft_sort_array(int *array, int len)
         }
         i++;
     }
-    return (array[len / 2]);
 }
 
 void    ft_check_duplicates(t_stacks    *main_struct)
@@ -47,7 +43,7 @@ void    ft_check_duplicates(t_stacks    *main_struct)
         main_struct->a = main_struct->a->next;
     }
     main_struct->a = begin;
-    main_struct->median = ft_sort_array(array, main_struct->a_len);
+	ft_check_dup(array, main_struct->a_len, 0, 0);
     free(array);
 }
 

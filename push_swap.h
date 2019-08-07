@@ -48,7 +48,7 @@ typedef struct              s_stacks
 {
     t_lis                   *a;
     t_lis                   *b;
-    int                     median;
+    int                     is_first;
     int 					a_len;
     int 					b_len;
 	int 					min_actions;
@@ -103,7 +103,7 @@ int	    ft_parse(char **argv, t_stacks    *main_struct);
 int		ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv);
 
 
-int    ft_sort_array(int *array, int len);
+void    ft_check_dup(int *array, int len, int i, int j);
 void    ft_check_duplicates(t_stacks    *main_struct);
 t_lis    *ft_create_stack(char **tmp);
 
