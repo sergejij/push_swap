@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p_s.dir/checker.c.o"
+  "CMakeFiles/p_s.dir/push_swap.c.o"
   "CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o"
   "CMakeFiles/p_s.dir/validation/validation.c.o"
   "CMakeFiles/p_s.dir/moves/swap.c.o"

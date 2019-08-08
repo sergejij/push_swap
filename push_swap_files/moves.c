@@ -19,38 +19,39 @@ int	ft_count_moves(int num_item, int len_stack)
 	return (counter);
 }
 
-void ft_move_no_gap(t_stacks *main_struct, int len_a, int item)
+void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b, int *len_b, int *len_a)
 {
-	int middle;
+	int middle_b;
+	int middle_a;
 
-	middle = len_a / 2;
-	if (main_struct->b->common_and_pos_a_b[1] <= middle)
-		while (main_struct->b->common_and_pos_a_b[1]-- + 1)
+	middle_b = (*len_b) % 2 == 0 ? (*len_b) / 2 : ((*len_b) / 2) + 1;
+	middle_a = (*len_a) % 2 == 0 ? (*len_a) / 2 : ((*len_a) / 2) + 1;
+	if ((*num_item_b) <= middle_b && (*num_item_b) - 1 > 0 && (*num_item_a) <= middle_a && (*num_item_a) > 1)
+		while (((*num_item_b) - 1) > 0 && ((*num_item_a) - 1) > 0)
 		{
-			RA;
-			ft_putstr("ra\n");
-			PA;
-			ft_putstr("pa\n");
+			RR;
+			ft_putstr("rr\n");
+			(*num_item_b)--;
+			(*num_item_a)--;
 		}
 	else
-	{
-		while (main_struct->b->common_and_pos_a_b[1]++ < len_a)
+		while (((*num_item_a) <= (*len_a)  && (*num_item_a) > middle_a)
+		&& ((*num_item_b) <= (*len_b) && (*num_item_b) > middle_b) && (*len_a) > 1 && (*len_b) > 1)
 		{
-			RRA;
-			ft_putstr("rra\n");
-			PA;
-			ft_putstr("pa\n");
+			RRR;
+			ft_putstr("rrr\n");
+			(*num_item_a)++;
+			(*num_item_b)++;
 		}
-	}
 }
 
-void ft_move_common(t_stacks *main_struct, int num_item, int len_stack, char which_stack)
+void ft_rotate(t_stacks *main_struct, int num_item, int len_stack, char which_stack)
 {
 	int middle;
 
 	middle = len_stack % 2 == 0 ? len_stack / 2 : (len_stack / 2) + 1;
 	if (num_item <= middle)
-		while (num_item-- - 1)
+		while (num_item-- - 1 > 0)
 		{
 			which_stack == 'a' ? RA : RB;
 			which_stack == 'a' ? ft_putstr("ra\n") : ft_putstr("rb\n");
@@ -69,21 +70,16 @@ void ft_move_common(t_stacks *main_struct, int num_item, int len_stack, char whi
 	}
 }
 
-void ft_move_b(t_stacks *main_struct, int item_b, int len_b)
+void ft_move_common(t_stacks *main_struct, int num_item_a, int num_item_b, int len_b, int len_a)/*, char which_stack*/
 {
-	int middle;
+	int middle_b;
+	int middle_a;
 
-	middle = len_b / 2;
-	if (item_b <= middle)
-		while (item_b-- - 1)
-		{
-			RB;
-			ft_putstr("rb\n");
-		}
-	else
-		while (item_b++ - 2 < len_b)
-		{
-			RRB;
-			ft_putstr("rrb\n");
-		}
+	middle_b = len_b % 2 == 0 ? len_b / 2 : (len_b / 2) + 1;
+	middle_a = len_a % 2 == 0 ? len_a / 2 : (len_a / 2) + 1;
+	ft_rotate_double(main_struct, &num_item_a, &num_item_b, &len_b, &len_a);
+	ft_rotate(main_struct, num_item_b, len_b, 'b');
+	ft_rotate(main_struct, num_item_a, len_a, 'a');
+
 }
+

@@ -9,10 +9,6 @@ CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o: ../auxiliary_fu
 CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o: ../libft/libft.h
 CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o: ../push_swap.h
 
-CMakeFiles/p_s.dir/checker.c.o: ../checker.c
-CMakeFiles/p_s.dir/checker.c.o: ../libft/libft.h
-CMakeFiles/p_s.dir/checker.c.o: ../push_swap.h
-
 CMakeFiles/p_s.dir/get_next_line.c.o: ../get_next_line.c
 CMakeFiles/p_s.dir/get_next_line.c.o: ../libft/libft.h
 CMakeFiles/p_s.dir/get_next_line.c.o: ../push_swap.h
@@ -32,6 +28,10 @@ CMakeFiles/p_s.dir/moves/rotate.c.o: ../push_swap.h
 CMakeFiles/p_s.dir/moves/swap.c.o: ../libft/libft.h
 CMakeFiles/p_s.dir/moves/swap.c.o: ../moves/swap.c
 CMakeFiles/p_s.dir/moves/swap.c.o: ../push_swap.h
+
+CMakeFiles/p_s.dir/push_swap.c.o: ../libft/libft.h
+CMakeFiles/p_s.dir/push_swap.c.o: ../push_swap.c
+CMakeFiles/p_s.dir/push_swap.c.o: ../push_swap.h
 
 CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../libft/libft.h
 CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../push_swap.h

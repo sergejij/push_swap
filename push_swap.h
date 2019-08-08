@@ -125,8 +125,10 @@ int ft_check_quantity_throw(t_stacks main_struct);
 
 int	ft_count_moves(int num_item, int len_stack);
 void ft_move_no_gap(t_stacks *main_struct, int len_a, int item);
-void ft_move_common(t_stacks *main_struct, int num_item, int len_stack, char which_stack);
+void ft_move_common(t_stacks *main_struct, int num_item_a, int num_item_b, int len_a, int len_b);
 void ft_move_b(t_stacks *main_struct, int item_b, int len_b);
+void ft_rotate(t_stacks *main_struct, int num_item, int len_stack, char which_stack);
+void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b, int *len_b, int *len_a);
 
 /*----------------------------throwing-----------------------------*/
 

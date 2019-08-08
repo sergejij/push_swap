@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ubartemi/CLionProjects/p_s
+# Install script for directory: /Users/ubartemi/Desktop/push_swap_currently
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ubartemi/CLionProjects/p_s/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ubartemi/Desktop/push_swap_currently/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

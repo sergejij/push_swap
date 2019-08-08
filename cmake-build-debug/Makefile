@@ -48,10 +48,10 @@ RM = /Users/ubartemi/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ubartemi/CLionProjects/p_s
+CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/push_swap_currently
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ubartemi/CLionProjects/p_s/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/push_swap_currently/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles /Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/push_swap_currently/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/push_swap_currently/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/CLionProjects/p_s/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/push_swap_currently/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,33 +176,6 @@ auxiliary_functions/auxiliary_functions2.s: auxiliary_functions/auxiliary_functi
 auxiliary_functions/auxiliary_functions2.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.s
 .PHONY : auxiliary_functions/auxiliary_functions2.c.s
-
-checker.o: checker.c.o
-
-.PHONY : checker.o
-
-# target to build an object file
-checker.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/checker.c.o
-.PHONY : checker.c.o
-
-checker.i: checker.c.i
-
-.PHONY : checker.i
-
-# target to preprocess a source file
-checker.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/checker.c.i
-.PHONY : checker.c.i
-
-checker.s: checker.c.s
-
-.PHONY : checker.s
-
-# target to generate assembly for a file
-checker.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/checker.c.s
-.PHONY : checker.c.s
 
 get_next_line.o: get_next_line.c.o
 
@@ -338,6 +311,33 @@ moves/swap.s: moves/swap.c.s
 moves/swap.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.s
 .PHONY : moves/swap.c.s
+
+push_swap.o: push_swap.c.o
+
+.PHONY : push_swap.o
+
+# target to build an object file
+push_swap.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap.c.o
+.PHONY : push_swap.c.o
+
+push_swap.i: push_swap.c.i
+
+.PHONY : push_swap.i
+
+# target to preprocess a source file
+push_swap.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap.c.i
+.PHONY : push_swap.c.i
+
+push_swap.s: push_swap.c.s
+
+.PHONY : push_swap.s
+
+# target to generate assembly for a file
+push_swap.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap.c.s
+.PHONY : push_swap.c.s
 
 push_swap_files/count_actions.o: push_swap_files/count_actions.c.o
 
@@ -543,9 +543,6 @@ help:
 	@echo "... auxiliary_functions/auxiliary_functions2.o"
 	@echo "... auxiliary_functions/auxiliary_functions2.i"
 	@echo "... auxiliary_functions/auxiliary_functions2.s"
-	@echo "... checker.o"
-	@echo "... checker.i"
-	@echo "... checker.s"
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"
@@ -561,6 +558,9 @@ help:
 	@echo "... moves/swap.o"
 	@echo "... moves/swap.i"
 	@echo "... moves/swap.s"
+	@echo "... push_swap.o"
+	@echo "... push_swap.i"
+	@echo "... push_swap.s"
 	@echo "... push_swap_files/count_actions.o"
 	@echo "... push_swap_files/count_actions.i"
 	@echo "... push_swap_files/count_actions.s"

@@ -1,4 +1,24 @@
-#include "../p_s/push_swap.h"
+#include "push_swap.h"
+
+void ft_final_rotates(t_stacks *main_struct, int num_item, int a_len)
+{
+	int middle;
+
+	middle = a_len % 2 == 0 ? a_len / 2 : (a_len / 2) + 1;
+	if (num_item <= middle)
+		while (num_item-- - 1)
+		{
+			RA;
+			ft_putstr("ra\n");
+		}
+	else if (main_struct->flag_stay_in_first != 1)
+		while (num_item <= a_len && a_len > 1)
+		{
+			RRA;
+			ft_putstr("rra\n");
+			num_item++;
+		}
+}
 
 void ft_eliminate_gap(t_stacks *main_struct, int a_len)
 {
@@ -20,7 +40,7 @@ void ft_eliminate_gap(t_stacks *main_struct, int a_len)
 		main_struct->a = main_struct->a->next;
 	}
 	main_struct->a = begin;
-	ft_move_common(main_struct, pos_after_gap, a_len, 'a');
+	ft_final_rotates(main_struct, pos_after_gap, a_len);
 }
 
 void ft_push_swap(t_stacks *main_struct)
