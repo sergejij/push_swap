@@ -19,11 +19,15 @@ int	ft_count_moves(int num_item, int len_stack)
 	return (counter);
 }
 
-void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b, int *len_b, int *len_a)
+void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b)
 {
 	int middle_b;
 	int middle_a;
+	int *len_b;
+	int *len_a;
 
+	len_b = &main_struct->b_len;
+	len_a = &main_struct->a_len;
 	middle_b = (*len_b) % 2 == 0 ? (*len_b) / 2 : ((*len_b) / 2) + 1;
 	middle_a = (*len_a) % 2 == 0 ? (*len_a) / 2 : ((*len_a) / 2) + 1;
 	if ((*num_item_b) <= middle_b && (*num_item_b) - 1 > 0 && (*num_item_a) <= middle_a && (*num_item_a) > 1)
@@ -35,7 +39,7 @@ void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b, i
 			(*num_item_a)--;
 		}
 	else
-		while (((*num_item_a) <= (*len_a)  && (*num_item_a) > middle_a)
+		while (((*num_item_a) < (*len_a)  && (*num_item_a) > middle_a)
 		&& ((*num_item_b) <= (*len_b) && (*num_item_b) > middle_b) && (*len_a) > 1 && (*len_b) > 1)
 		{
 			RRR;
@@ -70,16 +74,12 @@ void ft_rotate(t_stacks *main_struct, int num_item, int len_stack, char which_st
 	}
 }
 
-void ft_move_common(t_stacks *main_struct, int num_item_a, int num_item_b, int len_b, int len_a)/*, char which_stack*/
+void ft_move_common(t_stacks *main_struct, int num_item_a, int num_item_b)
 {
-	int middle_b;
-	int middle_a;
 
-	middle_b = len_b % 2 == 0 ? len_b / 2 : (len_b / 2) + 1;
-	middle_a = len_a % 2 == 0 ? len_a / 2 : (len_a / 2) + 1;
-	ft_rotate_double(main_struct, &num_item_a, &num_item_b, &len_b, &len_a);
-	ft_rotate(main_struct, num_item_b, len_b, 'b');
-	ft_rotate(main_struct, num_item_a, len_a, 'a');
+	ft_rotate_double(main_struct, &num_item_a, &num_item_b);
+	ft_rotate(main_struct, num_item_b, main_struct->b_len, 'b');
+	ft_rotate(main_struct, num_item_a, main_struct->a_len, 'a');
 
 }
 

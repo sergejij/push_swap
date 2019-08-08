@@ -51,7 +51,7 @@ void ft_make_throws(t_stacks *main_struct)
 
 	item_a = ft_find_poss_for_less_throws_a(*main_struct);
 	item_b = ft_find_poss_for_less_throws_b(*main_struct);
-	ft_move_common(main_struct, item_a, item_b, main_struct->b_len, main_struct->a_len/*, 'b'*/);
+	ft_move_common(main_struct, item_a, item_b);
 	//ft_move_common(main_struct, item_a,  main_struct->a_len, 'a');
 }
 
