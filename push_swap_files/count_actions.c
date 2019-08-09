@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 int is_has_gap(t_stacks main_struct)
 {

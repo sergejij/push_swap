@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void ft_find_pos_after_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found)
 {

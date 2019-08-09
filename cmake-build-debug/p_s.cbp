@@ -82,34 +82,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/auxiliary_functions/auxiliary_functions.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/auxiliary_functions/auxiliary_functions.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/auxiliary_functions/auxiliary_functions2.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/auxiliary_functions/auxiliary_functions2.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/get_next_line.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/get_next_line.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/get_next_line.h">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/get_next_line.h">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/moves/push.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/moves/push.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/moves/reverse_rotate.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/moves/reverse_rotate.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/moves/rotate.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/moves/rotate.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/moves/swap.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/moves/swap.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap.c">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/validation/validation.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap.h">
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/common_files/validation/validation2.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/count_actions.c">
@@ -121,16 +121,16 @@
 		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/moves.c">
 			<Option target="p_s"/>
 		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/push_swap.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/push_swap.h">
+			<Option target="p_s"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/sort.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/throwing.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/validation/validation.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/validation/validation2.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap_currently/CMakeLists.txt">

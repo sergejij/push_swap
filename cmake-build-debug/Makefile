@@ -123,221 +123,248 @@ p_s/fast:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/build
 .PHONY : p_s/fast
 
-auxiliary_functions/auxiliary_functions.o: auxiliary_functions/auxiliary_functions.c.o
+common_files/auxiliary_functions/auxiliary_functions.o: common_files/auxiliary_functions/auxiliary_functions.c.o
 
-.PHONY : auxiliary_functions/auxiliary_functions.o
-
-# target to build an object file
-auxiliary_functions/auxiliary_functions.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.o
-.PHONY : auxiliary_functions/auxiliary_functions.c.o
-
-auxiliary_functions/auxiliary_functions.i: auxiliary_functions/auxiliary_functions.c.i
-
-.PHONY : auxiliary_functions/auxiliary_functions.i
-
-# target to preprocess a source file
-auxiliary_functions/auxiliary_functions.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.i
-.PHONY : auxiliary_functions/auxiliary_functions.c.i
-
-auxiliary_functions/auxiliary_functions.s: auxiliary_functions/auxiliary_functions.c.s
-
-.PHONY : auxiliary_functions/auxiliary_functions.s
-
-# target to generate assembly for a file
-auxiliary_functions/auxiliary_functions.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions.c.s
-.PHONY : auxiliary_functions/auxiliary_functions.c.s
-
-auxiliary_functions/auxiliary_functions2.o: auxiliary_functions/auxiliary_functions2.c.o
-
-.PHONY : auxiliary_functions/auxiliary_functions2.o
+.PHONY : common_files/auxiliary_functions/auxiliary_functions.o
 
 # target to build an object file
-auxiliary_functions/auxiliary_functions2.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.o
-.PHONY : auxiliary_functions/auxiliary_functions2.c.o
+common_files/auxiliary_functions/auxiliary_functions.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.o
+.PHONY : common_files/auxiliary_functions/auxiliary_functions.c.o
 
-auxiliary_functions/auxiliary_functions2.i: auxiliary_functions/auxiliary_functions2.c.i
+common_files/auxiliary_functions/auxiliary_functions.i: common_files/auxiliary_functions/auxiliary_functions.c.i
 
-.PHONY : auxiliary_functions/auxiliary_functions2.i
+.PHONY : common_files/auxiliary_functions/auxiliary_functions.i
 
 # target to preprocess a source file
-auxiliary_functions/auxiliary_functions2.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.i
-.PHONY : auxiliary_functions/auxiliary_functions2.c.i
+common_files/auxiliary_functions/auxiliary_functions.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.i
+.PHONY : common_files/auxiliary_functions/auxiliary_functions.c.i
 
-auxiliary_functions/auxiliary_functions2.s: auxiliary_functions/auxiliary_functions2.c.s
+common_files/auxiliary_functions/auxiliary_functions.s: common_files/auxiliary_functions/auxiliary_functions.c.s
 
-.PHONY : auxiliary_functions/auxiliary_functions2.s
+.PHONY : common_files/auxiliary_functions/auxiliary_functions.s
 
 # target to generate assembly for a file
-auxiliary_functions/auxiliary_functions2.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/auxiliary_functions/auxiliary_functions2.c.s
-.PHONY : auxiliary_functions/auxiliary_functions2.c.s
+common_files/auxiliary_functions/auxiliary_functions.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.s
+.PHONY : common_files/auxiliary_functions/auxiliary_functions.c.s
 
-get_next_line.o: get_next_line.c.o
+common_files/auxiliary_functions/auxiliary_functions2.o: common_files/auxiliary_functions/auxiliary_functions2.c.o
 
-.PHONY : get_next_line.o
+.PHONY : common_files/auxiliary_functions/auxiliary_functions2.o
 
 # target to build an object file
-get_next_line.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/get_next_line.c.o
-.PHONY : get_next_line.c.o
+common_files/auxiliary_functions/auxiliary_functions2.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o
+.PHONY : common_files/auxiliary_functions/auxiliary_functions2.c.o
 
-get_next_line.i: get_next_line.c.i
+common_files/auxiliary_functions/auxiliary_functions2.i: common_files/auxiliary_functions/auxiliary_functions2.c.i
 
-.PHONY : get_next_line.i
+.PHONY : common_files/auxiliary_functions/auxiliary_functions2.i
 
 # target to preprocess a source file
-get_next_line.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/get_next_line.c.i
-.PHONY : get_next_line.c.i
+common_files/auxiliary_functions/auxiliary_functions2.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.i
+.PHONY : common_files/auxiliary_functions/auxiliary_functions2.c.i
 
-get_next_line.s: get_next_line.c.s
+common_files/auxiliary_functions/auxiliary_functions2.s: common_files/auxiliary_functions/auxiliary_functions2.c.s
 
-.PHONY : get_next_line.s
+.PHONY : common_files/auxiliary_functions/auxiliary_functions2.s
 
 # target to generate assembly for a file
-get_next_line.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/get_next_line.c.s
-.PHONY : get_next_line.c.s
+common_files/auxiliary_functions/auxiliary_functions2.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.s
+.PHONY : common_files/auxiliary_functions/auxiliary_functions2.c.s
 
-moves/push.o: moves/push.c.o
+common_files/get_next_line.o: common_files/get_next_line.c.o
 
-.PHONY : moves/push.o
+.PHONY : common_files/get_next_line.o
 
 # target to build an object file
-moves/push.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/push.c.o
-.PHONY : moves/push.c.o
+common_files/get_next_line.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/get_next_line.c.o
+.PHONY : common_files/get_next_line.c.o
 
-moves/push.i: moves/push.c.i
+common_files/get_next_line.i: common_files/get_next_line.c.i
 
-.PHONY : moves/push.i
+.PHONY : common_files/get_next_line.i
 
 # target to preprocess a source file
-moves/push.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/push.c.i
-.PHONY : moves/push.c.i
+common_files/get_next_line.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/get_next_line.c.i
+.PHONY : common_files/get_next_line.c.i
 
-moves/push.s: moves/push.c.s
+common_files/get_next_line.s: common_files/get_next_line.c.s
 
-.PHONY : moves/push.s
+.PHONY : common_files/get_next_line.s
 
 # target to generate assembly for a file
-moves/push.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/push.c.s
-.PHONY : moves/push.c.s
+common_files/get_next_line.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/get_next_line.c.s
+.PHONY : common_files/get_next_line.c.s
 
-moves/reverse_rotate.o: moves/reverse_rotate.c.o
+common_files/moves/push.o: common_files/moves/push.c.o
 
-.PHONY : moves/reverse_rotate.o
+.PHONY : common_files/moves/push.o
 
 # target to build an object file
-moves/reverse_rotate.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/reverse_rotate.c.o
-.PHONY : moves/reverse_rotate.c.o
+common_files/moves/push.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/push.c.o
+.PHONY : common_files/moves/push.c.o
 
-moves/reverse_rotate.i: moves/reverse_rotate.c.i
+common_files/moves/push.i: common_files/moves/push.c.i
 
-.PHONY : moves/reverse_rotate.i
+.PHONY : common_files/moves/push.i
 
 # target to preprocess a source file
-moves/reverse_rotate.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/reverse_rotate.c.i
-.PHONY : moves/reverse_rotate.c.i
+common_files/moves/push.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/push.c.i
+.PHONY : common_files/moves/push.c.i
 
-moves/reverse_rotate.s: moves/reverse_rotate.c.s
+common_files/moves/push.s: common_files/moves/push.c.s
 
-.PHONY : moves/reverse_rotate.s
+.PHONY : common_files/moves/push.s
 
 # target to generate assembly for a file
-moves/reverse_rotate.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/reverse_rotate.c.s
-.PHONY : moves/reverse_rotate.c.s
+common_files/moves/push.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/push.c.s
+.PHONY : common_files/moves/push.c.s
 
-moves/rotate.o: moves/rotate.c.o
+common_files/moves/reverse_rotate.o: common_files/moves/reverse_rotate.c.o
 
-.PHONY : moves/rotate.o
+.PHONY : common_files/moves/reverse_rotate.o
 
 # target to build an object file
-moves/rotate.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/rotate.c.o
-.PHONY : moves/rotate.c.o
+common_files/moves/reverse_rotate.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/reverse_rotate.c.o
+.PHONY : common_files/moves/reverse_rotate.c.o
 
-moves/rotate.i: moves/rotate.c.i
+common_files/moves/reverse_rotate.i: common_files/moves/reverse_rotate.c.i
 
-.PHONY : moves/rotate.i
+.PHONY : common_files/moves/reverse_rotate.i
 
 # target to preprocess a source file
-moves/rotate.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/rotate.c.i
-.PHONY : moves/rotate.c.i
+common_files/moves/reverse_rotate.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/reverse_rotate.c.i
+.PHONY : common_files/moves/reverse_rotate.c.i
 
-moves/rotate.s: moves/rotate.c.s
+common_files/moves/reverse_rotate.s: common_files/moves/reverse_rotate.c.s
 
-.PHONY : moves/rotate.s
+.PHONY : common_files/moves/reverse_rotate.s
 
 # target to generate assembly for a file
-moves/rotate.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/rotate.c.s
-.PHONY : moves/rotate.c.s
+common_files/moves/reverse_rotate.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/reverse_rotate.c.s
+.PHONY : common_files/moves/reverse_rotate.c.s
 
-moves/swap.o: moves/swap.c.o
+common_files/moves/rotate.o: common_files/moves/rotate.c.o
 
-.PHONY : moves/swap.o
+.PHONY : common_files/moves/rotate.o
 
 # target to build an object file
-moves/swap.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.o
-.PHONY : moves/swap.c.o
+common_files/moves/rotate.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/rotate.c.o
+.PHONY : common_files/moves/rotate.c.o
 
-moves/swap.i: moves/swap.c.i
+common_files/moves/rotate.i: common_files/moves/rotate.c.i
 
-.PHONY : moves/swap.i
+.PHONY : common_files/moves/rotate.i
 
 # target to preprocess a source file
-moves/swap.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.i
-.PHONY : moves/swap.c.i
+common_files/moves/rotate.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/rotate.c.i
+.PHONY : common_files/moves/rotate.c.i
 
-moves/swap.s: moves/swap.c.s
+common_files/moves/rotate.s: common_files/moves/rotate.c.s
 
-.PHONY : moves/swap.s
+.PHONY : common_files/moves/rotate.s
 
 # target to generate assembly for a file
-moves/swap.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/moves/swap.c.s
-.PHONY : moves/swap.c.s
+common_files/moves/rotate.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/rotate.c.s
+.PHONY : common_files/moves/rotate.c.s
 
-push_swap.o: push_swap.c.o
+common_files/moves/swap.o: common_files/moves/swap.c.o
 
-.PHONY : push_swap.o
+.PHONY : common_files/moves/swap.o
 
 # target to build an object file
-push_swap.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap.c.o
-.PHONY : push_swap.c.o
+common_files/moves/swap.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/swap.c.o
+.PHONY : common_files/moves/swap.c.o
 
-push_swap.i: push_swap.c.i
+common_files/moves/swap.i: common_files/moves/swap.c.i
 
-.PHONY : push_swap.i
+.PHONY : common_files/moves/swap.i
 
 # target to preprocess a source file
-push_swap.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap.c.i
-.PHONY : push_swap.c.i
+common_files/moves/swap.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/swap.c.i
+.PHONY : common_files/moves/swap.c.i
 
-push_swap.s: push_swap.c.s
+common_files/moves/swap.s: common_files/moves/swap.c.s
 
-.PHONY : push_swap.s
+.PHONY : common_files/moves/swap.s
 
 # target to generate assembly for a file
-push_swap.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap.c.s
-.PHONY : push_swap.c.s
+common_files/moves/swap.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/moves/swap.c.s
+.PHONY : common_files/moves/swap.c.s
+
+common_files/validation/validation.o: common_files/validation/validation.c.o
+
+.PHONY : common_files/validation/validation.o
+
+# target to build an object file
+common_files/validation/validation.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation.c.o
+.PHONY : common_files/validation/validation.c.o
+
+common_files/validation/validation.i: common_files/validation/validation.c.i
+
+.PHONY : common_files/validation/validation.i
+
+# target to preprocess a source file
+common_files/validation/validation.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation.c.i
+.PHONY : common_files/validation/validation.c.i
+
+common_files/validation/validation.s: common_files/validation/validation.c.s
+
+.PHONY : common_files/validation/validation.s
+
+# target to generate assembly for a file
+common_files/validation/validation.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation.c.s
+.PHONY : common_files/validation/validation.c.s
+
+common_files/validation/validation2.o: common_files/validation/validation2.c.o
+
+.PHONY : common_files/validation/validation2.o
+
+# target to build an object file
+common_files/validation/validation2.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation2.c.o
+.PHONY : common_files/validation/validation2.c.o
+
+common_files/validation/validation2.i: common_files/validation/validation2.c.i
+
+.PHONY : common_files/validation/validation2.i
+
+# target to preprocess a source file
+common_files/validation/validation2.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation2.c.i
+.PHONY : common_files/validation/validation2.c.i
+
+common_files/validation/validation2.s: common_files/validation/validation2.c.s
+
+.PHONY : common_files/validation/validation2.s
+
+# target to generate assembly for a file
+common_files/validation/validation2.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation2.c.s
+.PHONY : common_files/validation/validation2.c.s
 
 push_swap_files/count_actions.o: push_swap_files/count_actions.c.o
 
@@ -420,6 +447,33 @@ push_swap_files/moves.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/moves.c.s
 .PHONY : push_swap_files/moves.c.s
 
+push_swap_files/push_swap.o: push_swap_files/push_swap.c.o
+
+.PHONY : push_swap_files/push_swap.o
+
+# target to build an object file
+push_swap_files/push_swap.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o
+.PHONY : push_swap_files/push_swap.c.o
+
+push_swap_files/push_swap.i: push_swap_files/push_swap.c.i
+
+.PHONY : push_swap_files/push_swap.i
+
+# target to preprocess a source file
+push_swap_files/push_swap.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/push_swap.c.i
+.PHONY : push_swap_files/push_swap.c.i
+
+push_swap_files/push_swap.s: push_swap_files/push_swap.c.s
+
+.PHONY : push_swap_files/push_swap.s
+
+# target to generate assembly for a file
+push_swap_files/push_swap.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/push_swap.c.s
+.PHONY : push_swap_files/push_swap.c.s
+
 push_swap_files/sort.o: push_swap_files/sort.c.o
 
 .PHONY : push_swap_files/sort.o
@@ -474,60 +528,6 @@ push_swap_files/throwing.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/throwing.c.s
 .PHONY : push_swap_files/throwing.c.s
 
-validation/validation.o: validation/validation.c.o
-
-.PHONY : validation/validation.o
-
-# target to build an object file
-validation/validation.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation.c.o
-.PHONY : validation/validation.c.o
-
-validation/validation.i: validation/validation.c.i
-
-.PHONY : validation/validation.i
-
-# target to preprocess a source file
-validation/validation.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation.c.i
-.PHONY : validation/validation.c.i
-
-validation/validation.s: validation/validation.c.s
-
-.PHONY : validation/validation.s
-
-# target to generate assembly for a file
-validation/validation.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation.c.s
-.PHONY : validation/validation.c.s
-
-validation/validation2.o: validation/validation2.c.o
-
-.PHONY : validation/validation2.o
-
-# target to build an object file
-validation/validation2.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation2.c.o
-.PHONY : validation/validation2.c.o
-
-validation/validation2.i: validation/validation2.c.i
-
-.PHONY : validation/validation2.i
-
-# target to preprocess a source file
-validation/validation2.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation2.c.i
-.PHONY : validation/validation2.c.i
-
-validation/validation2.s: validation/validation2.c.s
-
-.PHONY : validation/validation2.s
-
-# target to generate assembly for a file
-validation/validation2.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/validation/validation2.c.s
-.PHONY : validation/validation2.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -537,30 +537,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... p_s"
-	@echo "... auxiliary_functions/auxiliary_functions.o"
-	@echo "... auxiliary_functions/auxiliary_functions.i"
-	@echo "... auxiliary_functions/auxiliary_functions.s"
-	@echo "... auxiliary_functions/auxiliary_functions2.o"
-	@echo "... auxiliary_functions/auxiliary_functions2.i"
-	@echo "... auxiliary_functions/auxiliary_functions2.s"
-	@echo "... get_next_line.o"
-	@echo "... get_next_line.i"
-	@echo "... get_next_line.s"
-	@echo "... moves/push.o"
-	@echo "... moves/push.i"
-	@echo "... moves/push.s"
-	@echo "... moves/reverse_rotate.o"
-	@echo "... moves/reverse_rotate.i"
-	@echo "... moves/reverse_rotate.s"
-	@echo "... moves/rotate.o"
-	@echo "... moves/rotate.i"
-	@echo "... moves/rotate.s"
-	@echo "... moves/swap.o"
-	@echo "... moves/swap.i"
-	@echo "... moves/swap.s"
-	@echo "... push_swap.o"
-	@echo "... push_swap.i"
-	@echo "... push_swap.s"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions.o"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions.i"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions.s"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions2.o"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions2.i"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions2.s"
+	@echo "... common_files/get_next_line.o"
+	@echo "... common_files/get_next_line.i"
+	@echo "... common_files/get_next_line.s"
+	@echo "... common_files/moves/push.o"
+	@echo "... common_files/moves/push.i"
+	@echo "... common_files/moves/push.s"
+	@echo "... common_files/moves/reverse_rotate.o"
+	@echo "... common_files/moves/reverse_rotate.i"
+	@echo "... common_files/moves/reverse_rotate.s"
+	@echo "... common_files/moves/rotate.o"
+	@echo "... common_files/moves/rotate.i"
+	@echo "... common_files/moves/rotate.s"
+	@echo "... common_files/moves/swap.o"
+	@echo "... common_files/moves/swap.i"
+	@echo "... common_files/moves/swap.s"
+	@echo "... common_files/validation/validation.o"
+	@echo "... common_files/validation/validation.i"
+	@echo "... common_files/validation/validation.s"
+	@echo "... common_files/validation/validation2.o"
+	@echo "... common_files/validation/validation2.i"
+	@echo "... common_files/validation/validation2.s"
 	@echo "... push_swap_files/count_actions.o"
 	@echo "... push_swap_files/count_actions.i"
 	@echo "... push_swap_files/count_actions.s"
@@ -570,18 +573,15 @@ help:
 	@echo "... push_swap_files/moves.o"
 	@echo "... push_swap_files/moves.i"
 	@echo "... push_swap_files/moves.s"
+	@echo "... push_swap_files/push_swap.o"
+	@echo "... push_swap_files/push_swap.i"
+	@echo "... push_swap_files/push_swap.s"
 	@echo "... push_swap_files/sort.o"
 	@echo "... push_swap_files/sort.i"
 	@echo "... push_swap_files/sort.s"
 	@echo "... push_swap_files/throwing.o"
 	@echo "... push_swap_files/throwing.i"
 	@echo "... push_swap_files/throwing.s"
-	@echo "... validation/validation.o"
-	@echo "... validation/validation.i"
-	@echo "... validation/validation.s"
-	@echo "... validation/validation2.o"
-	@echo "... validation/validation2.i"
-	@echo "... validation/validation2.s"
 .PHONY : help
 
 

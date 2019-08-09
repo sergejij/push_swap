@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 int	ft_find_poss_for_less_throws_a(t_stacks main_struct)
 {
@@ -52,7 +52,6 @@ void ft_make_throws(t_stacks *main_struct)
 	item_a = ft_find_poss_for_less_throws_a(*main_struct);
 	item_b = ft_find_poss_for_less_throws_b(*main_struct);
 	ft_move_common(main_struct, item_a, item_b);
-	//ft_move_common(main_struct, item_a,  main_struct->a_len, 'a');
 }
 
 void ft_throwing(t_stacks *main_struct)

@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void ft_sort_stack2(t_stacks *main_struct)
 {
