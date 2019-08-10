@@ -79,7 +79,7 @@ int main(int argc, char **argv)
         return (0);
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
     {
-        ft_putstr_fd("Error\n", 2);
+        ft_putstr_fd("Error\n", 1);
         return (1);
     }
     ft_check_duplicates(&main_struct);

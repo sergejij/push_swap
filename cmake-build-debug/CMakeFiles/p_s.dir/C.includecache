@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/ubartemi/Desktop/push_swap_currently/libft/libft.h
-unistd.h
--
-stdlib.h
--
+/Users/ubartemi/Desktop/push_swap_currently/common_files/checker.c
+../push_swap_files/push_swap.h
+/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/push_swap.h
 
-/Users/ubartemi/Desktop/push_swap_currently/push_swap.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_currently/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_currently/push_swap.h
+/Users/ubartemi/Desktop/push_swap_currently/common_files/checker.h
 unistd.h
 -
 stdlib.h
@@ -24,17 +18,15 @@ stdlib.h
 fcntl.h
 -
 libft/libft.h
-/Users/ubartemi/Desktop/push_swap_currently/libft/libft.h
+/Users/ubartemi/Desktop/push_swap_currently/common_files/libft/libft.h
 
-/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/has_gap.c
-../push_swap.h
-/Users/ubartemi/Desktop/push_swap_currently/push_swap.h
+/Users/ubartemi/Desktop/push_swap_currently/common_files/libft/libft.h
+unistd.h
+-
+stdlib.h
+-
 
-/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/moves.c
-../push_swap.h
-/Users/ubartemi/Desktop/push_swap_currently/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_currently/validation/validation2.c
-../push_swap.h
-/Users/ubartemi/Desktop/push_swap_currently/push_swap.h
+/Users/ubartemi/Desktop/push_swap_currently/push_swap_files/push_swap.h
+../common_files/checker.h
+/Users/ubartemi/Desktop/push_swap_currently/common_files/checker.h
 

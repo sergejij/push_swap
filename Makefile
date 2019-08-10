@@ -2,14 +2,14 @@ NAME_PUSH = push_swap
 NAME_CHECKER = checker
 
 PATH_COMMON = ./common_files/
-PATH_PUSH = ./common_files/
+PATH_PUSH = ./push_swap_files/
 
-SRC_PUSH = ./push_swap_files/push_swap.c \
-		   ./push_swap_files/sort.c \
-		   ./push_swap_files/has_gap.c \
-		   ./push_swap_files/count_actions.c \
-		   ./push_swap_files/moves.c \
-		   ./push_swap_files/throwing.c
+SRC_PUSH = $(PATH_PUSH)push_swap.c \
+		   $(PATH_PUSH)sort.c \
+		   $(PATH_PUSH)has_gap.c \
+		   $(PATH_PUSH)count_actions.c \
+		   $(PATH_PUSH)moves.c \
+		   $(PATH_PUSH)throwing.c
 SRC_CHECKER =   $(PATH_COMMON)checker.c
 SRC_COMMON =	$(PATH_COMMON)auxiliary_functions/auxiliary_functions.c \
 				$(PATH_COMMON)auxiliary_functions/auxiliary_functions2.c \

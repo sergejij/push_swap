@@ -45,10 +45,12 @@ int		get_next_line(const int fd, char **line);
 int		ft_length_list(const t_lis *start);
 int 	is_correct_input(char **str);
 void	ft_list_clear(t_lis **begin_list);
+void	ft_free_matrix(char **tmp);
 
 int 	is_need_parsing(char **argv);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
+void	ft_error();
 
 /*----------------------------moves----------------------------*/
 
@@ -69,7 +71,7 @@ void	rrr(t_stacks *stacks);
 
 /*--------------------------validation--------------------------*/
 
-char	**ft_shift_matrix(char **argv);
+char **ft_shift_matrix(char **argv, int argc, char **tmp);
 int	    ft_parse(char **argv, t_stacks    *main_struct);
 int		ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv);
 

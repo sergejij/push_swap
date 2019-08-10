@@ -1,46 +1,31 @@
 #include "../push_swap_files/push_swap.h"
 
-void	ft_check_command(char *command, t_stacks *main_struct)
-{
-    if ((ft_strcmp("sa", command) != 0) && (ft_strcmp("sb", command) != 0)
-        && (ft_strcmp("ss", command) != 0) && (ft_strcmp("pb", command) != 0)
-        && (ft_strcmp("pa", command) != 0) && (ft_strcmp("ra", command) != 0)
-        && (ft_strcmp("rb", command) != 0) && (ft_strcmp("rr", command) != 0)
-        && (ft_strcmp("rra", command) != 0) && (ft_strcmp("rrb", command) != 0)
-        && (ft_strcmp("rrr", command) != 0))
-    {
-    	if (ft_strcmp("Error", command) != 0)
-			ft_putstr_fd("Error\n", 2);
-		ft_list_clear(&main_struct->a);
-		ft_list_clear(&main_struct->b);
-        exit (1);
-    }
-}
-
 void	ft_apply_commands(t_stacks *main_struct, char *command)
 {
-	if (ft_strcmp("sa", command) == 0)
+	if (!ft_strcmp("sa", command))
 		SA;
-	else if (ft_strcmp("sb", command) == 0)
+	else if (!ft_strcmp("sb", command))
 		SB;
-	else if (ft_strcmp("ss", command) == 0)
+	else if (!ft_strcmp("ss", command))
 		SS;
-	else if (ft_strcmp("pb", command) == 0)
+	else if (!ft_strcmp("pb", command))
 		PB;
-	else if (ft_strcmp("pa", command) == 0)
+	else if (!ft_strcmp("pa", command))
 		PA;
-	else if (ft_strcmp("ra", command) == 0)
+	else if (!ft_strcmp("ra", command))
 		RA;
-	else if (ft_strcmp("rb", command) == 0)
+	else if (!ft_strcmp("rb", command))
 		RB;
-	else if (ft_strcmp("rr", command) == 0)
+	else if (!ft_strcmp("rr", command))
 		RR;
-	else if (ft_strcmp("rra", command) == 0)
+	else if (!ft_strcmp("rra", command))
 		RRA;
-	else if (ft_strcmp("rrb", command) == 0)
+	else if (!ft_strcmp("rrb", command))
 		RRB;
-	else if (ft_strcmp("rrr", command) == 0)
+	else if (!ft_strcmp("rrr", command))
 		RRR;
+	else
+		ft_error();
 }
 
 void ft_check_sort(t_stacks    *main_struct)
@@ -63,7 +48,6 @@ void ft_check_sort(t_stacks    *main_struct)
     ft_putstr("OK\n");
 }
 
-
 int		main(int argc, char **argv)
 {
     t_stacks    main_struct;
@@ -79,11 +63,7 @@ int		main(int argc, char **argv)
 	}
 	ft_check_duplicates(&main_struct);
 	while (get_next_line(0, &command) > 0)
-	{
-		ft_check_command(command, &main_struct);
 		ft_apply_commands(&main_struct, command);
-		ft_strdel(&command);
-	}
 	ft_check_sort(&main_struct);
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);
