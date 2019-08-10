@@ -42,13 +42,13 @@ FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME_PUSH) $(NAME_CHECKER)
 
-$(NAME_PUSH): $(SRC_PUSH) $(LIB)
+$(NAME_PUSH): $(SRC_PUSH)
 	make re -C $(PATH_COMMON)libft/
 	gcc -c -Wall -Werror -Wextra $(SRC_PUSH) -I. -g
 	gcc -c -Wall -Werror -Wextra $(SRC_COMMON) -I.$(PATH_COMMON)
 	gcc -Wall -Werror -Wextra $(OBJ_PUSH) $(OBJ_COMMON) -lft -L$(PATH_COMMON)libft/ -o $(NAME_PUSH)
 
-$(NAME_CHECKER): $(SRC_CHECKER) $(LIB)
+$(NAME_CHECKER): $(SRC_CHECKER)
 	gcc -c -Wall -Werror -Wextra $(SRC_CHECKER) $(SRC_COMMON) -I.
 	gcc -Wall -Werror -Wextra $(OBJ_CHECKER) $(OBJ_COMMON) -lft -L$(PATH_COMMON)libft/ -o $(NAME_CHECKER)
 

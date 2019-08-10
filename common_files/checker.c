@@ -57,13 +57,13 @@ int		main(int argc, char **argv)
     if (argc < 2)
     	return (0);
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))
-	{
-    	ft_putstr_fd("Error\n", 2);
-    	return (1);
-	}
+		ft_error();
 	ft_check_duplicates(&main_struct);
 	while (get_next_line(0, &command) > 0)
+	{
 		ft_apply_commands(&main_struct, command);
+		free(command);
+	}
 	ft_check_sort(&main_struct);
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);

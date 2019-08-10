@@ -59,6 +59,6 @@ void	ft_list_clear(t_lis **begin_list)
 
 void ft_error()
 {
-	ft_putstr_fd("Error\n", 2);
+	ft_putstr_fd("Error\n", 1); // 1 or 2 ?git add
 	exit (1);
 }

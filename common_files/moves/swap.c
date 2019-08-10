@@ -6,8 +6,10 @@ void    sa(t_stacks	*main_struct)
 	int tmp;
 
 	tmp = 0;
+	if (main_struct->a_len < 2)
+		return;
 	begin = main_struct->a;
-	if (begin->next)
+	if (begin->next && main_struct->a_len > 1)
 	{
 		tmp = begin->num;
 		begin->num = begin->next->num;
@@ -20,6 +22,8 @@ void    sb(t_stacks	*main_struct)
 	int tmp;
 
 	tmp = 0;
+	if (main_struct->b_len < 2)
+		return;
 	begin = main_struct->b;
 	if (begin->next)
 	{
@@ -32,6 +36,5 @@ void    sb(t_stacks	*main_struct)
 void    ss(t_stacks	*main_struct)
 {
 	sa(&(*main_struct));
-	//ft_print_list(main_struct.a);
 	sb(&(*main_struct));
 }

@@ -16,10 +16,7 @@ void    ft_check_dup(int *array, int len, int i, int j)
                 array[j + 1] = tmp;
             }
             else if (array[j] == array[j + 1])
-            {
-                ft_putstr_fd("Error\n", 1);
-                exit (1);
-            }
+				ft_error();
             j++;
         }
         i++;
