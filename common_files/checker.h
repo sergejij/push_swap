@@ -25,13 +25,13 @@ typedef struct              s_lis
 	struct        s_lis    	*next;
 	struct        s_lis    	*prev;
 	int 					common_and_pos_a_b[3];
+	int 					number_el;
 }                           t_lis;
 
 typedef struct              s_stacks
 {
 	t_lis                   *a;
 	t_lis                   *b;
-	int                     is_first;
 	int 					a_len;
 	int 					b_len;
 	int 					min_actions;

@@ -37,7 +37,7 @@ void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b)
 			(*num_item_b)--;
 			(*num_item_a)--;
 		}
-	else
+	else if ((*num_item_b) >= middle_b && (*num_item_a) >= middle_a)
 		while (((*num_item_a) < (*len_a)  && (*num_item_a) > middle_a)
 		&& ((*num_item_b) <= (*len_b) && (*num_item_b) > middle_b))
 		{
@@ -138,8 +138,6 @@ int	is_need_double(t_stacks *main_struct, int num_item_a, int num_item_b)
 		return (0);
 	return (1);
 }
-
-
 
 void ft_move_common(t_stacks *main_struct, int num_item_a, int num_item_b)
 {

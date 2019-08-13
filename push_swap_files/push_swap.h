@@ -20,6 +20,7 @@
 int	ft_count_moves(int num_item, int len_stack);
 int ft_count_no_gap(t_stacks *main_struct, int item, int len_a);
 int is_has_gap(t_stacks main_struct);
+void ft_throw_without_seq(t_stacks *main_struct);
 
 /*-----------------------------sort-----------------------------*/
 
