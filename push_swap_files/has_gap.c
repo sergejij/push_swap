@@ -36,7 +36,9 @@ int	ft_count_has_gap(t_stacks *main_struct, int item, int len_a)
 	int num_item;
 	t_lis *begin;
 	int is_not_found;
+	int a;
 
+	a = len_a;
 	is_not_found = 1;
 	begin = main_struct->a;
 	num_item = 1;
@@ -47,7 +49,7 @@ int	ft_count_has_gap(t_stacks *main_struct, int item, int len_a)
 		ft_find_pos_after_gap(main_struct, item,  &num_item, &is_not_found);
 	main_struct->b->common_and_pos_a_b[1] = num_item;
 	main_struct->a = begin;
-	return (ft_count_moves(num_item, len_a));
+	return (num_item);
 }
 
 void ft_find_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found)
