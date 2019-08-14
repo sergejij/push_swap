@@ -120,7 +120,7 @@ void ft_push_swap(t_stacks *main_struct)
 		ft_throw_seq(main_struct, start_seq, len_seq);
 	else if (!is_ready_sort(main_struct))
 		ft_throw_without_seq(main_struct);
-    while (!is_ready_sort(main_struct)) // циклит пока не отсортирует
+    while (!is_ready_sort(main_struct))
 	{
         if (main_struct->a_len == 2)
             ft_sort_stack2(main_struct);

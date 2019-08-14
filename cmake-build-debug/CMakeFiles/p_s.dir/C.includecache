@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/ubartemi/Desktop/push_swap_new/common_files/auxiliary_functions/auxiliary_functions.c
+../checker.h
+/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
+
 /Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
 unistd.h
 -
@@ -16,41 +20,9 @@ fcntl.h
 libft/libft.h
 /Users/ubartemi/Desktop/push_swap_new/common_files/libft/libft.h
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/get_next_line.c
-../push_swap_files/push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
 /Users/ubartemi/Desktop/push_swap_new/common_files/libft/libft.h
 unistd.h
 -
 stdlib.h
 -
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/count_actions.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/has_gap.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/moves.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-../common_files/checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/sort.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/throwing.c
-push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
 

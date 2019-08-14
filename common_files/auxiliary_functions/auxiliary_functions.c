@@ -11,7 +11,8 @@ int 	is_correct_input(char **str)
 	{
 		while (str[i][j])
 		{
-			if ((str[i][j] < 48 || str[i][j] > 57) && (j != 0 || str[i][0] != '-'))
+			if ((str[i][j] < 48 || str[i][j] > 57)
+			&& (j != 0 || str[i][0] != '-') && (j != 0 || str[i][0] != '+'))
 				return (0);
 			j++;
 		}
@@ -59,6 +60,6 @@ void	ft_list_clear(t_lis **begin_list)
 
 void ft_error()
 {
-	ft_putstr_fd("Error\n", 1); // 1 or 2 ?git add
+	ft_putstr_fd("Error\n", 2);
 	exit (1);
 }

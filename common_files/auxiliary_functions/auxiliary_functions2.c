@@ -12,7 +12,9 @@ int		ft_atoi_for_over(const char *str)
     counter = 0;
     while ((str[counter] > 7 && str[counter] < 14) || str[counter] == ' ')
         counter++;
-    if (str[counter] == '-')
+    if (str[counter] == '+')
+    	counter++;
+    else if (str[counter] == '-')
     {
         sign = -1;
         counter++;
