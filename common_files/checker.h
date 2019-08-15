@@ -36,6 +36,7 @@ typedef struct              s_stacks
 	int 					b_len;
 	int 					min_actions;
 	int 					flag_stay_in_first;
+	int 					debug_mode;
 }							t_stacks;
 
 int		get_next_line(const int fd, char **line);
@@ -46,8 +47,9 @@ int		ft_length_list(const t_lis *start);
 int 	is_correct_input(char **str);
 void	ft_list_clear(t_lis **begin_list);
 void	ft_free_matrix(char **tmp);
+void ft_print_stacks(t_stacks *main_struct);
 
-int 	is_need_parsing(char **argv);
+int is_need_parsing(char **argv, t_stacks main_struct);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
 void	ft_error();

@@ -60,14 +60,19 @@ int is_int(char **tmp)
     return (1);
 }
 
-int is_need_parsing(char **argv)
+int is_need_parsing(char **argv, t_stacks main_struct)
 {
     int i;
+	int j;
 
     i = 0;
-    while (argv[1][i])
+    if (main_struct.debug_mode)
+    	j = 2;
+    else
+    	j = 1;
+    while (argv[j][i])
     {
-        if (argv[1][i] == ' ')
+        if (argv[j][i] == ' ')
             return (1);
         i++;
     }

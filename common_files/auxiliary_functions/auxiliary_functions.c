@@ -63,3 +63,30 @@ void ft_error()
 	ft_putstr_fd("Error\n", 2);
 	exit (1);
 }
+
+void ft_print_stacks(t_stacks *main_struct)
+{
+	t_lis *begin_a;
+	t_lis *begin_b;
+
+	begin_a = main_struct->a;
+	begin_b = main_struct->b;
+	ft_putstr("Stack A:");
+	while (main_struct->a)
+	{
+		ft_putchar(' ');
+		ft_putnbr(main_struct->a->num);
+		main_struct->a = main_struct->a->next;
+	}
+	ft_putchar('\n');
+	ft_putstr("Stack B:");
+	while (main_struct->b)
+	{
+		ft_putchar(' ');
+		ft_putnbr(main_struct->b->num);
+		main_struct->b = main_struct->b->next;
+	}
+	ft_putchar('\n');
+	main_struct->a = begin_a;
+	main_struct->b = begin_b;
+}

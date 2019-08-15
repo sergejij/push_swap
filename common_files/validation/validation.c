@@ -42,9 +42,16 @@ int	ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv)
 	char **tmp;
 
 	tmp = NULL;
-	if (argc == 2 && is_need_parsing(argv))
+	if (argv[1][0] == '-' && argv[1][1] == 'v')
+		main_struct->debug_mode = 1;
+	if (argc == 2 && is_need_parsing(argv, *main_struct))
 	{
 		if (!(ft_parse(argv, main_struct)))
+			return (0);
+	}
+	else if (argc == 3 && is_need_parsing(argv, *main_struct))
+	{
+		if (!(ft_parse(argv + 1, main_struct)))
 			return (0);
 	}
 	else

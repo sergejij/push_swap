@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/auxiliary_functions/auxiliary_functions.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
 /Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
 unistd.h
 -
@@ -25,4 +21,8 @@ unistd.h
 -
 stdlib.h
 -
+
+/Users/ubartemi/Desktop/push_swap_new/common_files/validation/validation.c
+../checker.h
+/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
 
