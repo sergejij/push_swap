@@ -56,7 +56,10 @@ int	ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv)
 	}
 	else
 	{
-		tmp = ft_shift_matrix(argv, argc, tmp);
+		if (main_struct->debug_mode)
+			tmp = ft_shift_matrix(argv + 1, argc - 1, tmp);
+		else
+			tmp = ft_shift_matrix(argv, argc, tmp);
 		if (is_correct_input(tmp) && is_int(tmp))
 			(*main_struct).a = ft_create_stack(tmp);
 		else

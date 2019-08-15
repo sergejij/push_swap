@@ -107,10 +107,8 @@ int ft_check_quantity_throw(t_stacks main_struct)
 	begin = main_struct.b;
 	while (main_struct.b)
 	{
-		current_item = main_struct.b->num; // будем менять
-		tmp_count_actions = /*ft_count_actions_in_b(begin, current_item, main_struct.b_len)
-							+ ft_count_actions_in_a(&main_struct, current_item, main_struct.a_len)*/
-		ft_count_double_and_single(main_struct, begin, current_item);
+		current_item = main_struct.b->num;
+		tmp_count_actions = ft_count_double_and_single(main_struct, begin, current_item);
 		main_struct.b->common_and_pos_a_b[0] = tmp_count_actions;
 		if (tmp_count_actions < result)
 			result = tmp_count_actions;

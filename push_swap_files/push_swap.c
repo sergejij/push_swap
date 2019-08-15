@@ -18,8 +18,8 @@ void ft_final_rotates(t_stacks *main_struct, int num_item, int a_len)
 			ft_putstr("rra\n");
 			num_item++;
 		}
-	if (main_struct->debug_mode == 1)
-		ft_print_stacks(main_struct);
+	/*if (main_struct->debug_mode == 1)
+		ft_print_stacks(main_struct);*/
 }
 
 void ft_eliminate_gap(t_stacks *main_struct, int a_len)
@@ -117,8 +117,8 @@ void ft_push_swap(t_stacks *main_struct)
 
 	len_seq = 0;
 	start_seq = 0;
-	if (main_struct->debug_mode == 1)
-		ft_print_stacks(main_struct);
+	/*if (main_struct->debug_mode == 1)
+		ft_print_stacks(main_struct);*/
 	ft_find_sort_sequence(main_struct->a, &start_seq, &len_seq);
 	if (len_seq > 3 && !is_ready_sort(main_struct))
 		ft_throw_seq(main_struct, start_seq, len_seq);
@@ -144,7 +144,6 @@ void ft_push_swap(t_stacks *main_struct)
 int main(int argc, char **argv)
 {
     t_stacks    main_struct;
-    main_struct.debug_mode = 0;
     if (argc < 2)
         return (0);
     if (!(ft_parse_and_fill(&main_struct, argc, argv)))

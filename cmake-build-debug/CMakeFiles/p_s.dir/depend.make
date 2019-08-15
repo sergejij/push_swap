@@ -9,6 +9,11 @@ CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o: ..
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o: ../common_files/libft/libft.h
 
+CMakeFiles/p_s.dir/common_files/checker.c.o: ../common_files/checker.c
+CMakeFiles/p_s.dir/common_files/checker.c.o: ../common_files/checker.h
+CMakeFiles/p_s.dir/common_files/checker.c.o: ../common_files/libft/libft.h
+CMakeFiles/p_s.dir/common_files/checker.c.o: ../push_swap_files/push_swap.h
+
 CMakeFiles/p_s.dir/common_files/get_next_line.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/common_files/get_next_line.c.o: ../common_files/get_next_line.c
 CMakeFiles/p_s.dir/common_files/get_next_line.c.o: ../common_files/libft/libft.h
@@ -37,34 +42,4 @@ CMakeFiles/p_s.dir/common_files/validation/validation.c.o: ../common_files/valid
 CMakeFiles/p_s.dir/common_files/validation/validation2.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/common_files/validation/validation2.c.o: ../common_files/libft/libft.h
 CMakeFiles/p_s.dir/common_files/validation/validation2.c.o: ../common_files/validation/validation2.c
-
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../common_files/checker.h
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../common_files/libft/libft.h
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../push_swap_files/count_actions.c
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../push_swap_files/push_swap.h
-
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o: ../common_files/checker.h
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o: ../common_files/libft/libft.h
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o: ../push_swap_files/has_gap.c
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o: ../push_swap_files/push_swap.h
-
-CMakeFiles/p_s.dir/push_swap_files/moves.c.o: ../common_files/checker.h
-CMakeFiles/p_s.dir/push_swap_files/moves.c.o: ../common_files/libft/libft.h
-CMakeFiles/p_s.dir/push_swap_files/moves.c.o: ../push_swap_files/moves.c
-CMakeFiles/p_s.dir/push_swap_files/moves.c.o: ../push_swap_files/push_swap.h
-
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o: ../common_files/checker.h
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o: ../common_files/libft/libft.h
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o: ../push_swap_files/push_swap.c
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o: ../push_swap_files/push_swap.h
-
-CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../common_files/checker.h
-CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../common_files/libft/libft.h
-CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../push_swap_files/push_swap.h
-CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../push_swap_files/sort.c
-
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../common_files/checker.h
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../common_files/libft/libft.h
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../push_swap_files/push_swap.h
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../push_swap_files/throwing.c
 

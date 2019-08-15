@@ -18,6 +18,8 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include "libft/libft.h"
+#include <stdio.h>
+
 
 typedef struct              s_lis
 {
@@ -47,7 +49,7 @@ int		ft_length_list(const t_lis *start);
 int 	is_correct_input(char **str);
 void	ft_list_clear(t_lis **begin_list);
 void	ft_free_matrix(char **tmp);
-void ft_print_stacks(t_stacks *main_struct);
+void ft_print_stacks(t_lis *a, t_lis *b, char *command);
 
 int is_need_parsing(char **argv, t_stacks main_struct);
 int		is_int(char **tmp);
