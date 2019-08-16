@@ -54,6 +54,9 @@ int		main(int argc, char **argv)
 	char *command;
 
 	main_struct.debug_mode = 0;
+	main_struct.count_mode = 0;
+	main_struct.file_mode = 0;
+	main_struct.num_sep_flags = 0;
 	command = 0;
     if (argc < 2 || (argc == 2 && argv[1][0] == '-'))
     	return (0);

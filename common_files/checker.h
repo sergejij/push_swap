@@ -39,6 +39,9 @@ typedef struct              s_stacks
 	int 					min_actions;
 	int 					flag_stay_in_first;
 	int 					debug_mode;
+	int 					count_mode;
+	int 					file_mode;
+	int 					num_sep_flags;
 }							t_stacks;
 
 int		get_next_line(const int fd, char **line);
@@ -78,7 +81,7 @@ void	rrr(t_stacks *stacks);
 char **ft_shift_matrix(char **argv, int argc, char **tmp);
 int	    ft_parse(char **argv, t_stacks    *main_struct);
 int		ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv);
-
+void ft_parse_flags(t_stacks    *main_struct,char **argv);
 
 void    ft_check_dup(int *array, int len, int i, int j);
 void    ft_check_duplicates(t_stacks    *main_struct);

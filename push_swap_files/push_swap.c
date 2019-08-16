@@ -117,8 +117,6 @@ void ft_push_swap(t_stacks *main_struct)
 
 	len_seq = 0;
 	start_seq = 0;
-	/*if (main_struct->debug_mode == 1)
-		ft_print_stacks(main_struct);*/
 	ft_find_sort_sequence(main_struct->a, &start_seq, &len_seq);
 	if (len_seq > 3 && !is_ready_sort(main_struct))
 		ft_throw_seq(main_struct, start_seq, len_seq);

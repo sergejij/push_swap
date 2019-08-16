@@ -6,17 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/auxiliary_functions/auxiliary_functions.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
 /Users/ubartemi/Desktop/push_swap_new/common_files/auxiliary_functions/auxiliary_functions2.c
 ../checker.h
 /Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.c
-../push_swap_files/push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
 
 /Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
 unistd.h
@@ -30,41 +22,9 @@ libft/libft.h
 stdio.h
 -
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/get_next_line.c
-../push_swap_files/push_swap.h
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-
 /Users/ubartemi/Desktop/push_swap_new/common_files/libft/libft.h
 unistd.h
 -
 stdlib.h
 -
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/moves/push.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/moves/reverse_rotate.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/moves/rotate.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/moves/swap.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/validation/validation.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/common_files/validation/validation2.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
-
-/Users/ubartemi/Desktop/push_swap_new/push_swap_files/push_swap.h
-../common_files/checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
 

@@ -65,16 +65,16 @@ int is_need_parsing(char **argv, t_stacks main_struct)
     int i;
 	int j;
 
-    i = 0;
-    if (main_struct.debug_mode)
-    	j = 2;
+    j = 0;
+    if (main_struct.num_sep_flags)
+    	i = main_struct.num_sep_flags + 1;
     else
-    	j = 1;
-    while (argv[j][i])
+    	i = 1;
+    while (argv[i][j])
     {
-        if (argv[j][i] == ' ')
+        if (argv[i][j] == ' ')
             return (1);
-        i++;
+        j++;
     }
     return (0);
 }
