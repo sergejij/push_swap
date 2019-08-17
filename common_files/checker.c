@@ -2,6 +2,7 @@
 
 void	ft_apply_commands(t_stacks *main_struct, char *command)
 {
+	(main_struct->counter)++;
 	if (!ft_strcmp("sa", command))
 		SA;
 	else if (!ft_strcmp("sb", command))
@@ -28,7 +29,7 @@ void	ft_apply_commands(t_stacks *main_struct, char *command)
 		ft_error();
 }
 
-void ft_check_sort(t_stacks    *main_struct)
+void ft_check_sort(t_stacks    *main_struct, t_flags flags_struct)
 {
     t_lis *begin;
 
@@ -46,6 +47,11 @@ void ft_check_sort(t_stacks    *main_struct)
     }
     main_struct->a = begin;
     ft_putstr("\033[32;1mOK\033[0m\n");
+	if (flags_struct.count_mode)
+	{
+		ft_putnbr(main_struct->counter);
+		ft_putchar('\n');
+	}
 }
 
 void ft_change_fd(t_stacks *main_struct, t_flags *flags_struct)
@@ -63,16 +69,9 @@ int		main(int argc, char **argv)
 {
     t_stacks    main_struct;
 	t_flags		flags_struct;
-	char *command;
+	char		*command;
 
-	flags_struct.debug_mode = 0;
-	flags_struct.count_mode = 0;
-	flags_struct.file_mode = 0;
-	flags_struct.num_sep_flags = 0;
-	flags_struct.file_name = NULL;
-	main_struct.counter = 0;
-	main_struct.fd = 0;
-	command = 0;
+	ft_initialization(&flags_struct, &main_struct, 0);
     if (argc < 2)
     	return (0);
     if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
@@ -87,7 +86,7 @@ int		main(int argc, char **argv)
 			ft_print_stacks(main_struct.a, main_struct.b, command);
 		free(command);
 	}
-	ft_check_sort(&main_struct);
+	ft_check_sort(&main_struct, flags_struct);
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);
     return (0);

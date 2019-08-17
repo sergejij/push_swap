@@ -66,6 +66,7 @@ int is_need_parsing(char **argv, t_flags flags_struct);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
 void	ft_error();
+void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd);
 
 /*----------------------------moves----------------------------*/
 

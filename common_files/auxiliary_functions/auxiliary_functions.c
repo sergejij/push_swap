@@ -86,3 +86,14 @@ void ft_print_stacks(t_lis *a, t_lis *b, char *command)
 	}
 	ft_putstr("\n---------------------------------------------\n");
 }
+
+void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
+{
+	flags_struct->debug_mode = 0;
+	flags_struct->count_mode = 0;
+	flags_struct->file_mode = 0;
+	flags_struct->num_sep_flags = 0;
+	flags_struct->file_name = NULL;
+	main_struct->counter = 0;
+	main_struct->fd = fd;
+}

@@ -45,6 +45,28 @@ void ft_check_flags(t_flags *flags_struct)
 		ft_error();
 }
 
+void ft_parse_flags_fill(t_flags *flags_struct, char **argv, char flag, int i)
+{
+	if (flag == 'v')
+	{
+		flags_struct->debug_mode += 1;
+		flags_struct->num_sep_flags = flags_struct->num_sep_flags == 0
+									  ? i : flags_struct->num_sep_flags;
+	}
+	else if (flag == 'c')
+	{
+		flags_struct->count_mode += 1;
+		flags_struct->num_sep_flags = flags_struct->num_sep_flags == 0
+									  ? i : flags_struct->num_sep_flags;
+	}
+	else if (flag == 'f')
+	{
+		flags_struct->file_mode += 1;
+		flags_struct->num_sep_flags = i + 1;
+		flags_struct->file_name = argv[i + 1];
+	}
+}
+
 void ft_parse_flags(t_flags *flags_struct, char **argv)
 {
 	int i;
@@ -56,26 +78,16 @@ void ft_parse_flags(t_flags *flags_struct, char **argv)
 		if (argv[i][0] == '-')
 		{
 			j = 1;
-			while (argv[i][j])
+			while (j <= 3 &&argv[i][j])
 			{
 				if (argv[i][j] == 'v')
-				{
-					flags_struct->debug_mode += 1;
-					flags_struct->num_sep_flags = flags_struct->num_sep_flags == 0
-							? i : flags_struct->num_sep_flags;
-				}
+					ft_parse_flags_fill(flags_struct, argv, argv[i][j], i);
 				else if (argv[i][j] == 'c')
-				{
-					flags_struct->count_mode += 1;
-					flags_struct->num_sep_flags = i;
-				}
+					ft_parse_flags_fill(flags_struct, argv, argv[i][j], i);
 				else if (argv[i][j] == 'f')
-				{
-					flags_struct->file_mode += 1;
-					flags_struct->num_sep_flags = i + 1;
-					flags_struct->file_name = argv[i + 1];
-				}
-				else if (argv[i][j] < 48 | argv[i][j] > 57)
+					ft_parse_flags_fill(flags_struct, argv, argv[i][j], i);
+				else if ((argv[i][j] < 48 || argv[i][j] > 57)
+				&& argv[i][j] != 32 && argv[i][j] != '-')
 					ft_error();
 				j++;
 			}
@@ -100,7 +112,7 @@ int	ft_parse_and_fill(t_stacks    *main_struct, t_flags    *flags_struct, int ar
 	}
 	else
 	{
-		tmp = (flags_struct->num_sep_flags) ? ft_shift_matrix(argv + flags_struct->num_sep_flags + 1, argc - 1, tmp) :
+		tmp = (flags_struct->num_sep_flags) ? ft_shift_matrix(argv + flags_struct->num_sep_flags, argc - 1, tmp) :
 				ft_shift_matrix(argv, argc, tmp);
 		if (is_correct_input(tmp) && is_int(tmp))
 			(*main_struct).a = ft_create_stack(tmp);

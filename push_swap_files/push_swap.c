@@ -153,11 +153,7 @@ int main(int argc, char **argv)
     t_stacks    main_struct;
     t_flags		flags_struct;
 
-	flags_struct.debug_mode = 0;
-	flags_struct.count_mode = 0;
-	flags_struct.file_mode = 0;
-	flags_struct.num_sep_flags = 0;
-	main_struct.fd = 1;
+	ft_initialization(&flags_struct, &main_struct, 1);
     if (argc < 2)
         return (0);
     if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
