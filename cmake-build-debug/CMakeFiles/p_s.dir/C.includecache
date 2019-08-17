@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/auxiliary_functions/auxiliary_functions2.c
-../checker.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
+/Users/ubartemi/Desktop/push_swap/common_files/checker.c
+../push_swap_files/push_swap.h
+/Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.h
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/checker.h
+/Users/ubartemi/Desktop/push_swap/common_files/checker.h
 unistd.h
 -
 stdlib.h
@@ -18,13 +18,17 @@ stdlib.h
 fcntl.h
 -
 libft/libft.h
-/Users/ubartemi/Desktop/push_swap_new/common_files/libft/libft.h
+/Users/ubartemi/Desktop/push_swap/common_files/libft/libft.h
 stdio.h
 -
 
-/Users/ubartemi/Desktop/push_swap_new/common_files/libft/libft.h
+/Users/ubartemi/Desktop/push_swap/common_files/libft/libft.h
 unistd.h
 -
 stdlib.h
 -
+
+/Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.h
+../common_files/checker.h
+/Users/ubartemi/Desktop/push_swap/common_files/checker.h
 

@@ -33,7 +33,7 @@ void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b)
 		while (((*num_item_b) - 1) > 0 && ((*num_item_a) - 1) > 0)
 		{
 			RR;
-			ft_putstr("rr\n");
+			ft_putstr_fd("rr\n", main_struct->fd);
 			(*num_item_b)--;
 			(*num_item_a)--;
 		}
@@ -42,7 +42,7 @@ void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b)
 		&& ((*num_item_b) <= (*len_b) && (*num_item_b) > middle_b))
 		{
 			RRR;
-			ft_putstr("rrr\n");
+			ft_putstr_fd("rrr\n", main_struct->fd);
 			(*num_item_a)++;
 			(*num_item_b)++;
 		}
@@ -58,19 +58,19 @@ void ft_rotate(t_stacks *main_struct, int num_item, int len_stack, char which_st
 		while (num_item-- - 1 > 0)
 		{
 			which_stack == 'a' ? RA : RB;
-			which_stack == 'a' ? ft_putstr("ra\n") : ft_putstr("rb\n");
+			which_stack == 'a' ? ft_putstr_fd("ra\n", main_struct->fd) : ft_putstr_fd("rb\n", main_struct->fd);
 		}
 	else if (main_struct->flag_stay_in_first != 1)
 		while (num_item <= len_stack && len_stack > 1)
 		{
 			which_stack == 'a' ? RRA : RRB;
-			which_stack == 'a' ? ft_putstr("rra\n") : ft_putstr("rrb\n");
+			which_stack == 'a' ? ft_putstr_fd("rra\n", main_struct->fd) : ft_putstr_fd("rrb\n", main_struct->fd);
 			num_item++;
 		}
 	if (main_struct->b && which_stack == 'a')
 	{
 		PA;
-		ft_putstr("pa\n");
+		ft_putstr_fd("pa\n", main_struct->fd);
 	}
 }
 

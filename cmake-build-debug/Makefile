@@ -48,10 +48,10 @@ RM = /Users/ubartemi/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/push_swap_new
+CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/push_swap_new/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/push_swap_new/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/push_swap_new/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/push_swap_new/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,33 +176,6 @@ common_files/auxiliary_functions/auxiliary_functions2.s: common_files/auxiliary_
 common_files/auxiliary_functions/auxiliary_functions2.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.s
 .PHONY : common_files/auxiliary_functions/auxiliary_functions2.c.s
-
-common_files/checker.o: common_files/checker.c.o
-
-.PHONY : common_files/checker.o
-
-# target to build an object file
-common_files/checker.c.o:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/checker.c.o
-.PHONY : common_files/checker.c.o
-
-common_files/checker.i: common_files/checker.c.i
-
-.PHONY : common_files/checker.i
-
-# target to preprocess a source file
-common_files/checker.c.i:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/checker.c.i
-.PHONY : common_files/checker.c.i
-
-common_files/checker.s: common_files/checker.c.s
-
-.PHONY : common_files/checker.s
-
-# target to generate assembly for a file
-common_files/checker.c.s:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/checker.c.s
-.PHONY : common_files/checker.c.s
 
 common_files/get_next_line.o: common_files/get_next_line.c.o
 
@@ -393,6 +366,168 @@ common_files/validation/validation2.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/validation/validation2.c.s
 .PHONY : common_files/validation/validation2.c.s
 
+push_swap_files/count_actions.o: push_swap_files/count_actions.c.o
+
+.PHONY : push_swap_files/count_actions.o
+
+# target to build an object file
+push_swap_files/count_actions.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o
+.PHONY : push_swap_files/count_actions.c.o
+
+push_swap_files/count_actions.i: push_swap_files/count_actions.c.i
+
+.PHONY : push_swap_files/count_actions.i
+
+# target to preprocess a source file
+push_swap_files/count_actions.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_actions.c.i
+.PHONY : push_swap_files/count_actions.c.i
+
+push_swap_files/count_actions.s: push_swap_files/count_actions.c.s
+
+.PHONY : push_swap_files/count_actions.s
+
+# target to generate assembly for a file
+push_swap_files/count_actions.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_actions.c.s
+.PHONY : push_swap_files/count_actions.c.s
+
+push_swap_files/has_gap.o: push_swap_files/has_gap.c.o
+
+.PHONY : push_swap_files/has_gap.o
+
+# target to build an object file
+push_swap_files/has_gap.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o
+.PHONY : push_swap_files/has_gap.c.o
+
+push_swap_files/has_gap.i: push_swap_files/has_gap.c.i
+
+.PHONY : push_swap_files/has_gap.i
+
+# target to preprocess a source file
+push_swap_files/has_gap.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/has_gap.c.i
+.PHONY : push_swap_files/has_gap.c.i
+
+push_swap_files/has_gap.s: push_swap_files/has_gap.c.s
+
+.PHONY : push_swap_files/has_gap.s
+
+# target to generate assembly for a file
+push_swap_files/has_gap.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/has_gap.c.s
+.PHONY : push_swap_files/has_gap.c.s
+
+push_swap_files/moves.o: push_swap_files/moves.c.o
+
+.PHONY : push_swap_files/moves.o
+
+# target to build an object file
+push_swap_files/moves.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/moves.c.o
+.PHONY : push_swap_files/moves.c.o
+
+push_swap_files/moves.i: push_swap_files/moves.c.i
+
+.PHONY : push_swap_files/moves.i
+
+# target to preprocess a source file
+push_swap_files/moves.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/moves.c.i
+.PHONY : push_swap_files/moves.c.i
+
+push_swap_files/moves.s: push_swap_files/moves.c.s
+
+.PHONY : push_swap_files/moves.s
+
+# target to generate assembly for a file
+push_swap_files/moves.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/moves.c.s
+.PHONY : push_swap_files/moves.c.s
+
+push_swap_files/push_swap.o: push_swap_files/push_swap.c.o
+
+.PHONY : push_swap_files/push_swap.o
+
+# target to build an object file
+push_swap_files/push_swap.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o
+.PHONY : push_swap_files/push_swap.c.o
+
+push_swap_files/push_swap.i: push_swap_files/push_swap.c.i
+
+.PHONY : push_swap_files/push_swap.i
+
+# target to preprocess a source file
+push_swap_files/push_swap.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/push_swap.c.i
+.PHONY : push_swap_files/push_swap.c.i
+
+push_swap_files/push_swap.s: push_swap_files/push_swap.c.s
+
+.PHONY : push_swap_files/push_swap.s
+
+# target to generate assembly for a file
+push_swap_files/push_swap.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/push_swap.c.s
+.PHONY : push_swap_files/push_swap.c.s
+
+push_swap_files/sort.o: push_swap_files/sort.c.o
+
+.PHONY : push_swap_files/sort.o
+
+# target to build an object file
+push_swap_files/sort.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort.c.o
+.PHONY : push_swap_files/sort.c.o
+
+push_swap_files/sort.i: push_swap_files/sort.c.i
+
+.PHONY : push_swap_files/sort.i
+
+# target to preprocess a source file
+push_swap_files/sort.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort.c.i
+.PHONY : push_swap_files/sort.c.i
+
+push_swap_files/sort.s: push_swap_files/sort.c.s
+
+.PHONY : push_swap_files/sort.s
+
+# target to generate assembly for a file
+push_swap_files/sort.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort.c.s
+.PHONY : push_swap_files/sort.c.s
+
+push_swap_files/throwing.o: push_swap_files/throwing.c.o
+
+.PHONY : push_swap_files/throwing.o
+
+# target to build an object file
+push_swap_files/throwing.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/throwing.c.o
+.PHONY : push_swap_files/throwing.c.o
+
+push_swap_files/throwing.i: push_swap_files/throwing.c.i
+
+.PHONY : push_swap_files/throwing.i
+
+# target to preprocess a source file
+push_swap_files/throwing.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/throwing.c.i
+.PHONY : push_swap_files/throwing.c.i
+
+push_swap_files/throwing.s: push_swap_files/throwing.c.s
+
+.PHONY : push_swap_files/throwing.s
+
+# target to generate assembly for a file
+push_swap_files/throwing.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/throwing.c.s
+.PHONY : push_swap_files/throwing.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -408,9 +543,6 @@ help:
 	@echo "... common_files/auxiliary_functions/auxiliary_functions2.o"
 	@echo "... common_files/auxiliary_functions/auxiliary_functions2.i"
 	@echo "... common_files/auxiliary_functions/auxiliary_functions2.s"
-	@echo "... common_files/checker.o"
-	@echo "... common_files/checker.i"
-	@echo "... common_files/checker.s"
 	@echo "... common_files/get_next_line.o"
 	@echo "... common_files/get_next_line.i"
 	@echo "... common_files/get_next_line.s"
@@ -432,6 +564,24 @@ help:
 	@echo "... common_files/validation/validation2.o"
 	@echo "... common_files/validation/validation2.i"
 	@echo "... common_files/validation/validation2.s"
+	@echo "... push_swap_files/count_actions.o"
+	@echo "... push_swap_files/count_actions.i"
+	@echo "... push_swap_files/count_actions.s"
+	@echo "... push_swap_files/has_gap.o"
+	@echo "... push_swap_files/has_gap.i"
+	@echo "... push_swap_files/has_gap.s"
+	@echo "... push_swap_files/moves.o"
+	@echo "... push_swap_files/moves.i"
+	@echo "... push_swap_files/moves.s"
+	@echo "... push_swap_files/push_swap.o"
+	@echo "... push_swap_files/push_swap.i"
+	@echo "... push_swap_files/push_swap.s"
+	@echo "... push_swap_files/sort.o"
+	@echo "... push_swap_files/sort.i"
+	@echo "... push_swap_files/sort.s"
+	@echo "... push_swap_files/throwing.o"
+	@echo "... push_swap_files/throwing.i"
+	@echo "... push_swap_files/throwing.s"
 .PHONY : help
 
 

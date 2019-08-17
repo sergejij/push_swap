@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/ubartemi/Desktop/push_swap_new/. 
+C_INCLUDES = -I/Users/ubartemi/Desktop/push_swap/. 
 

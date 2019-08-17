@@ -1,21 +1,18 @@
 #include "push_swap.h"
 
-void ft_final_rotates(t_stacks *main_struct, int num_item, int a_len)
-{
+void ft_final_rotates(t_stacks *main_struct, int num_item, int a_len) {
 	int middle;
 
 	middle = a_len % 2 == 0 ? a_len / 2 : (a_len / 2) + 1;
 	if (num_item <= middle)
-		while (num_item-- - 1)
-		{
+		while (num_item-- - 1) {
 			RA;
-			ft_putstr("ra\n");
+			ft_putstr_fd("ra\n", main_struct->fd);
 		}
 	else if (main_struct->flag_stay_in_first != 1)
-		while (num_item <= a_len && a_len > 1)
-		{
+		while (num_item <= a_len && a_len > 1) {
 			RRA;
-			ft_putstr("rra\n");
+			ft_putstr_fd("rra\n", main_struct->fd);
 			num_item++;
 		}
 	/*if (main_struct->debug_mode == 1)
@@ -50,7 +47,7 @@ void ft_throw_without_seq(t_stacks *main_struct)
 	while (((main_struct->a_len - 3) > 0))
 	{
 		PB;
-		ft_putstr("pb\n");
+		ft_putstr_fd("pb\n", main_struct->fd);
 		main_struct->a_len -= 1;
 		main_struct->b_len += 1;
 	}
@@ -71,10 +68,10 @@ void ft_throw_seq(t_stacks *main_struct, int start_seq, int len_seq)
 			while (i++ - start_seq < len_seq)
 			{
 				RA;
-				ft_putstr("ra\n");
+				ft_putstr_fd("ra\n", main_struct->fd);
 			}
 		PB;
-		ft_putstr("pb\n");
+		ft_putstr_fd("pb\n", main_struct->fd);
 		main_struct->a_len -= 1;
 		main_struct->b_len += 1;
 		i++;
@@ -139,13 +136,34 @@ void ft_push_swap(t_stacks *main_struct)
     }
 }
 
+void ft_write_file(t_flags *flags_struct, t_stacks *main_struct)
+{
+	if ((main_struct->fd = open(flags_struct->file_name,
+								O_CREAT | O_RDWR | O_APPEND | O_TRUNC, S_IWRITE | S_IREAD)) == -1)
+	{
+		ft_putstr_fd("Open/create file error\n", 2);
+		ft_list_clear(&main_struct->a);
+		ft_list_clear(&main_struct->b);
+		exit (1);
+	}
+}
+
 int main(int argc, char **argv)
 {
     t_stacks    main_struct;
+    t_flags		flags_struct;
+
+	flags_struct.debug_mode = 0;
+	flags_struct.count_mode = 0;
+	flags_struct.file_mode = 0;
+	flags_struct.num_sep_flags = 0;
+	main_struct.fd = 1;
     if (argc < 2)
         return (0);
-    if (!(ft_parse_and_fill(&main_struct, argc, argv)))
+    if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
 		ft_error();
+   if (flags_struct.file_mode)
+	   ft_write_file(&flags_struct, &main_struct);
     ft_check_duplicates(&main_struct);
     ft_push_swap(&main_struct);
 	ft_list_clear(&main_struct.a);

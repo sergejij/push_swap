@@ -48,25 +48,42 @@ void ft_check_sort(t_stacks    *main_struct)
     ft_putstr("\033[32;1mOK\033[0m\n");
 }
 
+void ft_change_fd(t_stacks *main_struct, t_flags *flags_struct)
+{
+	if ((main_struct->fd = open(flags_struct->file_name, O_RDONLY)) == -1)
+	{
+		ft_putstr_fd("Open/create file error\n", 2);
+		ft_list_clear(&main_struct->a);
+		ft_list_clear(&main_struct->b);
+		exit (1);
+	}
+}
+
 int		main(int argc, char **argv)
 {
     t_stacks    main_struct;
+	t_flags		flags_struct;
 	char *command;
 
-	main_struct.debug_mode = 0;
-	main_struct.count_mode = 0;
-	main_struct.file_mode = 0;
-	main_struct.num_sep_flags = 0;
+	flags_struct.debug_mode = 0;
+	flags_struct.count_mode = 0;
+	flags_struct.file_mode = 0;
+	flags_struct.num_sep_flags = 0;
+	flags_struct.file_name = NULL;
+	main_struct.counter = 0;
+	main_struct.fd = 0;
 	command = 0;
-    if (argc < 2 || (argc == 2 && argv[1][0] == '-'))
+    if (argc < 2)
     	return (0);
-    if (!(ft_parse_and_fill(&main_struct, argc, argv)))
+    if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
 		ft_error();
 	ft_check_duplicates(&main_struct);
-	while (get_next_line(0, &command) > 0)
+	if (flags_struct.file_mode)
+		ft_change_fd(&main_struct, &flags_struct);
+	while (get_next_line(main_struct.fd, &command) > 0)
 	{
 		ft_apply_commands(&main_struct, command);
-		if (main_struct.debug_mode == 1)
+		if (flags_struct.debug_mode == 1)
 			ft_print_stacks(main_struct.a, main_struct.b, command);
 		free(command);
 	}

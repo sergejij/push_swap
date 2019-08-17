@@ -12,8 +12,7 @@ int 	is_correct_input(char **str)
 		while (str[i][j])
 		{
 			if (((str[i][j] < 48 || str[i][j] > 57)
-			&& (j != 0 || str[i][0] != '-') && (j != 0 || str[i][0] != '+'))
-			/*|| (str[1][0] == '-' && str[1][1] == 'v')*/)
+			&& (j != 0 || str[i][0] != '-') && (j != 0 || str[i][0] != '+')))
 				return (0);
 			j++;
 		}

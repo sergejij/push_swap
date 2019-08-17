@@ -38,11 +38,19 @@ typedef struct              s_stacks
 	int 					b_len;
 	int 					min_actions;
 	int 					flag_stay_in_first;
+	int 					fd;
+	int 					counter;
+}							t_stacks;
+
+typedef struct              s_flags
+{
+	int 					fd;
 	int 					debug_mode;
 	int 					count_mode;
 	int 					file_mode;
+	char					*file_name;
 	int 					num_sep_flags;
-}							t_stacks;
+}							t_flags;
 
 int		get_next_line(const int fd, char **line);
 
@@ -52,9 +60,9 @@ int		ft_length_list(const t_lis *start);
 int 	is_correct_input(char **str);
 void	ft_list_clear(t_lis **begin_list);
 void	ft_free_matrix(char **tmp);
-void ft_print_stacks(t_lis *a, t_lis *b, char *command);
+void	ft_print_stacks(t_lis *a, t_lis *b, char *command);
 
-int is_need_parsing(char **argv, t_stacks main_struct);
+int is_need_parsing(char **argv, t_flags flags_struct);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
 void	ft_error();
@@ -80,8 +88,8 @@ void	rrr(t_stacks *stacks);
 
 char **ft_shift_matrix(char **argv, int argc, char **tmp);
 int	    ft_parse(char **argv, t_stacks    *main_struct);
-int		ft_parse_and_fill(t_stacks    *main_struct, int argc, char **argv);
-void ft_parse_flags(t_stacks    *main_struct,char **argv);
+int	ft_parse_and_fill(t_stacks    *main_struct, t_flags    *flags_struct, int argc, char **argv);
+void ft_parse_flags(t_flags *flags_struct, char **argv);
 
 void    ft_check_dup(int *array, int len, int i, int j);
 void    ft_check_duplicates(t_stacks    *main_struct);

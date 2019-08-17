@@ -60,14 +60,14 @@ int is_int(char **tmp)
     return (1);
 }
 
-int is_need_parsing(char **argv, t_stacks main_struct)
+int is_need_parsing(char **argv, t_flags flags_struct)
 {
     int i;
 	int j;
 
     j = 0;
-    if (main_struct.num_sep_flags)
-    	i = main_struct.num_sep_flags + 1;
+    if (flags_struct.num_sep_flags)
+    	i = flags_struct.num_sep_flags + 1;
     else
     	i = 1;
     while (argv[i][j])
