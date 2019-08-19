@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   count_double.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 14:37:17 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 14:39:49 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-int ft_count_single(t_stacks *main_struct, int num_item, int len_stack)
+int		ft_count_single(t_stacks *main_struct, int num_item, int len_stack)
 {
 	int middle;
 	int counter;
@@ -19,7 +31,7 @@ int ft_count_single(t_stacks *main_struct, int num_item, int len_stack)
 	return (counter);
 }
 
-int ft_count_double(t_stacks *m_struct, int num_i_a, int num_i_b)
+int		ft_count_double(t_stacks *m_struct, int num_i_a, int num_i_b)
 {
 	int middle_b;
 	int middle_a;
@@ -32,21 +44,21 @@ int ft_count_double(t_stacks *m_struct, int num_i_a, int num_i_b)
 		while ((num_i_b - 1) > 0 && num_i_a - 1 > 0)
 			ft_change_meanings(&num_i_a, &num_i_b, &counter, '-');
 	else
-		while ((num_i_a < m_struct->a_len  && num_i_a > middle_a)
-			   && (num_i_b <= m_struct->b_len && num_i_b > middle_b))
+		while ((num_i_a < m_struct->a_len && num_i_a > middle_a)
+				&& (num_i_b <= m_struct->b_len && num_i_b > middle_b))
 			ft_change_meanings(&num_i_a, &num_i_b, &counter, '+');
 	return (counter + ft_count_single(m_struct, num_i_b, m_struct->b_len)
 			+ ft_count_single(m_struct, num_i_a, m_struct->a_len));
 }
 
-int	is_need_double(t_stacks *m_struct, int num_i_a, int num_i_b)
+int		is_need_double(t_stacks *m_struct, int num_i_a, int num_i_b)
 {
 	int number_of_double;
 	int number_of_single;
 
 	number_of_double = ft_count_double(m_struct, num_i_a, num_i_b);
 	number_of_single = ft_count_single(m_struct, num_i_b, m_struct->b_len)
-					   + ft_count_single(m_struct, num_i_a, m_struct->a_len);
+		+ ft_count_single(m_struct, num_i_a, m_struct->a_len);
 	if (number_of_double >= number_of_single)
 		return (0);
 	return (1);

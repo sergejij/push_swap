@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_sequence.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 14:58:43 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 14:59:38 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-void ft_throw_without_seq(t_stacks *main_struct)
+void	ft_throw_without_seq(t_stacks *main_struct)
 {
 	while (((main_struct->a_len - 3) > 0))
 	{
@@ -10,11 +22,11 @@ void ft_throw_without_seq(t_stacks *main_struct)
 	}
 }
 
-void ft_throw_seq(t_stacks *main_struct, int start_seq, int len_seq)
+void	ft_throw_seq(t_stacks *main_struct, int start_seq, int len_seq)
 {
-	t_lis *begin;
-	int i;
-	int len_a;
+	t_lis	*begin;
+	int		i;
+	int		len_a;
 
 	len_a = main_struct->a_len;
 	begin = main_struct->a;
@@ -34,11 +46,11 @@ void ft_throw_seq(t_stacks *main_struct, int start_seq, int len_seq)
 	}
 }
 
-void ft_find_sort_sequence(t_lis *stack_a, int *start_seq, int *len_seq)
+void	ft_find_sort_sequence(t_lis *stack_a, int *start_seq, int *len_seq)
 {
-	int counter;
-	int tmp_end;
-	t_lis *begin;
+	int		counter;
+	int		tmp_end;
+	t_lis	*begin;
 
 	begin = stack_a;
 	counter = 0;

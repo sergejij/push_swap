@@ -1,17 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 14:57:16 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 14:58:23 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-void ft_sort_stack2(t_stacks *main_struct)
+void	ft_sort_stack2(t_stacks *main_struct)
 {
 	if (main_struct->a->num > main_struct->a->next->num)
 		ft_print_command(main_struct, "sa");
 }
 
-
-void ft_sort_stack3(t_stacks *main_struct)
+void	ft_sort_stack3(t_stacks *main_struct)
 {
-	int   first;
-	int   second;
-	int   third;
+	int		first;
+	int		second;
+	int		third;
 
 	first = main_struct->a->num;
 	second = main_struct->a->next->num;
@@ -34,7 +45,7 @@ void ft_sort_stack3(t_stacks *main_struct)
 		ft_print_command(main_struct, "rra");
 }
 
-int ft_check_sort_ps(t_stacks    main_struct)
+int		ft_check_sort_ps(t_stacks main_struct)
 {
 	t_lis *begin;
 
@@ -51,7 +62,7 @@ int ft_check_sort_ps(t_stacks    main_struct)
 	return (1);
 }
 
-int is_ready_sort(t_stacks *main_struct)
+int		is_ready_sort(t_stacks *main_struct)
 {
 	if (ft_check_sort_ps(*main_struct) && !(main_struct->b))
 		return (1);
