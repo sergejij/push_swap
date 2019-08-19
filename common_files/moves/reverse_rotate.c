@@ -17,7 +17,7 @@ void	rra(t_stacks *stacks)
 		stacks->a->prev = NULL;
 		penultimate->next = NULL;
 	}
-} // последний становится первым
+}
 
 void	rrb(t_stacks *stacks)
 {

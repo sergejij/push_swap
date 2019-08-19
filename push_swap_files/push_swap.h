@@ -58,4 +58,23 @@ int	ft_find_poss_for_less_throws_b(t_stacks main_struct);
 void ft_make_throws(t_stacks *main_struct);
 void ft_throwing(t_stacks *main_struct);
 
+/*--------------------------sort_sequence---------------------------*/
+
+void ft_throw_without_seq(t_stacks *main_struct);
+void ft_throw_seq(t_stacks *main_struct, int start_seq, int len_seq);
+void ft_find_sort_sequence(t_lis *stack_a, int *start_seq, int *len_seq);
+
+/*-----------------------------bonuses-------------------------------*/
+
+void ft_write_file(t_flags *flags_struct, t_stacks *main_struct);
+void ft_parse_flags(t_flags *flags_struct, char **argv);
+void ft_parse_flags_fill(t_flags *flags_struct, char **argv, char flag, int i);
+void ft_check_flags(t_flags *flags_struct);
+
+/*---------------------------count_double-----------------------------*/
+
+int ft_count_single(t_stacks *main_struct, int num_item, int len_stack);
+int ft_count_double(t_stacks *main_struct, int num_item_a, int num_item_b);
+int	is_need_double(t_stacks *main_struct, int num_item_a, int num_item_b);
+
 #endif

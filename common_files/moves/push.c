@@ -21,7 +21,7 @@ void    pb(t_stacks *stacks)
 		}
 		else
 			stacks->b->next = NULL;
-	}//взять значение первого эл-та в а и поместить в верх b
+	}
 }
 
 void    pa(t_stacks *stacks)
@@ -45,5 +45,5 @@ void    pa(t_stacks *stacks)
 		}
 		else
 			stacks->a->next = NULL;
-	}//взять значение первого эл-та в а и поместить в верх b
+	}
 }

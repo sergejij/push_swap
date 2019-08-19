@@ -9,6 +9,14 @@ CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o: ..
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o: ../common_files/libft/libft.h
 
+CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o: ../common_files/auxiliary_functions/auxiliary_functions3.c
+CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o: ../common_files/checker.h
+CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o: ../common_files/libft/libft.h
+
+CMakeFiles/p_s.dir/common_files/bonuses.c.o: ../common_files/bonuses.c
+CMakeFiles/p_s.dir/common_files/bonuses.c.o: ../common_files/checker.h
+CMakeFiles/p_s.dir/common_files/bonuses.c.o: ../common_files/libft/libft.h
+
 CMakeFiles/p_s.dir/common_files/get_next_line.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/common_files/get_next_line.c.o: ../common_files/get_next_line.c
 CMakeFiles/p_s.dir/common_files/get_next_line.c.o: ../common_files/libft/libft.h
@@ -62,6 +70,11 @@ CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../common_files/libft/libft.h
 CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../push_swap_files/push_swap.h
 CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../push_swap_files/sort.c
+
+CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o: ../common_files/checker.h
+CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o: ../common_files/libft/libft.h
+CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o: ../push_swap_files/push_swap.h
+CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o: ../push_swap_files/sort_sequence.c
 
 CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../common_files/checker.h
 CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../common_files/libft/libft.h

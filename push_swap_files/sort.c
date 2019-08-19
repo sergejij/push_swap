@@ -3,34 +3,9 @@
 void ft_sort_stack2(t_stacks *main_struct)
 {
 	if (main_struct->a->num > main_struct->a->next->num)
-	{
-		SA;
-		ft_putstr_fd("sa\n", main_struct->fd);
-	}
-
+		ft_print_command(main_struct, "sa");
 }
 
-void ft_print_command(t_stacks *main_struct, char *command)
-{
-	if (command[0] == 's' && command[1] == 'a')
-	{
-		SA;
-		ft_putstr_fd("sa\n", main_struct->fd);
-	}
-	else if (command[0] == 'r')
-	{
-		if (command[1] == 'r')
-		{
-			RRA;
-			ft_putstr_fd("rra\n", main_struct->fd);
-		}
-		else if (command[1] == 'a')
-		{
-			RA;
-			ft_putstr_fd("ra\n", main_struct->fd);
-		}
-	}
-}
 
 void ft_sort_stack3(t_stacks *main_struct)
 {

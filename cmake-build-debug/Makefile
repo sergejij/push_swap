@@ -177,6 +177,87 @@ common_files/auxiliary_functions/auxiliary_functions2.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.s
 .PHONY : common_files/auxiliary_functions/auxiliary_functions2.c.s
 
+common_files/auxiliary_functions/auxiliary_functions3.o: common_files/auxiliary_functions/auxiliary_functions3.c.o
+
+.PHONY : common_files/auxiliary_functions/auxiliary_functions3.o
+
+# target to build an object file
+common_files/auxiliary_functions/auxiliary_functions3.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o
+.PHONY : common_files/auxiliary_functions/auxiliary_functions3.c.o
+
+common_files/auxiliary_functions/auxiliary_functions3.i: common_files/auxiliary_functions/auxiliary_functions3.c.i
+
+.PHONY : common_files/auxiliary_functions/auxiliary_functions3.i
+
+# target to preprocess a source file
+common_files/auxiliary_functions/auxiliary_functions3.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.i
+.PHONY : common_files/auxiliary_functions/auxiliary_functions3.c.i
+
+common_files/auxiliary_functions/auxiliary_functions3.s: common_files/auxiliary_functions/auxiliary_functions3.c.s
+
+.PHONY : common_files/auxiliary_functions/auxiliary_functions3.s
+
+# target to generate assembly for a file
+common_files/auxiliary_functions/auxiliary_functions3.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.s
+.PHONY : common_files/auxiliary_functions/auxiliary_functions3.c.s
+
+common_files/auxiliary_functions/auxiliary_functions4.o: common_files/auxiliary_functions/auxiliary_functions4.c.o
+
+.PHONY : common_files/auxiliary_functions/auxiliary_functions4.o
+
+# target to build an object file
+common_files/auxiliary_functions/auxiliary_functions4.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o
+.PHONY : common_files/auxiliary_functions/auxiliary_functions4.c.o
+
+common_files/auxiliary_functions/auxiliary_functions4.i: common_files/auxiliary_functions/auxiliary_functions4.c.i
+
+.PHONY : common_files/auxiliary_functions/auxiliary_functions4.i
+
+# target to preprocess a source file
+common_files/auxiliary_functions/auxiliary_functions4.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.i
+.PHONY : common_files/auxiliary_functions/auxiliary_functions4.c.i
+
+common_files/auxiliary_functions/auxiliary_functions4.s: common_files/auxiliary_functions/auxiliary_functions4.c.s
+
+.PHONY : common_files/auxiliary_functions/auxiliary_functions4.s
+
+# target to generate assembly for a file
+common_files/auxiliary_functions/auxiliary_functions4.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.s
+.PHONY : common_files/auxiliary_functions/auxiliary_functions4.c.s
+
+common_files/bonuses.o: common_files/bonuses.c.o
+
+.PHONY : common_files/bonuses.o
+
+# target to build an object file
+common_files/bonuses.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/bonuses.c.o
+.PHONY : common_files/bonuses.c.o
+
+common_files/bonuses.i: common_files/bonuses.c.i
+
+.PHONY : common_files/bonuses.i
+
+# target to preprocess a source file
+common_files/bonuses.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/bonuses.c.i
+.PHONY : common_files/bonuses.c.i
+
+common_files/bonuses.s: common_files/bonuses.c.s
+
+.PHONY : common_files/bonuses.s
+
+# target to generate assembly for a file
+common_files/bonuses.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/common_files/bonuses.c.s
+.PHONY : common_files/bonuses.c.s
+
 common_files/get_next_line.o: common_files/get_next_line.c.o
 
 .PHONY : common_files/get_next_line.o
@@ -393,6 +474,33 @@ push_swap_files/count_actions.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_actions.c.s
 .PHONY : push_swap_files/count_actions.c.s
 
+push_swap_files/count_double.o: push_swap_files/count_double.c.o
+
+.PHONY : push_swap_files/count_double.o
+
+# target to build an object file
+push_swap_files/count_double.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_double.c.o
+.PHONY : push_swap_files/count_double.c.o
+
+push_swap_files/count_double.i: push_swap_files/count_double.c.i
+
+.PHONY : push_swap_files/count_double.i
+
+# target to preprocess a source file
+push_swap_files/count_double.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_double.c.i
+.PHONY : push_swap_files/count_double.c.i
+
+push_swap_files/count_double.s: push_swap_files/count_double.c.s
+
+.PHONY : push_swap_files/count_double.s
+
+# target to generate assembly for a file
+push_swap_files/count_double.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/count_double.c.s
+.PHONY : push_swap_files/count_double.c.s
+
 push_swap_files/has_gap.o: push_swap_files/has_gap.c.o
 
 .PHONY : push_swap_files/has_gap.o
@@ -501,6 +609,33 @@ push_swap_files/sort.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort.c.s
 .PHONY : push_swap_files/sort.c.s
 
+push_swap_files/sort_sequence.o: push_swap_files/sort_sequence.c.o
+
+.PHONY : push_swap_files/sort_sequence.o
+
+# target to build an object file
+push_swap_files/sort_sequence.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o
+.PHONY : push_swap_files/sort_sequence.c.o
+
+push_swap_files/sort_sequence.i: push_swap_files/sort_sequence.c.i
+
+.PHONY : push_swap_files/sort_sequence.i
+
+# target to preprocess a source file
+push_swap_files/sort_sequence.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.i
+.PHONY : push_swap_files/sort_sequence.c.i
+
+push_swap_files/sort_sequence.s: push_swap_files/sort_sequence.c.s
+
+.PHONY : push_swap_files/sort_sequence.s
+
+# target to generate assembly for a file
+push_swap_files/sort_sequence.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.s
+.PHONY : push_swap_files/sort_sequence.c.s
+
 push_swap_files/throwing.o: push_swap_files/throwing.c.o
 
 .PHONY : push_swap_files/throwing.o
@@ -543,6 +678,15 @@ help:
 	@echo "... common_files/auxiliary_functions/auxiliary_functions2.o"
 	@echo "... common_files/auxiliary_functions/auxiliary_functions2.i"
 	@echo "... common_files/auxiliary_functions/auxiliary_functions2.s"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions3.o"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions3.i"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions3.s"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions4.o"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions4.i"
+	@echo "... common_files/auxiliary_functions/auxiliary_functions4.s"
+	@echo "... common_files/bonuses.o"
+	@echo "... common_files/bonuses.i"
+	@echo "... common_files/bonuses.s"
 	@echo "... common_files/get_next_line.o"
 	@echo "... common_files/get_next_line.i"
 	@echo "... common_files/get_next_line.s"
@@ -567,6 +711,9 @@ help:
 	@echo "... push_swap_files/count_actions.o"
 	@echo "... push_swap_files/count_actions.i"
 	@echo "... push_swap_files/count_actions.s"
+	@echo "... push_swap_files/count_double.o"
+	@echo "... push_swap_files/count_double.i"
+	@echo "... push_swap_files/count_double.s"
 	@echo "... push_swap_files/has_gap.o"
 	@echo "... push_swap_files/has_gap.i"
 	@echo "... push_swap_files/has_gap.s"
@@ -579,6 +726,9 @@ help:
 	@echo "... push_swap_files/sort.o"
 	@echo "... push_swap_files/sort.i"
 	@echo "... push_swap_files/sort.s"
+	@echo "... push_swap_files/sort_sequence.o"
+	@echo "... push_swap_files/sort_sequence.i"
+	@echo "... push_swap_files/sort_sequence.s"
 	@echo "... push_swap_files/throwing.o"
 	@echo "... push_swap_files/throwing.i"
 	@echo "... push_swap_files/throwing.s"

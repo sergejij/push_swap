@@ -14,6 +14,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o"
   "CMakeFiles/p_s.dir/push_swap_files/moves.c.o"
   "CMakeFiles/p_s.dir/push_swap_files/throwing.c.o"
+  "CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o"
+  "CMakeFiles/p_s.dir/common_files/bonuses.c.o"
+  "CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o"
+  "CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o"
+  "CMakeFiles/p_s.dir/push_swap_files/count_double.c.o"
   "p_s.pdb"
   "p_s"
 )

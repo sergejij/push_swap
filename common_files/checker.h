@@ -18,7 +18,6 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include "libft/libft.h"
-#include <stdio.h>
 
 
 typedef struct              s_lis
@@ -44,7 +43,6 @@ typedef struct              s_stacks
 
 typedef struct              s_flags
 {
-	int 					fd;
 	int 					debug_mode;
 	int 					count_mode;
 	int 					file_mode;
@@ -60,13 +58,18 @@ int		ft_length_list(const t_lis *start);
 int 	is_correct_input(char **str);
 void	ft_list_clear(t_lis **begin_list);
 void	ft_free_matrix(char **tmp);
-void	ft_print_stacks(t_lis *a, t_lis *b, char *command);
+void	ft_debag(t_lis *a, t_lis *b, char *command);
+void 	ft_show_usage_ch();
+void 	ft_show_usage_ps();
 
 int is_need_parsing(char **argv, t_flags flags_struct);
 int		is_int(char **tmp);
 int		ft_atoi_for_over(const char *str);
 void	ft_error();
 void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd);
+
+void ft_print_command(t_stacks *main_struct, char *command);
+void ft_change_meanings(int *first, int *second, char sign);
 
 /*----------------------------moves----------------------------*/
 

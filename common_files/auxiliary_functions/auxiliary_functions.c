@@ -64,36 +64,3 @@ void ft_error()
 	exit (1);
 }
 
-void ft_print_stacks(t_lis *a, t_lis *b, char *command)
-{
-	ft_putstr("Execute the command - ");
-	ft_putstr(command);
-	ft_putchar('\n');
-	ft_putstr("\033[33;1;4mStack A:\033[0m");
-	while (a)
-	{
-		ft_putchar(' ');
-		ft_putnbr(a->num);
-		a = a->next;
-	}
-	ft_putchar('\n');
-	ft_putstr("\033[34;1;4mStack B:\033[0m");
-	while (b)
-	{
-		ft_putchar(' ');
-		ft_putnbr(b->num);
-		b = b->next;
-	}
-	ft_putstr("\n---------------------------------------------\n");
-}
-
-void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
-{
-	flags_struct->debug_mode = 0;
-	flags_struct->count_mode = 0;
-	flags_struct->file_mode = 0;
-	flags_struct->num_sep_flags = 0;
-	flags_struct->file_name = NULL;
-	main_struct->counter = 0;
-	main_struct->fd = fd;
-}

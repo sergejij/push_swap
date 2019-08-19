@@ -6,6 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.o"
   "/Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions2.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o"
+  "/Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions3.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o"
+  "/Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions4.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o"
+  "/Users/ubartemi/Desktop/push_swap/common_files/bonuses.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/bonuses.c.o"
   "/Users/ubartemi/Desktop/push_swap/common_files/get_next_line.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/get_next_line.c.o"
   "/Users/ubartemi/Desktop/push_swap/common_files/moves/push.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/moves/push.c.o"
   "/Users/ubartemi/Desktop/push_swap/common_files/moves/reverse_rotate.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/moves/reverse_rotate.c.o"
@@ -14,10 +17,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ubartemi/Desktop/push_swap/common_files/validation/validation.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/validation/validation.c.o"
   "/Users/ubartemi/Desktop/push_swap/common_files/validation/validation2.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/common_files/validation/validation2.c.o"
   "/Users/ubartemi/Desktop/push_swap/push_swap_files/count_actions.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o"
+  "/Users/ubartemi/Desktop/push_swap/push_swap_files/count_double.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/count_double.c.o"
   "/Users/ubartemi/Desktop/push_swap/push_swap_files/has_gap.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o"
   "/Users/ubartemi/Desktop/push_swap/push_swap_files/moves.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/moves.c.o"
   "/Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o"
   "/Users/ubartemi/Desktop/push_swap/push_swap_files/sort.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/sort.c.o"
+  "/Users/ubartemi/Desktop/push_swap/push_swap_files/sort_sequence.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o"
   "/Users/ubartemi/Desktop/push_swap/push_swap_files/throwing.c" "/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles/p_s.dir/push_swap_files/throwing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

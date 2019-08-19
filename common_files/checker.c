@@ -73,7 +73,7 @@ int		main(int argc, char **argv)
 
 	ft_initialization(&flags_struct, &main_struct, 0);
     if (argc < 2)
-    	return (0);
+		ft_show_usage_ch();
     if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
 		ft_error();
 	ft_check_duplicates(&main_struct);
@@ -83,10 +83,12 @@ int		main(int argc, char **argv)
 	{
 		ft_apply_commands(&main_struct, command);
 		if (flags_struct.debug_mode == 1)
-			ft_print_stacks(main_struct.a, main_struct.b, command);
+			ft_debag(main_struct.a, main_struct.b, command);
 		free(command);
 	}
 	ft_check_sort(&main_struct, flags_struct);
+	if (flags_struct.file_mode)
+		close(main_struct.fd);
 	ft_list_clear(&main_struct.a);
     ft_list_clear(&main_struct.b);
     return (0);

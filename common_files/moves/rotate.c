@@ -18,7 +18,7 @@ void	ra(t_stacks *stacks)
 		begin->prev = NULL;
 		stacks->a = begin;
 	}
-}// сдвинуть каждый эл-т стэка на 1, Первый станет последним
+}
 
 void	rb(t_stacks *stacks)
 {
