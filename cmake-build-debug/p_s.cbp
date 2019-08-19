@@ -97,6 +97,12 @@
 		<Unit filename="/Users/ubartemi/Desktop/push_swap/common_files/bonuses.c">
 			<Option target="p_s"/>
 		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/push_swap/common_files/checker.c">
+			<Option target="p_s"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/push_swap/common_files/checker.h">
+			<Option target="p_s"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap/common_files/get_next_line.c">
 			<Option target="p_s"/>
 		</Unit>
@@ -121,31 +127,7 @@
 		<Unit filename="/Users/ubartemi/Desktop/push_swap/common_files/validation/validation2.c">
 			<Option target="p_s"/>
 		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/count_actions.c">
-			<Option target="p_s"/>
-		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/count_double.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/has_gap.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/moves.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.h">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/sort.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/sort_sequence.c">
-			<Option target="p_s"/>
-		</Unit>
-		<Unit filename="/Users/ubartemi/Desktop/push_swap/push_swap_files/throwing.c">
 			<Option target="p_s"/>
 		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/push_swap/CMakeLists.txt">

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   validation.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 13:57:30 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 13:59:18 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../checker.h"
 
-char **ft_shift_matrix(char **argv, int argc, char **tmp)
+char	**ft_shift_matrix(char **argv, int argc, char **tmp)
 {
 	int i;
 
@@ -8,7 +20,7 @@ char **ft_shift_matrix(char **argv, int argc, char **tmp)
 	if (!(tmp = (char**)malloc(sizeof(char*) * argc)))
 	{
 		free(tmp);
-		exit (1);
+		exit(1);
 	}
 	while (argv[i])
 	{
@@ -21,7 +33,7 @@ char **ft_shift_matrix(char **argv, int argc, char **tmp)
 	return (tmp);
 }
 
-int	ft_parse(char **argv, t_stacks    *main_struct)
+int		ft_parse(char **argv, t_stacks *main_struct)
 {
 	char **tmp;
 
@@ -37,9 +49,8 @@ int	ft_parse(char **argv, t_stacks    *main_struct)
 	return (1);
 }
 
-
-int	ft_parse_fill(t_stacks *m_struct, t_flags *f_struct, int argc,
-					 char **argv)
+int		ft_parse_fill(t_stacks *m_struct, t_flags *f_struct, int argc,
+		char **argv)
 {
 	char **tmp;
 

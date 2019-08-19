@@ -57,18 +57,18 @@ include CMakeFiles/p_s.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/p_s.dir/flags.make
 
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o: ../push_swap_files/push_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.c
+CMakeFiles/p_s.dir/common_files/checker.c.o: CMakeFiles/p_s.dir/flags.make
+CMakeFiles/p_s.dir/common_files/checker.c.o: ../common_files/checker.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/p_s.dir/common_files/checker.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/common_files/checker.c.o   -c /Users/ubartemi/Desktop/push_swap/common_files/checker.c
 
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/push_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.c > CMakeFiles/p_s.dir/push_swap_files/push_swap.c.i
+CMakeFiles/p_s.dir/common_files/checker.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/common_files/checker.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/common_files/checker.c > CMakeFiles/p_s.dir/common_files/checker.c.i
 
-CMakeFiles/p_s.dir/push_swap_files/push_swap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/push_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/push_swap.c -o CMakeFiles/p_s.dir/push_swap_files/push_swap.c.s
+CMakeFiles/p_s.dir/common_files/checker.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/common_files/checker.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/common_files/checker.c -o CMakeFiles/p_s.dir/common_files/checker.c.s
 
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.o: ../common_files/auxiliary_functions/auxiliary_functions.c
@@ -187,87 +187,9 @@ CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions2.c -o CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.s
 
-CMakeFiles/p_s.dir/push_swap_files/sort.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/sort.c.o: ../push_swap_files/sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/p_s.dir/push_swap_files/sort.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/sort.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/sort.c
-
-CMakeFiles/p_s.dir/push_swap_files/sort.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/sort.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/sort.c > CMakeFiles/p_s.dir/push_swap_files/sort.c.i
-
-CMakeFiles/p_s.dir/push_swap_files/sort.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/sort.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/sort.c -o CMakeFiles/p_s.dir/push_swap_files/sort.c.s
-
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o: ../push_swap_files/has_gap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/has_gap.c
-
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/has_gap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/has_gap.c > CMakeFiles/p_s.dir/push_swap_files/has_gap.c.i
-
-CMakeFiles/p_s.dir/push_swap_files/has_gap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/has_gap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/has_gap.c -o CMakeFiles/p_s.dir/push_swap_files/has_gap.c.s
-
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o: ../push_swap_files/count_actions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/count_actions.c
-
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/count_actions.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/count_actions.c > CMakeFiles/p_s.dir/push_swap_files/count_actions.c.i
-
-CMakeFiles/p_s.dir/push_swap_files/count_actions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/count_actions.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/count_actions.c -o CMakeFiles/p_s.dir/push_swap_files/count_actions.c.s
-
-CMakeFiles/p_s.dir/push_swap_files/moves.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/moves.c.o: ../push_swap_files/moves.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/p_s.dir/push_swap_files/moves.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/moves.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/moves.c
-
-CMakeFiles/p_s.dir/push_swap_files/moves.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/moves.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/moves.c > CMakeFiles/p_s.dir/push_swap_files/moves.c.i
-
-CMakeFiles/p_s.dir/push_swap_files/moves.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/moves.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/moves.c -o CMakeFiles/p_s.dir/push_swap_files/moves.c.s
-
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.o: ../push_swap_files/throwing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/p_s.dir/push_swap_files/throwing.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/throwing.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/throwing.c
-
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/throwing.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/throwing.c > CMakeFiles/p_s.dir/push_swap_files/throwing.c.i
-
-CMakeFiles/p_s.dir/push_swap_files/throwing.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/throwing.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/throwing.c -o CMakeFiles/p_s.dir/push_swap_files/throwing.c.s
-
-CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o: CMakeFiles/p_s.dir/flags.make
-CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o: ../push_swap_files/sort_sequence.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/sort_sequence.c
-
-CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/push_swap/push_swap_files/sort_sequence.c > CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.i
-
-CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/push_swap/push_swap_files/sort_sequence.c -o CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.s
-
 CMakeFiles/p_s.dir/common_files/bonuses.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/common_files/bonuses.c.o: ../common_files/bonuses.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/p_s.dir/common_files/bonuses.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/p_s.dir/common_files/bonuses.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/common_files/bonuses.c.o   -c /Users/ubartemi/Desktop/push_swap/common_files/bonuses.c
 
 CMakeFiles/p_s.dir/common_files/bonuses.c.i: cmake_force
@@ -280,7 +202,7 @@ CMakeFiles/p_s.dir/common_files/bonuses.c.s: cmake_force
 
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o: ../common_files/auxiliary_functions/auxiliary_functions3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o   -c /Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions3.c
 
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.i: cmake_force
@@ -293,7 +215,7 @@ CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.s: cm
 
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o: ../common_files/auxiliary_functions/auxiliary_functions4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o   -c /Users/ubartemi/Desktop/push_swap/common_files/auxiliary_functions/auxiliary_functions4.c
 
 CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.i: cmake_force
@@ -306,7 +228,7 @@ CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.s: cm
 
 CMakeFiles/p_s.dir/push_swap_files/count_double.c.o: CMakeFiles/p_s.dir/flags.make
 CMakeFiles/p_s.dir/push_swap_files/count_double.c.o: ../push_swap_files/count_double.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/p_s.dir/push_swap_files/count_double.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/p_s.dir/push_swap_files/count_double.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/p_s.dir/push_swap_files/count_double.c.o   -c /Users/ubartemi/Desktop/push_swap/push_swap_files/count_double.c
 
 CMakeFiles/p_s.dir/push_swap_files/count_double.c.i: cmake_force
@@ -319,7 +241,7 @@ CMakeFiles/p_s.dir/push_swap_files/count_double.c.s: cmake_force
 
 # Object files for target p_s
 p_s_OBJECTS = \
-"CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o" \
+"CMakeFiles/p_s.dir/common_files/checker.c.o" \
 "CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.o" \
 "CMakeFiles/p_s.dir/common_files/validation/validation.c.o" \
 "CMakeFiles/p_s.dir/common_files/moves/swap.c.o" \
@@ -329,12 +251,6 @@ p_s_OBJECTS = \
 "CMakeFiles/p_s.dir/common_files/get_next_line.c.o" \
 "CMakeFiles/p_s.dir/common_files/validation/validation2.c.o" \
 "CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o" \
-"CMakeFiles/p_s.dir/push_swap_files/sort.c.o" \
-"CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o" \
-"CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o" \
-"CMakeFiles/p_s.dir/push_swap_files/moves.c.o" \
-"CMakeFiles/p_s.dir/push_swap_files/throwing.c.o" \
-"CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o" \
 "CMakeFiles/p_s.dir/common_files/bonuses.c.o" \
 "CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o" \
 "CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o" \
@@ -343,7 +259,7 @@ p_s_OBJECTS = \
 # External object files for target p_s
 p_s_EXTERNAL_OBJECTS =
 
-p_s: CMakeFiles/p_s.dir/push_swap_files/push_swap.c.o
+p_s: CMakeFiles/p_s.dir/common_files/checker.c.o
 p_s: CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions.c.o
 p_s: CMakeFiles/p_s.dir/common_files/validation/validation.c.o
 p_s: CMakeFiles/p_s.dir/common_files/moves/swap.c.o
@@ -353,12 +269,6 @@ p_s: CMakeFiles/p_s.dir/common_files/moves/reverse_rotate.c.o
 p_s: CMakeFiles/p_s.dir/common_files/get_next_line.c.o
 p_s: CMakeFiles/p_s.dir/common_files/validation/validation2.c.o
 p_s: CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions2.c.o
-p_s: CMakeFiles/p_s.dir/push_swap_files/sort.c.o
-p_s: CMakeFiles/p_s.dir/push_swap_files/has_gap.c.o
-p_s: CMakeFiles/p_s.dir/push_swap_files/count_actions.c.o
-p_s: CMakeFiles/p_s.dir/push_swap_files/moves.c.o
-p_s: CMakeFiles/p_s.dir/push_swap_files/throwing.c.o
-p_s: CMakeFiles/p_s.dir/push_swap_files/sort_sequence.c.o
 p_s: CMakeFiles/p_s.dir/common_files/bonuses.c.o
 p_s: CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions3.c.o
 p_s: CMakeFiles/p_s.dir/common_files/auxiliary_functions/auxiliary_functions4.c.o
@@ -366,7 +276,7 @@ p_s: CMakeFiles/p_s.dir/push_swap_files/count_double.c.o
 p_s: CMakeFiles/p_s.dir/build.make
 p_s: ../common_files/libft/libft.a
 p_s: CMakeFiles/p_s.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable p_s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable p_s"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p_s.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

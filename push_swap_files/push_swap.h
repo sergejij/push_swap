@@ -18,7 +18,6 @@
 /*---------------------------push_swap---------------------------*/
 
 int	ft_count_moves(int num_item, int len_stack);
-int ft_count_no_gap(t_stacks *main_struct, int item, int len_a);
 int is_has_gap(t_stacks main_struct);
 void ft_throw_without_seq(t_stacks *main_struct);
 
@@ -32,16 +31,16 @@ void ft_print_command(t_stacks *main_struct, char *command);
 
 /*----------------------------has_gap----------------------------*/
 
-int	ft_count_has_gap(t_stacks *main_struct, int item, int len_a);
-void ft_find_pos_after_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found);
+int	ft_count_has_gap(t_stacks *m_struct, int item);
+void ft_pos_after_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found);
 void ft_find_gap(t_stacks *main_struct, int item,  int *num_item, int *is_not_found);
 
 /*-------------------------count_actions-------------------------*/
 
 int is_has_gap(t_stacks main_struct);
-int ft_count_no_gap(t_stacks *main_struct, int item, int len_a);
-int ft_count_actions_in_a(t_stacks *main_struct, int item, int len_a);
-int ft_count_actions_in_b(t_lis *b, int item, int len_b);
+int ft_count_no_gap(t_stacks *main_struct, int item);
+int ft_c_actions_in_a(t_stacks *main_struct, int item);
+int ft_c_actions_in_b(t_lis *b, int item, int len_b);
 int ft_check_quantity_throw(t_stacks main_struct);
 
 /*-----------------------------moves------------------------------*/

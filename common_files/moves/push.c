@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 13:51:20 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 13:52:17 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../checker.h"
 
-void    pb(t_stacks *stacks)
+void	pb(t_stacks *stacks)
 {
 	t_lis *tmp;
+
 	if (stacks->a)
 	{
 		tmp = stacks->b;
@@ -24,9 +37,10 @@ void    pb(t_stacks *stacks)
 	}
 }
 
-void    pa(t_stacks *stacks)
+void	pa(t_stacks *stacks)
 {
 	t_lis *tmp;
+
 	if (stacks->b)
 	{
 		tmp = stacks->a;

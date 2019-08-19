@@ -69,7 +69,7 @@ void	ft_error();
 void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd);
 
 void ft_print_command(t_stacks *main_struct, char *command);
-void ft_change_meanings(int *first, int *second, char sign);
+void ft_change_meanings(int *first, int *second, int *third, char sign);
 
 /*----------------------------moves----------------------------*/
 

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   auxiliary_functions4.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 13:49:53 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 13:50:34 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../../push_swap_files/push_swap.h"
 
-void ft_print_command1(t_stacks *main_struct, char *command)
+void	ft_print_command1(t_stacks *main_struct, char *command)
 {
 	if (!ft_strcmp("sa", command))
 	{
@@ -24,7 +36,7 @@ void ft_print_command1(t_stacks *main_struct, char *command)
 	}
 }
 
-void ft_print_command2(t_stacks *main_struct, char *command)
+void	ft_print_command2(t_stacks *main_struct, char *command)
 {
 	if (!ft_strcmp("pb", command))
 	{
@@ -48,7 +60,7 @@ void ft_print_command2(t_stacks *main_struct, char *command)
 	}
 }
 
-void ft_print_command3(t_stacks *main_struct, char *command)
+void	ft_print_command3(t_stacks *main_struct, char *command)
 {
 	if (!ft_strcmp("rra", command))
 	{
@@ -67,7 +79,7 @@ void ft_print_command3(t_stacks *main_struct, char *command)
 	}
 }
 
-void ft_print_command(t_stacks *main_struct, char *command)
+void	ft_print_command(t_stacks *main_struct, char *command)
 {
 	ft_print_command1(main_struct, command);
 	ft_print_command2(main_struct, command);

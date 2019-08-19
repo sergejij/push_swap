@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   auxiliary_functions.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 13:43:39 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 13:46:10 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../checker.h"
 
-int 	is_correct_input(char **str)
+int		is_correct_input(char **str)
 {
 	int i;
 	int j;
@@ -22,9 +34,9 @@ int 	is_correct_input(char **str)
 	return (1);
 }
 
-int	ft_length_list(const t_lis *start)
+int		ft_length_list(const t_lis *start)
 {
-	int counter;
+	int		counter;
 
 	counter = 0;
 	if (!start->next)
@@ -58,9 +70,8 @@ void	ft_list_clear(t_lis **begin_list)
 	}
 }
 
-void ft_error()
+void	ft_error(void)
 {
 	ft_putstr_fd("Error\n", 2);
-	exit (1);
+	exit(1);
 }
-

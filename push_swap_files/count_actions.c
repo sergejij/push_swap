@@ -15,13 +15,11 @@ int is_has_gap(t_stacks main_struct)
 	return (0);
 }
 
-int ft_count_no_gap(t_stacks *main_struct, int item, int len_a)
+int ft_count_no_gap(t_stacks *main_struct, int item)
 {
 	int num_item;
 	t_lis *begin;
-	int lea;
 
-	lea = len_a;
 	begin = main_struct->a;
 	num_item = 1;
 	while (main_struct->a)
@@ -37,15 +35,15 @@ int ft_count_no_gap(t_stacks *main_struct, int item, int len_a)
 	return (num_item);
 }
 
-int ft_count_actions_in_a(t_stacks *main_struct, int item, int len_a)
+int ft_c_actions_in_a(t_stacks *main_struct, int item)
 {
 	if (!is_has_gap(*main_struct))
-		return (ft_count_no_gap(main_struct, item, len_a));
+		return (ft_count_no_gap(main_struct, item));
 	else
-		return (ft_count_has_gap(main_struct, item, len_a));
+		return (ft_count_has_gap(main_struct, item));
 }
 
-int ft_count_actions_in_b(t_lis *b, int item, int len_b)
+int ft_c_actions_in_b(t_lis *b, int item, int len_b)
 {
 	int num_item;
 	t_lis *begin;
@@ -66,34 +64,27 @@ int ft_count_actions_in_b(t_lis *b, int item, int len_b)
 	return (num_item);
 }
 
-int ft_count_double_and_single(t_stacks main_struct, t_lis *b, int current_item)
+int ft_count_d_and_s(t_stacks m_struct, t_lis *b, int item)
 {
-	int num_item_b;
-	int num_item_a;
+	int num_i_b;
+	int num_i_a;
 	int middle_b;
 	int middle_a;
 	int tmp;
 
 	tmp = 0;
-	middle_b = main_struct.b_len % 2 == 0 ? main_struct.b_len / 2 : (main_struct.b_len / 2) + 1;
-	middle_a = main_struct.a_len % 2 == 0 ? main_struct.a_len / 2 : (main_struct.a_len / 2) + 1;
-	num_item_b = ft_count_actions_in_b(b, current_item, main_struct.b_len);
-	num_item_a = ft_count_actions_in_a(&main_struct, current_item, main_struct.a_len);
-	if (num_item_b <= middle_b && num_item_a <= middle_a)
-		while (num_item_b - 1 > 0 && num_item_a - 1 > 0)
-		{
-			tmp++;
-			num_item_b--;
-			num_item_a--;
-		}
+	middle_b = m_struct.b_len / 2;
+	middle_a = m_struct.a_len / 2;
+	num_i_b = ft_c_actions_in_b(b, item, m_struct.b_len);
+	num_i_a = ft_c_actions_in_a(&m_struct, item);
+	if (num_i_b <= middle_b && num_i_a <= middle_a)
+		while (num_i_b - 1 > 0 && num_i_a - 1 > 0)
+			ft_change_meanings(&num_i_b, &num_i_a, &tmp, '-');
 	else
-		while (num_item_b < main_struct.b_len && num_item_a <= main_struct.a_len)
-		{
-			tmp++;
-			num_item_b++;
-			num_item_a++;
-		}
-	return (tmp + ft_count_moves(num_item_b, main_struct.b_len) + ft_count_moves(num_item_a, main_struct.a_len));
+		while (num_i_b < m_struct.b_len && num_i_a <= m_struct.a_len)
+			ft_change_meanings(&num_i_b, &num_i_a, &tmp, '+');
+	return (tmp + ft_count_moves(num_i_b, m_struct.b_len)
+	+ ft_count_moves(num_i_a, m_struct.a_len));
 }
 
 int ft_check_quantity_throw(t_stacks main_struct)
@@ -108,7 +99,7 @@ int ft_check_quantity_throw(t_stacks main_struct)
 	while (main_struct.b)
 	{
 		current_item = main_struct.b->num;
-		tmp_count_actions = ft_count_double_and_single(main_struct, begin, current_item);
+		tmp_count_actions = ft_count_d_and_s(main_struct, begin, current_item);
 		main_struct.b->common_and_pos_a_b[0] = tmp_count_actions;
 		if (tmp_count_actions < result)
 			result = tmp_count_actions;

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   auxiliary_functions3.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/19 13:48:19 by ubartemi          #+#    #+#             */
+/*   Updated: 2019/08/19 13:49:37 by ubartemi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../checker.h"
 
-void ft_debag(t_lis *a, t_lis *b, char *command)
+void	ft_debag(t_lis *a, t_lis *b, char *command)
 {
 	ft_putstr("Execute the command - ");
 	ft_putstr(command);
@@ -23,7 +35,7 @@ void ft_debag(t_lis *a, t_lis *b, char *command)
 	ft_putstr("\n---------------------------------------------\n");
 }
 
-void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
+void	ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
 {
 	flags_struct->debug_mode = 0;
 	flags_struct->count_mode = 0;
@@ -40,7 +52,7 @@ void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
 	main_struct->is_first = 0;
 }
 
-void ft_show_usage_ch()
+void	ft_show_usage_ch(void)
 {
 	ft_putstr("Usage: ./checker [options] <args>\n");
 	ft_putstr("options:\n\t -v  debugger\n");
@@ -55,10 +67,10 @@ void ft_show_usage_ch()
 	ft_putstr("\tYou also can combine options\n");
 	ft_putstr("\t./checker -vc <args>\n");
 	ft_putstr("\t./checker -fvc [file_name] <args>\n");
-	exit (1);
+	exit(1);
 }
 
-void ft_show_usage_ps()
+void	ft_show_usage_ps(void)
 {
 	ft_putstr("Usage: ./push_swap [options] <args>\n");
 	ft_putstr("options:\n");
@@ -66,18 +78,20 @@ void ft_show_usage_ps()
 	ft_putstr("Example:\n");
 	ft_putstr("\t./push_swap <args>\n");
 	ft_putstr("\t./push_swap -f [file_name] <args>\n");
-	exit (1);
+	exit(1);
 }
 
-void ft_change_meanings(int *first, int *second, char sign)
+void	ft_change_meanings(int *first, int *second, int *third, char sign)
 {
 	if (sign == '+')
 	{
+		(*third)++;
 		(*first)++;
 		(*second)++;
 	}
 	else if (sign == '-')
 	{
+		(*third)++;
 		(*first)--;
 		(*second)--;
 	}

@@ -6,7 +6,7 @@ int	ft_count_moves(int num_item, int len_stack)
 	int counter;
 
 	counter = 0;
-	middle = (len_stack / 2) % 2 == 0 ? len_stack / 2 : (len_stack / 2) + 1;
+	middle = len_stack / 2;
 	if (len_stack == 1 || len_stack < num_item)
 		return (0);
 	if (num_item <= middle)
@@ -27,44 +27,43 @@ void ft_rotate_double(t_stacks *main_struct, int *num_item_a, int *num_item_b)
 
 	len_b = &main_struct->b_len;
 	len_a = &main_struct->a_len;
-	middle_b = (*len_b) % 2 == 0 ? (*len_b) / 2 : ((*len_b) / 2) + 1;
-	middle_a = (*len_a) % 2 == 0 ? (*len_a) / 2 : ((*len_a) / 2) + 1;
-	if ((*num_item_b) <= middle_b && (*num_item_a) <= middle_a)
-		while (((*num_item_b) - 1) > 0 && ((*num_item_a) - 1) > 0)
+	middle_b = (*len_b) / 2;
+	middle_a = (*len_a) / 2;
+	if (*num_item_b <= middle_b && *num_item_a <= middle_a)
+		while ((*num_item_b - 1) > 0 && (*num_item_a - 1) > 0)
 		{
 			ft_print_command(main_struct, "rr");
 			(*num_item_b)--;
 			(*num_item_a)--;
 		}
-	else if ((*num_item_b) >= middle_b && (*num_item_a) >= middle_a)
-		while (((*num_item_a) < (*len_a)  && (*num_item_a) > middle_a)
-		&& ((*num_item_b) <= (*len_b) && (*num_item_b) > middle_b))
+	else if (*num_item_b >= middle_b && *num_item_a >= middle_a)
+		while ((*num_item_a < *len_a  && *num_item_a > middle_a)
+		&& (*num_item_b <= *len_b && *num_item_b > middle_b))
 		{
 			ft_print_command(main_struct, "rrr");
 			(*num_item_a)++;
 			(*num_item_b)++;
 		}
-
 }
 
-void ft_rotate(t_stacks *main_struct, int num_item, int len_stack, char which_stack)
+void ft_rotate(t_stacks *m_struct, int n_item, int len_stack, char which_stack)
 {
 	int middle;
 
-	middle = len_stack % 2 == 0 ? len_stack / 2 : (len_stack / 2) + 1;
-	if (num_item <= middle)
-		while (num_item-- - 1 > 0)
-			which_stack == 'a' ? ft_print_command(main_struct, "ra")
-			: ft_print_command(main_struct, "rb");
-	else if (main_struct->is_first != 1)
-		while (num_item <= len_stack && len_stack > 1)
+	middle = len_stack / 2;
+	if (n_item <= middle)
+		while (n_item-- - 1 > 0)
+			which_stack == 'a' ? ft_print_command(m_struct, "ra")
+			: ft_print_command(m_struct, "rb");
+	else if (m_struct->is_first != 1)
+		while (n_item <= len_stack && len_stack > 1)
 		{
-			which_stack == 'a' ? ft_print_command(main_struct, "rra")
-			: ft_print_command(main_struct, "rrb");
-			num_item++;
+			which_stack == 'a' ? ft_print_command(m_struct, "rra")
+			: ft_print_command(m_struct, "rrb");
+			n_item++;
 		}
-	if (main_struct->b && which_stack == 'a')
-		ft_print_command(main_struct, "pa");
+	if (m_struct->b && which_stack == 'a')
+		ft_print_command(m_struct, "pa");
 }
 
 void ft_move_common(t_stacks *main_struct, int num_item_a, int num_item_b)

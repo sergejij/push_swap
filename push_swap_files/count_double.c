@@ -19,40 +19,34 @@ int ft_count_single(t_stacks *main_struct, int num_item, int len_stack)
 	return (counter);
 }
 
-int ft_count_double(t_stacks *main_struct, int num_item_a, int num_item_b)
+int ft_count_double(t_stacks *m_struct, int num_i_a, int num_i_b)
 {
 	int middle_b;
 	int middle_a;
 	int counter;
 
 	counter = 0;
-	middle_b = main_struct->b_len / 2;
-	middle_a = main_struct->a_len / 2;
-	if (num_item_b <= middle_b && num_item_a <= middle_a)
-		while ((num_item_b - 1) > 0 && num_item_a - 1 > 0)
-		{
-			counter++;
-			ft_change_meanings(&num_item_a, &num_item_b, '-');
-		}
+	middle_b = m_struct->b_len / 2;
+	middle_a = m_struct->a_len / 2;
+	if (num_i_b <= middle_b && num_i_a <= middle_a)
+		while ((num_i_b - 1) > 0 && num_i_a - 1 > 0)
+			ft_change_meanings(&num_i_a, &num_i_b, &counter, '-');
 	else
-		while ((num_item_a < main_struct->a_len  && num_item_a > middle_a)
-			   && (num_item_b <= main_struct->b_len && num_item_b > middle_b))
-		{
-			counter++;
-			ft_change_meanings(&num_item_a, &num_item_b, '+');
-		}
-	return (counter + ft_count_single(main_struct, num_item_b, main_struct->b_len)
-			+ ft_count_single(main_struct, num_item_a, main_struct->a_len));
+		while ((num_i_a < m_struct->a_len  && num_i_a > middle_a)
+			   && (num_i_b <= m_struct->b_len && num_i_b > middle_b))
+			ft_change_meanings(&num_i_a, &num_i_b, &counter, '+');
+	return (counter + ft_count_single(m_struct, num_i_b, m_struct->b_len)
+			+ ft_count_single(m_struct, num_i_a, m_struct->a_len));
 }
 
-int	is_need_double(t_stacks *main_struct, int num_item_a, int num_item_b)
+int	is_need_double(t_stacks *m_struct, int num_i_a, int num_i_b)
 {
 	int number_of_double;
 	int number_of_single;
 
-	number_of_double = ft_count_double(main_struct, num_item_a, num_item_b);
-	number_of_single = ft_count_single(main_struct, num_item_b, main_struct->b_len)
-					   + ft_count_single(main_struct, num_item_a, main_struct->a_len);
+	number_of_double = ft_count_double(m_struct, num_i_a, num_i_b);
+	number_of_single = ft_count_single(m_struct, num_i_b, m_struct->b_len)
+					   + ft_count_single(m_struct, num_i_a, m_struct->a_len);
 	if (number_of_double >= number_of_single)
 		return (0);
 	return (1);
