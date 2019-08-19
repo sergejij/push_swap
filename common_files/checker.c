@@ -29,27 +29,27 @@ void	ft_apply_commands(t_stacks *main_struct, char *command)
 		ft_error();
 }
 
-void ft_check_sort(t_stacks    *main_struct, t_flags flags_struct)
+void ft_check_sort(t_stacks    *m_struct, t_flags f_struct)
 {
     t_lis *begin;
 
-    if (!main_struct->a)
+    if (!m_struct->a)
         return ;
-    begin = main_struct->a;
-    while (main_struct->a && main_struct->a->next)
+    begin = m_struct->a;
+    while (m_struct->a && m_struct->a->next)
     {
-        if ((main_struct->a->num > main_struct->a->next->num) || main_struct->b)
+        if ((m_struct->a->num > m_struct->a->next->num) || m_struct->b)
         {
             ft_putstr("\033[31;1mKO\033[0m\n");
             exit (1);
         }
-        main_struct->a = main_struct->a->next;
+        m_struct->a = m_struct->a->next;
     }
-    main_struct->a = begin;
+    m_struct->a = begin;
     ft_putstr("\033[32;1mOK\033[0m\n");
-	if (flags_struct.count_mode)
+	if (f_struct.count_mode)
 	{
-		ft_putnbr(main_struct->counter);
+		ft_putnbr(m_struct->counter);
 		ft_putchar('\n');
 	}
 }
@@ -74,7 +74,7 @@ int		main(int argc, char **argv)
 	ft_initialization(&flags_struct, &main_struct, 0);
     if (argc < 2)
 		ft_show_usage_ch();
-    if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
+    if (!(ft_parse_fill(&main_struct, &flags_struct, argc, argv)))
 		ft_error();
 	ft_check_duplicates(&main_struct);
 	if (flags_struct.file_mode)

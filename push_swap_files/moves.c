@@ -56,7 +56,7 @@ void ft_rotate(t_stacks *main_struct, int num_item, int len_stack, char which_st
 		while (num_item-- - 1 > 0)
 			which_stack == 'a' ? ft_print_command(main_struct, "ra")
 			: ft_print_command(main_struct, "rb");
-	else if (main_struct->flag_stay_in_first != 1)
+	else if (main_struct->is_first != 1)
 		while (num_item <= len_stack && len_stack > 1)
 		{
 			which_stack == 'a' ? ft_print_command(main_struct, "rra")

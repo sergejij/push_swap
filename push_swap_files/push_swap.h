@@ -67,7 +67,7 @@ void ft_find_sort_sequence(t_lis *stack_a, int *start_seq, int *len_seq);
 /*-----------------------------bonuses-------------------------------*/
 
 void ft_write_file(t_flags *flags_struct, t_stacks *main_struct);
-void ft_parse_flags(t_flags *flags_struct, char **argv);
+void ft_parse_flags(t_flags *f_struct, char **argv);
 void ft_parse_flags_fill(t_flags *flags_struct, char **argv, char flag, int i);
 void ft_check_flags(t_flags *flags_struct);
 

@@ -10,7 +10,7 @@ void ft_final_rotates(t_stacks *main_struct, int num_item, int a_len) {
 			ft_print_command(main_struct, "ra");
 			num_item--;
 		}
-	else if (main_struct->flag_stay_in_first != 1)
+	else if (main_struct->is_first != 1)
 		while (num_item <= a_len && a_len > 1) {
 			ft_print_command(main_struct, "rra");
 			num_item++;
@@ -80,7 +80,7 @@ int main(int argc, char **argv)
 	ft_initialization(&flags_struct, &main_struct, 1);
     if (argc < 2)
 		ft_show_usage_ps();
-    if (!(ft_parse_and_fill(&main_struct, &flags_struct, argc, argv)))
+    if (!(ft_parse_fill(&main_struct, &flags_struct, argc, argv)))
 		ft_error();
     ft_check_duplicates(&main_struct);
 	if (flags_struct.file_mode)

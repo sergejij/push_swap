@@ -28,7 +28,7 @@ void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
 	flags_struct->debug_mode = 0;
 	flags_struct->count_mode = 0;
 	flags_struct->file_mode = 0;
-	flags_struct->num_sep_flags = 0;
+	flags_struct->sep_f = 0;
 	flags_struct->file_name = NULL;
 	main_struct->counter = 0;
 	main_struct->fd = fd;
@@ -37,7 +37,7 @@ void ft_initialization(t_flags *flags_struct, t_stacks *main_struct, int fd)
 	main_struct->a_len = 0;
 	main_struct->b_len = 0;
 	main_struct->min_actions = 0;
-	main_struct->flag_stay_in_first = 0;
+	main_struct->is_first = 0;
 }
 
 void ft_show_usage_ch()

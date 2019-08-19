@@ -10,7 +10,7 @@ int ft_count_single(t_stacks *main_struct, int num_item, int len_stack)
 	if (num_item <= middle)
 		while (num_item-- - 1 > 0)
 			counter++;
-	else if (main_struct->flag_stay_in_first != 1)
+	else if (main_struct->is_first != 1)
 		while (num_item <= len_stack && len_stack > 1)
 		{
 			counter++;

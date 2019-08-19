@@ -38,22 +38,23 @@ int	ft_parse(char **argv, t_stacks    *main_struct)
 }
 
 
-int	ft_parse_and_fill(t_stacks    *m_struct, t_flags    *f_struct, int argc, char **argv)
+int	ft_parse_fill(t_stacks *m_struct, t_flags *f_struct, int argc,
+					 char **argv)
 {
 	char **tmp;
 
 	tmp = NULL;
 	ft_parse_flags(f_struct, argv);
-	if (argc <= f_struct->num_sep_flags + 1)
+	if (argc <= f_struct->sep_f + 1)
 		ft_error();
-	if (argc == f_struct->num_sep_flags + 2 && is_need_parsing(argv, *f_struct))
+	if (argc == f_struct->sep_f + 2 && is_need_parsing(argv, *f_struct))
 	{
-		if (!(ft_parse(argv + f_struct->num_sep_flags, m_struct)))
+		if (!(ft_parse(argv + f_struct->sep_f, m_struct)))
 			return (0);
 	}
 	else
 	{
-		tmp = (f_struct->num_sep_flags) ? ft_shift_matrix(argv + f_struct->num_sep_flags,
+		tmp = (f_struct->sep_f) ? ft_shift_matrix(argv + f_struct->sep_f,
 				argc - 1, tmp) : ft_shift_matrix(argv, argc, tmp);
 		if (is_correct_input(tmp) && is_int(tmp))
 			(*m_struct).a = ft_create_stack(tmp);

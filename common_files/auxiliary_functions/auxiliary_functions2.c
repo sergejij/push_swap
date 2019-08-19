@@ -66,8 +66,8 @@ int is_need_parsing(char **argv, t_flags flags_struct)
 	int j;
 
     j = 0;
-    if (flags_struct.num_sep_flags)
-    	i = flags_struct.num_sep_flags + 1;
+    if (flags_struct.sep_f)
+    	i = flags_struct.sep_f + 1;
     else
     	i = 1;
     while (argv[i][j])
