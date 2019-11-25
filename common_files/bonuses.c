@@ -6,7 +6,7 @@
 /*   By: ubartemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 14:01:56 by ubartemi          #+#    #+#             */
-/*   Updated: 2019/08/19 14:03:12 by ubartemi         ###   ########.fr       */
+/*   Updated: 2019/08/19 15:51:56 by ubartemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ void	ft_parse_flags(t_flags *f_struct, char **ar)
 		if (ar[i][0] == '-')
 		{
 			j = 1;
+			if (!ar[i][j])
+				ft_error();
 			while (j <= 3 && ar[i][j])
 			{
 				if (ar[i][j] == 'v' || ar[i][j] == 'c' || ar[i][j] == 'f')
